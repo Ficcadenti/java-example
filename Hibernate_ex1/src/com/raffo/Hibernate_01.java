@@ -2,8 +2,23 @@ package com.raffo;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.File;
+
+import java.net.URL;
+import java.net.URISyntaxException;
+
 
 public class Hibernate_01 
 {
@@ -14,11 +29,74 @@ public class Hibernate_01
     public static void main(String[] args) 
     {
     	//PropertyConfigurator.configure("log4j.properties");
+    	
+		String jsonData = "";
+		BufferedReader br = null;
+		try 
+		{
+			URL log4jprop = Hibernate_01.class.getResource("/resources/log4j.properties");
+			System.out.println("log4j properties file: " + log4jprop.getPath());
+			PropertyConfigurator.configure(log4jprop.getPath());
+			
+			String line;
+			File file;
+			URL credenziali = Hibernate_01.class.getResource("/resources/credenziali.json");
+			System.out.println("JSON  file: " + credenziali.getPath());
+			
+			file = new File(credenziali.toURI());
+			br = new BufferedReader(new FileReader(file));
+			
+			while ((line = br.readLine()) != null) 
+			{
+				jsonData += line + "\n";
+			}
+		} 
+		catch (URISyntaxException e)
+		{
+			e.printStackTrace();
+		}
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		} 
+		finally 
+		{
+			try 
+			{
+				if (br != null)
+				{
+					br.close();
+				}
+			} 
+			catch (IOException ex) 
+			{
+				ex.printStackTrace();
+			}
+		}
+		
+		
+		System.out.println("File Content: \n" + jsonData);
+		
+    	JSONObject obj = new JSONObject(jsonData);
+
+        /*obj.put("db_name", "hibernate_test");
+        obj.put("login", "root");
+        obj.put("password", "raffo");*/
+
+        System.out.println("db_name="+obj.getString("db_name"));
+        System.out.println("login="+obj.getString("login"));
+        System.out.println("password="+obj.getString("password"));
+        
+
+
+        System.out.println(obj);
+        
+        
     	String classpath = System.getProperty("java.class.path");
     	System.out.println("classpath="+classpath);
     			
     	
-    	logger.info("Log su file : ");
+    	logger.info("Logger su file : ");
     	
     	System.out.println("Persona Unit Test");
     	
