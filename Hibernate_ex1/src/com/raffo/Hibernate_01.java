@@ -15,9 +15,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
-import java.net.URL;
-import java.net.URISyntaxException;
 
 
 public class Hibernate_01 
@@ -28,33 +28,25 @@ public class Hibernate_01
 	
     public static void main(String[] args) 
     {
-    	//PropertyConfigurator.configure("log4j.properties");
-    	
+    	InputStream in = null;
 		String jsonData = "";
 		BufferedReader br = null;
+		String line = "";
+		
 		try 
 		{
-			URL log4jprop = Hibernate_01.class.getResource("/resources/log4j.properties");
-			System.out.println("log4j properties file: " + log4jprop.getPath());
-			PropertyConfigurator.configure(log4jprop.getPath());
+			in = Hibernate_01.class.getResourceAsStream("/resources/log4j.properties");
+			System.out.println("log4j properties file: " + in);
+			PropertyConfigurator.configure(in);
 			
-			String line;
-			File file;
-			URL credenziali = Hibernate_01.class.getResource("/resources/credenziali.json");
-			System.out.println("JSON  file: " + credenziali.getPath());
-			
-			file = new File(credenziali.toURI());
-			br = new BufferedReader(new FileReader(file));
-			
+			in = Hibernate_01.class.getResourceAsStream("/resources/credenziali.json"); 
+			br = new BufferedReader(new InputStreamReader(in));
+						
 			while ((line = br.readLine()) != null) 
 			{
 				jsonData += line + "\n";
 			}
 		} 
-		catch (URISyntaxException e)
-		{
-			e.printStackTrace();
-		}
 		catch (IOException e) 
 		{
 			e.printStackTrace();
@@ -125,6 +117,7 @@ public class Hibernate_01
         
         System.out.println("successfully saved");  
         session.close();
+        
     }
 
 
