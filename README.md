@@ -16,5 +16,7 @@ Raffaele.
   <li>esempioZIP2: Utilizzo della classe java.util.zip per zippare file e directory.</li>
   <br>
   <li>Hibernate_ex1: Utilizzo della framework Hibernate, ed esempio di automatizazione con Maven.</li>
+  <br>
+  <li>Servlet_ex1: La prima Servlet in Eclipse, utilizzo di Maven per il deploy in tomcat.</li>
 </ul>
 
