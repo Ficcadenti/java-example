@@ -8,5 +8,10 @@
 </head>
 <body>
 	<h1>Presentazione dati</h1>
+	
+	Login: <% String fLogin = request.getParameter("user"); out.print(fLogin); %>
+	<br>
+	Password: <% String fPass = request.getParameter("pass"); out.print(fPass); %>
+	
 </body>
 </html>
