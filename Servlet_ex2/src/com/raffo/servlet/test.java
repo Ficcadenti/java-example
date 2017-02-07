@@ -60,8 +60,8 @@ public class test extends HttpServlet {
 		
 		String dbname=(String)request.getAttribute("dbname");
 		
-		out.append("doGet() Served at: ").append(request.getContextPath());
-		out.append("\n dbname="+dbname);
+		out.append("<br>doGet() Served at: ").append(request.getContextPath());
+		out.append("<br>dbname="+dbname);
 	}
 
 	/**

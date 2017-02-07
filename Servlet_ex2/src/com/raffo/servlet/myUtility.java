@@ -4,6 +4,7 @@ import java.util.Enumeration;
 import java.util.Locale;
 
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
 
@@ -76,14 +77,22 @@ public class myUtility
 	public void showInfo(ServletConfig cfg,HttpServletRequest request)
 	{
 		String name = cfg.getServletName();
+		ServletContext ctx = cfg.getServletContext();
+		
 		String URI=request.getRequestURI();
 		String URL=request.getRequestURL().toString();
 		String queryString=request.getQueryString();
+
 		
-		log.info("Nome servlets: "+name);
-		log.info("URI          : "+URI);
-		log.info("URL          : "+URL);
-		log.info("queryString  : "+queryString);
+		int vMajor=ctx.getMajorVersion();
+		int vMinor=ctx.getMinorVersion();
+		
+		
+		log.info("Nome servlets       : "+name);
+		log.info("Servlet API Version : "+vMajor+"."+vMinor);
+		log.info("URI                 : "+URI);
+		log.info("URL                 : "+URL);
+		log.info("queryString         : "+queryString);
 	}
 
 }
