@@ -15,8 +15,14 @@
 <% Date dateTime = new Date(); %>
 <body style = "font-size: 16pt;">
 Oggi &egrave; <%= dateFormat.format(dateTime) %><br>
-e sono le ore <%= timeFormat.format(dateTime) %>
+e sono le ore <%= timeFormat.format(dateTime) %><br>
 
-	
+<% String name = request.getParameter("name"); %>
+<% if (name == null || name.length() == 0) { %>
+Ciao, chiunque tu sia!
+<% } else { %>
+Ciao <%= name %>!
+<% } %>
+
 </body>
 </html>

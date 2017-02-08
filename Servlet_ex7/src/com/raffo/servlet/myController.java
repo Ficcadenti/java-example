@@ -21,7 +21,7 @@ import org.apache.log4j.PropertyConfigurator;
  * Servlet implementation class myController
  */
 @WebServlet(
-		description = "Servlet esempio 6", 
+		description = "Servlet esempio 7", 
 		urlPatterns = { "/myController" }, 
 		initParams = { 
 				@WebInitParam(name = "versione", value = "1.0", description = "numero di versione"),
@@ -54,7 +54,7 @@ public class myController extends HttpServlet
 		super.init(config);
 		map = new HashMap<String,String>();
 		log = org.apache.log4j.Logger.getLogger(myController.class);
-		PropertyConfigurator.configure("./webapps/Servlet_ex6/WEB-INF/classes/resources/log4j.properties");
+		PropertyConfigurator.configure("./webapps/Servlet_ex7/WEB-INF/classes/resources/log4j.properties");
 
 		log.info("Servlet init()");
 		raffo= new myUtility(config);
@@ -104,7 +104,7 @@ public class myController extends HttpServlet
 	 */
 	public String getServletInfo() {
 		// TODO Auto-generated method stub
-		return "Servlet_ex6 - v1.0";
+		return "Servlet_ex7 - v1.0";
 	}
 
 	/**

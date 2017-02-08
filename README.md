@@ -29,6 +29,8 @@ Raffaele.
   <br>
   <li><b>Servlet_ex6</b>: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP a lavoro.</li>
   <br>
+  <li><b>Servlet_ex7</b>: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP/JavaBean a lavoro.</li>
+  <br>
   <li><b>JSF_ex1</b>: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
 </ul>
 
