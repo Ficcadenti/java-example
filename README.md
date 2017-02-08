@@ -23,6 +23,10 @@ Raffaele.
   <br>
   <li>Servlet_ex3: MVC Project: Servlet/JSP/Bootstrap: il mantenimento dello stato mediante modifica della invocazione.</li>
   <br>
+  <li>Servlet_ex4: MVC Project: Servlet/JSP/Bootstrap: il mantenimento dello stato mediante Cookie.</li>
+  <br>
+  <li>Servlet_ex5: MVC Project: Servlet/JSP/Bootstrap: il mantenimento dello stato mediante Sessioni.</li>
+  <br>
   <li>JSF_ex1: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
 </ul>
 
