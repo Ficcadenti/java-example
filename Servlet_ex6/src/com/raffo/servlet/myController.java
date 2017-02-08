@@ -13,7 +13,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -22,20 +21,20 @@ import org.apache.log4j.PropertyConfigurator;
  * Servlet implementation class myController
  */
 @WebServlet(
-		description = "Servlet esempio 5", 
+		description = "Servlet esempio 6", 
 		urlPatterns = { "/myController" }, 
 		initParams = { 
 				@WebInitParam(name = "versione", value = "1.0", description = "numero di versione"),
 				@WebInitParam(name = "autore", value = "Raffaele Ficcadenti", description = ""),
 				@WebInitParam(name = "email", value = "raffaele.ficcadenti@gmail.it", description = "")
 		})
-public class myController extends HttpServlet {
+public class myController extends HttpServlet 
+{
 	private static final long serialVersionUID = 1L;
 	private int serviceCounter = 0;
 	private boolean shuttingDown = false;
 	private HashMap<String,String> map;
 	private myUtility raffo = null;
-	private HttpSession session = null;
 	static Logger log;
 	static final int TIME_TO_SLEEP=1*1000; //in millisecondi
 
@@ -70,7 +69,7 @@ public class myController extends HttpServlet {
 			log.info(param_name+": "+param_value);
 			map.put(param_name, param_value);
 		}
-		
+
 	}
 
 	/**
@@ -84,10 +83,6 @@ public class myController extends HttpServlet {
 		}
 		else
 		{
-			if(session!=null)
-			{
-				session.invalidate();
-			}
 			log.info("destroy OK");
 		}
 		// Attende lo stop dei vari servizi
@@ -99,7 +94,7 @@ public class myController extends HttpServlet {
 			}
 			catch (InterruptedException e) 
 			{
-				log.info("Si � verificata una eccezione");
+				log.info("Si è verificata una eccezione");
 			}
 		}
 	}
@@ -109,7 +104,7 @@ public class myController extends HttpServlet {
 	 */
 	public String getServletInfo() {
 		// TODO Auto-generated method stub
-		return "Servlet_ex5 � Un servlet personalizzato � V 1.0";
+		return "Servlet_ex6 - v1.0";
 	}
 
 	/**
@@ -137,7 +132,8 @@ public class myController extends HttpServlet {
 		// TODO Auto-generated method stub
 		if(!isShuttingDown())
 		{
-			
+			RequestDispatcher rd = request.getRequestDispatcher("prova.jsp");
+			rd.forward(request, response);
 		}
 	}
 
@@ -158,62 +154,8 @@ public class myController extends HttpServlet {
 			raffo.showInfo(cfg,request);
 
 			String username=request.getParameter("user_id");
-			boolean sessionUserName=false;
-			
-			session = request.getSession(true);
-			session.setMaxInactiveInterval(1000);; //espresso in secondi
-			String idSessione=session.getId();
-			if(session.isNew()==true)
-			{
-				log.info("Creata nuova sessione con di=["+idSessione+"] !!!!");
-			}
-			else
-			{
-				log.info("Caricata sessione esistente con di=["+idSessione+"] !!!!");
-			}
-			
-			
-			// si prova a ricavare dalla sessione
-			// il valore di sessiontest.counter
-			Integer ival = (Integer) session.getAttribute("sessiontest.counter");
-			// se la sessione non esiste il valore restituito sarà null
-			if (ival==null)
-			{
-				// ival non è definito
-				ival = new Integer(1);
-			}
-			else 
-			{
-				// il valore di ival è definito
-				// si incrementa di 1
-				ival = new Integer(ival.intValue() + 1);
-			}
-			// si memorizza nella sessione il nuovo valore
-			session.setAttribute("sessiontest.counter", ival);
-			
-			
-			String sessionUserId=(String) session.getAttribute("sessiontest.user_id");
-			
-			if (sessionUserId==null)
-			{
-				// sessionUserId non è definito
-				sessionUserId = username;
-				sessionUserName=true;
-			}
-			else
-			{
-				username=sessionUserId;
-			}
-			
-			// si memorizza nella sessione il nuovo valore
-			session.setAttribute("sessiontest.user_id", sessionUserId);
-			
-			log.info("sessiontest.counter="+ival);
-			log.info("sessiontest.user_id="+sessionUserId);
 
-			
-
-			if( (username==null) && (sessionUserName==false) ) 
+			if( username==null )
 			{
 				String msg="Errore nei parametri manca 'user'!!!";
 				response.sendError(HttpServletResponse.SC_BAD_REQUEST,msg);
@@ -222,9 +164,7 @@ public class myController extends HttpServlet {
 			else
 			{
 				out.println(myUtility.PAGE_TOP);
-				out.println("<h1>Serlvet - Esempio 5 - Il mantenimento dello stato: le sessioni()</h1>");
-				out.println("<h2> SessionID="+idSessione+"</h2><br>");
-				out.println("<h3> Session counter="+ival+"</h3><br>");
+				out.println("<h1>Serlvet - Esempio 6 - JSP()</h1>");
 				out.println("<FORM METHOD=\"POST\" ACTION=\"myController\">");
 				out.println("Quali articoli vuoi comprare '"+username+"'? <INPUT TYPE=\"text\" NAME=\"data\"><BR>");
 				out.println("<input type=\"submit\" name=\"articolo\" value=\"ok\">");

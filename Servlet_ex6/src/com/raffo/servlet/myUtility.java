@@ -18,24 +18,24 @@ public class myUtility
 	
 	
 	public static final String PAGE_JQUERY = ""
-			+ "<link rel=\"stylesheet\"	href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n"
-			+ "<script	src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n"
-			+ "<script	src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n";
+			+ "<link rel=\"stylesheet\"	href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\r\n"
+			+ "<script	src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\r\n"
+			+ "<script	src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n";
 	
 	public static final String PAGE_TOP = ""
-			+ "<!DOCTYPE html>"
-            + "<html>\n"
-            + "<head>\n"
-            + "<title>Servlet esempio 5 - Il mantenimento dello stato: le sessioni</title>\n"
-            + "<meta charset=\"utf-8\">\n"
-            + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
+			+ "<!DOCTYPE html>\r\n"
+            + "<html>\r\n"
+            + "<head>\r\n"
+            + "<title>Servlet esempio 6 - JSP </title>\r\n"
+            + "<meta charset=\"utf-8\">\r\n"
+            + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n"
             + PAGE_JQUERY
-            + "</head>\n"
-            + "<body>\n";
+            + "</head>\r\n"
+            + "<body>\r\n";
     
 	public static final String PAGE_BOTTOM = ""
-            + "</body>\n"
-            + "</html>\n";
+            + "</body>\r\n"
+            + "</html>\r\n";
 	
 	myUtility(ServletConfig config)
 	{
