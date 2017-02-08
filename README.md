@@ -9,26 +9,26 @@ Se volete provare ogni singolo esempio andate sul mio sito <a href="http://www.r
 Buon 'coding'.
 Raffaele.
 <ul>
-  <li>HangmanGame: Il gioco del'impiccato.</li>
+  <li><b>HangmanGame</b>: Il gioco del'impiccato.</li>
   <br>
-  <li>esempioZIP: Utilizzo della classe java.util.zip per zippare file.</li>
+  <li><b>esempioZIP</b>: Utilizzo della classe java.util.zip per zippare file.</li>
   <br>
-  <li>esempioZIP2: Utilizzo della classe java.util.zip per zippare file e directory.</li>
+  <li><b>esempioZIP2</b>: Utilizzo della classe java.util.zip per zippare file e directory.</li>
   <br>
-  <li>Hibernate_ex1: Utilizzo della framework Hibernate, ed esempio di automatizazione con Maven.</li>
+  <li><b>Hibernate_ex1</b>: Utilizzo della framework Hibernate, ed esempio di automatizazione con Maven.</li>
   <br>
-  <li>Servlet_ex1: La prima Servlet in Eclipse, utilizzo di Maven per il deploy in tomcat.</li>
+  <li><b>Servlet_ex1</b>: La prima Servlet in Eclipse, utilizzo di Maven per il deploy in tomcat.</li>
   <br>
-  <li>Servlet_ex2: MVC Project: Servlet/Bootstrap il tutto automatizzato con Maven.</li>
+  <li><b>Servlet_ex2</b>: MVC Project: Servlet/Bootstrap il tutto automatizzato con Maven.</li>
   <br>
-  <li>Servlet_ex3: MVC Project: Servlet/Bootstrap: il mantenimento dello stato mediante modifica della invocazione.</li>
+  <li><b>Servlet_ex3</b>: MVC Project: Servlet/Bootstrap: il mantenimento dello stato mediante modifica della invocazione.</li>
   <br>
-  <li>Servlet_ex4: MVC Project: Servlet/Bootstrap: il mantenimento dello stato mediante Cookie.</li>
+  <li><b>Servlet_ex4</b>: MVC Project: Servlet/Bootstrap: il mantenimento dello stato mediante Cookie.</li>
   <br>
-  <li>Servlet_ex5: MVC Project: Servlet/Bootstrap: il mantenimento dello stato mediante Sessioni.</li>
+  <li><b>Servlet_ex5</b>: MVC Project: Servlet/Bootstrap: il mantenimento dello stato mediante Sessioni.</li>
   <br>
-  <li>Servlet_ex6: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP a lavoro.</li>
+  <li><b>Servlet_ex6</b>: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP a lavoro.</li>
   <br>
-  <li>JSF_ex1: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
+  <li><b>JSF_ex1</b>: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
 </ul>
 
