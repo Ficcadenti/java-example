@@ -218,6 +218,8 @@ public class myController extends HttpServlet {
 			{
 				out.println(myUtility.PAGE_TOP);
 				out.println("<h1>Serlvet - Esempio 5 - Il mantenimento dello stato: le sessioni()</h1>");
+				out.println("<h2> SessionID="+idSessione+"</h2><br>");
+				out.println("<h3> Session counter="+ival+"</h3><br>");
 				out.println("<FORM METHOD=\"POST\" ACTION=\"myController\">");
 				out.println("Quali articoli vuoi comprare '"+username+"'? <INPUT TYPE=\"text\" NAME=\"data\"><BR>");
 				out.println("<input type=\"submit\" name=\"articolo\" value=\"ok\">");

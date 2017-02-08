@@ -39,7 +39,7 @@ public class myUtility
 	{
 		// Costruttore
 		log = org.apache.log4j.Logger.getLogger(myUtility.class);
-		PropertyConfigurator.configure("./webapps/Servlet_ex2/WEB-INF/classes/resources/log4j.properties");
+		PropertyConfigurator.configure("./webapps/Servlet_ex3/WEB-INF/classes/resources/log4j.properties");
 		
 		log.info("myUtility()");
 	}

@@ -22,7 +22,7 @@ import org.apache.log4j.PropertyConfigurator;
 @WebServlet(
 		description = "Servlet esempio 3", 
 		urlPatterns = { "/myController" }, 
-				initParams = { 
+		initParams = { 
 						@WebInitParam(name = "versione", value = "1.0", description = "numero di versione"),
 						@WebInitParam(name = "autore", value = "Raffaele Ficcadenti", description = ""),
 						@WebInitParam(name = "email", value = "raffaele.ficcadenti@gmail.it", description = "")
@@ -164,9 +164,8 @@ public class myController extends HttpServlet
 				out.println("<h1>Serlvet - Esempio 3 - Il mantenimento dello stato()</h1>");
 				out.println("<FORM METHOD=\"POST\" ACTION=\"myController\">");
 				out.println("Quali articoli vuoi comprare '"+username+"'? <INPUT TYPE=\"text\" NAME=\"data\"><BR>");
-				out.println("<inputtype=\"submit\" name=\"articolo\" value=\"ok\">");
-				out.println("<inputtype=\"hidden\" name=\"user_id\" value=\""+username+"\">");
-				out.println("<input type=\"submit\" name= \"articolo\" value=\"ok\">");
+				out.println("<input type=\"hidden\" name=\"user_id\" value=\""+username+"\">");
+				out.println("<input type=\"submit\" name=\"articolo\" value=\"ok\">");
 				out.println("</FORM>");
 				out.println(myUtility.PAGE_BOTTOM);
 			}
