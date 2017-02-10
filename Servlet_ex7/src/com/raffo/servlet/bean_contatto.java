@@ -3,13 +3,14 @@ package com.raffo.servlet;
 public class bean_contatto 
 {
 	
-	private String nome;
+	private String nome=null;
 	private String cognome;
 	private String email;
 	private String cellulare;
 	
 	public String getNome()
 	{
+		nome.length();
 		return nome;
 	}
 

@@ -7,6 +7,7 @@
 <body style="font-size: 16pt;">
 	<%@ page errorPage = "pageError.jsp" %>
 	
+	<!--  Commentare la riga successiva per simulare l'errore -->
 	<jsp:setProperty name="contatto" property="nome" value="Raffaele"/>
 	<jsp:setProperty name="contatto" property="cognome" value="Ficcadenti"/>
 	<jsp:setProperty name="contatto" property="email" value="raffaele.ficcadenti@gmail.it"/>
