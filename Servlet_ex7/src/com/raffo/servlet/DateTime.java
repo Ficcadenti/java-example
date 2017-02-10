@@ -6,7 +6,7 @@ import java.text.*;
 public class DateTime 
 {
 	DateFormat dateFormat = new SimpleDateFormat("EEEE d MMMM yyyy");
-	DateFormat timeFormat = new SimpleDateFormat("H:mm");
+	DateFormat timeFormat = new SimpleDateFormat("H:mm:ss");
 	
 	public String getDate() 
 	{
