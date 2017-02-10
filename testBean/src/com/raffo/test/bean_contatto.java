@@ -1,12 +1,20 @@
 package com.raffo.test;
 
-public class bean_contatto 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
+public class bean_contatto
 {
 	
-	private String nome;
-	private String cognome;
-	private String email;
-	private String cellulare;
+	private PropertyChangeSupport changes = new PropertyChangeSupport(this);
+	
+	//proprieta semplice
+	private String nome      = "";
+	private String cognome   = "";
+	private String cellulare = "";
+	
+	//proprieta bound
+	private String email     = "";
 	
 	public String getNome()
 	{
@@ -35,7 +43,9 @@ public class bean_contatto
 
 	public void setEmail(String e)
 	{
+		String old_email=email;
 		email=e;
+		changes.firePropertyChange("email", old_email,e);
 	}
 	
 	public String getcellulare()
@@ -47,4 +57,14 @@ public class bean_contatto
 	{
 		cellulare=c;
 	}
+	
+	public void addPropertyChangeListener(PropertyChangeListener l)
+	  {
+	   changes.addPropertyChangeListener(l);
+	  }
+	
+	  public void removePropertyChangeListener(PropertyChangeListener l)
+	  {
+	   changes.removePropertyChangeListener(l);
+	  }
 }
