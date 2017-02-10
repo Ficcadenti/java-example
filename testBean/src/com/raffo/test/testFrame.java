@@ -11,6 +11,8 @@ import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.beans.PropertyVetoException;
+import java.beans.VetoableChangeListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -25,6 +27,8 @@ public class testFrame extends JFrame {
 	private static bean_test1 bean_test1_ = new bean_test1();
 	private static bean_contatto contatto = new bean_contatto();
 	private static bean_bound bb=new bean_bound();
+	private static bean_constrained bc=new bean_constrained();
+	
 	private static PhotoAlbum p;
 	private static JLabel lblNewLabel;
 
@@ -65,6 +69,19 @@ public class testFrame extends JFrame {
 				catch (Exception e) 
 				{
 					e.printStackTrace();
+				}
+			}
+		});
+		
+		bc.addVetoableChangeListener(new VetoableChangeListener() {
+			
+			@Override
+			public void vetoableChange(PropertyChangeEvent evt) throws PropertyVetoException {
+				// TODO Auto-generated method stub
+				if(evt.getPropertyName()=="email")
+				{
+					System.out.println("Constrained: "+evt.getPropertyName() + ": " + evt.getNewValue());
+					throw new PropertyVetoException("Messagio di eccezzione per il vincolo sulla proprietà email del bean 'bean_constrained' !!!",evt);
 				}
 			}
 		});
@@ -109,7 +126,7 @@ public class testFrame extends JFrame {
 		setBounds(100, 100, 450, 300);
 
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.LIGHT_GRAY);
+		contentPane.setBackground(Color.BLACK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
@@ -128,6 +145,14 @@ public class testFrame extends JFrame {
 					System.out.println("get bean:"+bean_test1_.getMyString());
 					contatto.setEmail("raffaele.ficcadenti@gmail.com");
 					bb.setEmail("valeria.greco@gmail.com");
+
+						try {
+							bc.setEmail("valeria.greco@gmail.com");
+						} catch (PropertyVetoException e) {
+							// TODO Auto-generated catch block
+							System.out.println(e.getMessage()+"   email="+bc.getEmail());
+						}
+					
 					p.showNext();
 				}
 				if (!btnNewButton_2.isEnabled()) {

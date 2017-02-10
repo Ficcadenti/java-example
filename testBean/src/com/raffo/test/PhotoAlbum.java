@@ -19,6 +19,7 @@ public class PhotoAlbum extends JPanel {
 	{
 		super();
 		setLayout(new BorderLayout());
+		setBackground(Color.black);
 		setupComments();
 		imageIndex = 0;
 		showNext();
@@ -76,6 +77,8 @@ public class PhotoAlbum extends JPanel {
 		
 		ImageIcon img = new ImageIcon(imageUrl);
 		JLabel picture = new JLabel(img);
+		picture.setBackground(Color.BLACK);
+		picture.setOpaque(true);
 		JScrollPane pictureScrollPane = new JScrollPane(picture);
 		removeAll();
 		add(BorderLayout.CENTER,pictureScrollPane);
