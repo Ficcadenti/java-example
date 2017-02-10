@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	
+	<servers>
+		<server>
+			<id>TomcatServer</id>
+			<username>tomcat</username>
+			<password>tomcat</password>
+		</server>
+
+	</servers>
+
+	<profiles>
+		
+		<profile>
+			<id>myprofile</id>
+
+			<repositories>
+				
+				
+				<repository>
+					<id>freehep</id>
+					<name>Freehep central repository</name>
+					<url>http://java.freehep.org/maven</url>
+					<releases>
+					</releases>
+				</repository>	
+				
+				<repository>
+					<id>freehep-maven</id>
+					<name>Maven FreeHEP</name>
+					<url>http://java.freehep.org/maven2</url>
+				</repository>
+
+				<repository>
+					<id>sourceforge-releases</id>
+					<name>Sourceforge Releases</name>
+					<url>https://oss.sonatype.org/content/repositories/sourceforge-releases
+					</url>
+				</repository>
+
+			</repositories>
+			
+		</profile>
+		
+	</profiles>
+	
+	<activeProfiles>
+		<activeProfile>myprofile</activeProfile>
+	</activeProfiles>
+	
+</settings>

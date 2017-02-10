@@ -9,6 +9,8 @@ Se volete provare ogni singolo esempio andate sul mio sito <a href="http://www.r
 Buon 'coding'.
 Raffaele.
 <ul>
+  <li><b>Maven</b>: File di configurazione per repository Maven.</li>
+  <br>
   <li><b>HangmanGame</b>: Il gioco del'impiccato.</li>
   <br>
   <li><b>esempioZIP</b>: Utilizzo della classe java.util.zip per zippare file.</li>
@@ -32,5 +34,7 @@ Raffaele.
   <li><b>Servlet_ex7</b>: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP/JavaBean a lavoro.</li>
   <br>
   <li><b>JSF_ex1</b>: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
+  <br>
+  <li><b>testBean</b>: JavaBean: esempio di utilizzo ed integrazione in WindowBuilder (Eclipse).</li>
 </ul>
 
