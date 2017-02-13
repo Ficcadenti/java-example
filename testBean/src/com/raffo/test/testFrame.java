@@ -16,6 +16,7 @@ import java.beans.VetoableChangeListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.servlet.jsp.tagext.*;
 
 public class testFrame extends JFrame {
 
@@ -28,6 +29,8 @@ public class testFrame extends JFrame {
 	private static bean_contatto contatto = new bean_contatto();
 	private static bean_bound bb=new bean_bound();
 	private static bean_constrained bc=new bean_constrained();
+	
+	private static bean_event be=new bean_event();
 	
 	private static PhotoAlbum p;
 	private static JLabel lblNewLabel;
@@ -71,6 +74,18 @@ public class testFrame extends JFrame {
 					e.printStackTrace();
 				}
 			}
+		});
+		
+		be.addmyEventListener(new myEventListener() 
+		{
+
+			@Override
+			public void myEventPerformed(myEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("---------- myEvent intercettao");
+			}
+			
+			
 		});
 		
 		bc.addVetoableChangeListener(new VetoableChangeListener() {
@@ -145,6 +160,7 @@ public class testFrame extends JFrame {
 					System.out.println("get bean:"+bean_test1_.getMyString());
 					contatto.setEmail("raffaele.ficcadenti@gmail.com");
 					bb.setEmail("valeria.greco@gmail.com");
+					be.setStr("bean con evento");
 
 						try {
 							bc.setEmail("valeria.greco@gmail.com");
