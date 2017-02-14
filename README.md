@@ -35,6 +35,8 @@ Raffaele.
   <br>
   <li><b>JSF_ex1</b>: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
   <br>
-  <li><b>testBean</b>: JavaBean: esempio di utilizzo ed integrazione in WindowBuilder (Eclipse).</li>
+  <li><b>testBean</b>: JavaBean: esempio di utilizzo ed integrazione in WindowBuilder (Eclipse/Maven).</li>
+  <br>
+  <li><b>struts-blank-1.3.10</b>: Esempio Hello World utilizzando il framework Struts 1.3.10 (Eclipse/Maven).</li>
 </ul>
 
