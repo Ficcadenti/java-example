@@ -15,8 +15,8 @@
 
 	<jsp-config>
 		<taglib>
-			<taglib-uri>/esempio</taglib-uri>
-			<taglib-location>/WEB-INF/tlds/esempio.tld</taglib-location>
+			<taglib-uri>/mytag</taglib-uri>
+			<taglib-location>/WEB-INF/tlds/mytag.tld</taglib-location>
 		</taglib>
 	</jsp-config>
 </web-app>
