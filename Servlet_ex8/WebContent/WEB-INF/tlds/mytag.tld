@@ -3,22 +3,38 @@
         PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
 <taglib>
-  <tlibversion>1.0</tlibversion>
-  <jspversion>1.1</jspversion>
-  <shortname>esempio</shortname>
-  <info>Libreria di tag.</info>
-  <tag>
-    <name>hello</name>
-    <tagclass>com.raffo.servlet.MyTag</tagclass>
-    <bodycontent>empty</bodycontent>
-    <info>Esempio</info>
-    <attribute>
-            <name>nome</name>
-            <required>false</required>
-        </attribute>
-        <attribute>
-            <name>className</name>
-            <required>true</required>
-        </attribute>
-  </tag>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>mytag</shortname>
+	<info>Libreria di tag.</info>
+	<tag>
+		<name>hello</name>
+		<tagclass>com.raffo.servlet.MyTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Esempio1</info>
+		<attribute>
+			<name>nome</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>className</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>hello_body</name>
+		<tagclass>com.raffo.servlet.MyTagBody</tagclass>
+		<bodycontent>tagdependent</bodycontent>
+		<info>Esempio2</info>
+		<attribute>
+			<name>nome</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>className</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
 </taglib>
