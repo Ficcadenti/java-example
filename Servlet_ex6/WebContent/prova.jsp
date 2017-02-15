@@ -17,7 +17,7 @@
 Oggi &egrave; <%= dateFormat.format(dateTime) %><br>
 e sono le ore <%= timeFormat.format(dateTime) %><br>
 
-<% String name = request.getParameter("name"); %>
+<% String name = request.getParameter("user_id"); %>
 <% if (name == null || name.length() == 0) { %>
 Ciao, chiunque tu sia!
 <% } else { %>

@@ -13,6 +13,7 @@ public class bean_contatto
 	private String cognome   = "";
 	private String cellulare = "";
 	
+	
 	//proprieta bound
 	private String email     = "";
 	

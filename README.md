@@ -33,6 +33,8 @@ Raffaele.
   <br>
   <li><b>Servlet_ex7</b>: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP/JavaBean a lavoro.</li>
   <br>
+  <li><b>Servlet_ex8</b>: MVC Project: Servlet/JSP/Bootstrap: Servlet e JSP/JavaBean/JSTL/Custom Tag (Eclipse/Maven).</li>
+  <br>
   <li><b>JSF_ex1</b>: MVC Project: JSF il primo esempio, il tutto automatizzato con Maven.</li>
   <br>
   <li><b>testBean</b>: JavaBean: esempio di utilizzo ed integrazione in WindowBuilder (Eclipse/Maven).</li>
