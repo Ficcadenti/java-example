@@ -175,10 +175,20 @@ user-select: none;
 }
 
 div[data-toggle="buttons"] label:hover {
-color: #7AA3CC;
+	color: #7AA3CC;
 }
 
-div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
--webkit-box-shadow: none;
-box-shadow: none;
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active
+	{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.stile1{
+    border:1px solid #000000;
+    padding:5px 5px 5px 5px;
+    font-size:14px;
+}
+.stile2{
+    font-size:16px;
 }

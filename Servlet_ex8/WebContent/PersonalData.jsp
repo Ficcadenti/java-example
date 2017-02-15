@@ -1,6 +1,8 @@
+<%@ taglib uri="/esempio" prefix="mb"%>
 <html>
 <head>
 <title>PersonalData</title>
+<link rel="stylesheet" type="text/css" href="css/myStile.css">
 </head>
 <body>
 	<jsp:useBean id="beanPerson" class="com.raffo.servlet.Person" />
@@ -26,6 +28,8 @@
 			<td><jsp:getProperty name="beanPerson" property="email" /></td>
 		</tr>
 	</table>
-	
+	<mb:hello nome="test" className="stile1"></mb:hello>
+    <hr/>
+    <mb:hello className="stile2"></mb:hello>
 </body>
 </html>
