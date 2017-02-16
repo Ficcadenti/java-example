@@ -1,6 +1,9 @@
 package com.raffo.servlet;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
@@ -27,6 +30,21 @@ public class MyTagBody extends BodyTagSupport {
 	 * L'attributo viene utilizzato per definire il nome utente
 	 */
 	private String nome;
+	
+	/**
+	 * L'attributo viene utilizzato per definire il nome utente
+	 */
+	private String schema;
+	
+	/**
+	 * L'attributo viene utilizzato per definire il nome utente
+	 */
+	private String host;
+	
+	/**
+	 * L'attributo viene utilizzato per definire il nome utente
+	 */
+	private String port;
 
 	/**
 	 * Metodi getter and setter
@@ -38,6 +56,32 @@ public class MyTagBody extends BodyTagSupport {
 	public void setClassName(String className) {
 		this.className = className;
 	}
+	
+	public String getSchema() {
+		return schema;
+	}
+
+	public void setSchema(String s) {
+		this.schema = s;
+	}
+
+	
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String h) {
+		this.host = h;
+	}
+	
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String p) {
+		this.port = p;
+	}
+
 
 	public void setNome(String value){
 		this.nome = value;
@@ -73,17 +117,66 @@ public class MyTagBody extends BodyTagSupport {
 
 	public int doEndTag() throws JspException 
 	{
+		int nCol=0;
+		ResultSetMetaData rsmd = null;
+		
 		BodyContent bc = getBodyContent();
-		MySQLConnection connect=new MySQLConnection("root","raffo");
+		MySQLConnection connect=new MySQLConnection("root","raffo",this.host,this.schema);
 		
 		if(bc!=null)
 		{
 			query = bc.getString();
-			/* esegui query */
+			printMessage(connect.getSID());
+			ResultSet rs=connect.Query_rs(query);
+
+			try 
+			{
+				rsmd = rs.getMetaData();
+				nCol=rsmd.getColumnCount();
+			} 
+			catch (SQLException e1) 
+			{
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			
+			if(rs!=null)
+			{
+				try 
+				{
+					printTable("<table class=\""+this.className+"\">");
+					printTable("<thead>");
+					printTable("<tr>");
+					for(int i=1;i<=nCol;i++)
+					{
+						printTable("<th><b>"+rsmd.getColumnName(i)+"</b></th>");
+					}
+					printTable("</tr>");
+					printTable("</thead>");
+					printTable("<tbody>");
+					while(rs.next())
+					{
+						printTable("<tr id=\"riga\" bgcolor=\"#ffffd6\">");
+						for(int i=1;i<=nCol;i++)
+						{
+							printTable("<th><b>"+rs.getString(i)+"</b></th>");
+						}
+						printTable("</tr>");
+					}
+					printTable("</tbody>");
+					printTable("</table>");
+				} 
+				catch (SQLException e) 
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
 			bc.clearBody();
 		}
-		printMessage(connect.getSID());
-		printMessage("<table class=\"table table-sm\">                  "
+		
+		/*printMessage("<table class=\"table table-sm\">                  "
 				+"  <thead>                                       "
 				+"    <tr id=\"riga\" bgcolor=\"#ffffd6\">        "
 				+"      <th>#</th>                                "
@@ -112,7 +205,7 @@ public class MyTagBody extends BodyTagSupport {
 				+"      <td>@twitter</td>                         "
 				+"    </tr>                                       "
 				+"  </tbody>                                      "
-				+"</table>                                        ");
+				+"</table>                                        ");*/
 		
 		try {
 			JspWriter out = pageContext.getOut();
@@ -133,5 +226,36 @@ public class MyTagBody extends BodyTagSupport {
 		{
 			throw new JspException(ioe.toString());
 		}
+	}
+	
+	private void printTable(String message) throws JspException  
+	{
+		try {
+			pageContext.getOut().println(message);
+		}
+		catch(IOException ioe) 
+		{
+			throw new JspException(ioe.toString());
+		}
+	}
+	
+	private int getRowCount(ResultSet resultSet) 
+	{
+	    if (resultSet == null) {
+	        return 0;
+	    }
+	    try {
+	        resultSet.last();
+	        return resultSet.getRow();
+	    } catch (SQLException exp) {
+	        exp.printStackTrace();
+	    } finally {
+	        try {
+	            resultSet.beforeFirst();
+	        } catch (SQLException exp) {
+	            exp.printStackTrace();
+	        }
+	    }
+	    return 0;
 	}
 }

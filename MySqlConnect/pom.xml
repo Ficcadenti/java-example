@@ -11,6 +11,23 @@
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.5.0</version>
+				<executions>
+					<execution>
+						<id>java-run</id>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>com.service.mysql.testConnect</mainClass>
+				</configuration>
+			</plugin>
+			
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>2.6</version>
@@ -31,6 +48,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<verbose>true</verbose>
 					<fork>true</fork>
 					<executable>${JAVA_HOME}\bin\javac</executable>
 				</configuration>

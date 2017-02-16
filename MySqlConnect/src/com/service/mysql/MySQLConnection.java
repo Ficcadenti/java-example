@@ -16,22 +16,43 @@ public class MySQLConnection
     private Statement   st          = null;
     private String      user        = "";
     private String      pswd        = "";
+    private String      host        = "";
+    private String      port        = "3306";
+    private String      schema      = "";
     private boolean     connOK      = false;
     private String      conn_sid    = "";
     /** Creates a new instance of MySQLConnection */
     
 
-    public MySQLConnection(String user,String pswd)
+    public MySQLConnection(String user,String pswd,String host,String schema)
     {
 
         this.user=user;
         this.pswd=pswd;
+        this.host=host;
+        this.schema=schema;
         connOK=LoadDriver();
         if(connOK)
         {
             System.out.println("MySQLConnection(): Connesione to MySQL OK.");
         }
     }
+    
+    public MySQLConnection(String user,String pswd,String host,String port,String schema)
+    {
+
+        this.user=user;
+        this.pswd=pswd;
+        this.host=host;
+        this.port=port;
+        this.schema=schema;
+        connOK=LoadDriver();
+        if(connOK)
+        {
+            System.out.println("MySQLConnection(): Connesione to MySQL OK.");
+        }
+    }
+    
     
     public String getSID()
     {
@@ -40,7 +61,7 @@ public class MySQLConnection
     
     public boolean LoadDriver ()
     {
-        conn_sid="jdbc:mysql://10.10.10.151:3306/phpexample"+";"+this.user+";"+this.pswd;
+        conn_sid="jdbc:mysql://"+this.host+":"+this.port+"/phpexample"+";"+this.user+";"+this.pswd;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://10.10.10.151:3306/phpexample",this.user,this.pswd);

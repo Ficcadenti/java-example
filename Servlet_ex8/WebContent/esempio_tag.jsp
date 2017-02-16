@@ -18,9 +18,11 @@
     <hr/>
     <mb:hello className="stile2"></mb:hello>
     <hr/>
-    <mb:hello_body className="stile1">SELECT first_name,last_name,username from tab_01 where id>10</mb:hello_body>
+    <mb:hello_body host="localhost" schema="phpexample"  className="table table-sm">SELECT id,`e-mail`,cognome,nome from tab_01 where id>0</mb:hello_body>
     <br/>
+    <mb:hello_body host="localhost" schema="phpexample"  className="table table-sm">SELECT id from tab_01</mb:hello_body>
 	<br/>
+	<mb:hello_body host="localhost" schema="phpexample"  className="table table-sm">SELECT cognome from tab_01</mb:hello_body>
 	<br/>
     <b>JSTL core/function</b><br>
     <c:set var="string1" value="This is first String."/>

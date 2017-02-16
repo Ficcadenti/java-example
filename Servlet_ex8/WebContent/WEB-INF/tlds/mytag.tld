@@ -28,7 +28,15 @@
 		<bodycontent>tagdependent</bodycontent>
 		<info>Esempio2</info>
 		<attribute>
-			<name>nome</name>
+			<name>schema</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>host</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>port</name>
 			<required>false</required>
 		</attribute>
 		<attribute>
