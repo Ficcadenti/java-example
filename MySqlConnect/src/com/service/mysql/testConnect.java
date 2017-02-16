@@ -32,9 +32,10 @@ public class testConnect {
 		int nRow=0;
 		ResultSetMetaData rsmd = null;
 
-		MySQLConnection connect=new MySQLConnection("root","raffo","10.10.10.151","3306","phpexample");
-		ResultSet rs=connect.Query_rs("SELECT * from TAB_01");
+		MySQLConnection connect=new MySQLConnection("root","raffo","localhost","3306","agile3");
+		ResultSet rs=connect.Query_rs("SELECT * from tab_operators_lib");
 		
+		System.out.println(connect.getSID());
 		try 
 		{
 			rsmd = rs.getMetaData();

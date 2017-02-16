@@ -61,10 +61,10 @@ public class MySQLConnection
     
     public boolean LoadDriver ()
     {
-        conn_sid="jdbc:mysql://"+this.host+":"+this.port+"/phpexample"+";"+this.user+";"+this.pswd;
+        conn_sid="jdbc:mysql://"+this.host+":"+this.port+"/"+this.schema;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://10.10.10.151:3306/phpexample",this.user,this.pswd);
+            con = DriverManager.getConnection(conn_sid,this.user,this.pswd);
             
             return true;
         } catch (SQLException ex) {

@@ -29,7 +29,12 @@ public class MyTagBody extends BodyTagSupport {
 	/**
 	 * L'attributo viene utilizzato per definire il nome utente
 	 */
-	private String nome;
+	private String user = "root";
+	
+	/**
+	 * L'attributo viene utilizzato per definire il nome utente
+	 */
+	private String password = "raffo";
 	
 	/**
 	 * L'attributo viene utilizzato per definire il nome utente
@@ -82,13 +87,20 @@ public class MyTagBody extends BodyTagSupport {
 		this.port = p;
 	}
 
-
-	public void setNome(String value){
-		this.nome = value;
+	public void setUser(String u){
+		this.user = u;
 	}
 
-	public String getNome(){
-		return(nome);
+	public String getUser(){
+		return this.user;
+	}
+	
+	public void setPassword(String p){
+		this.password = p;
+	}
+
+	public String getPassword(){
+		return this.password;
 	}
 
 
@@ -121,12 +133,14 @@ public class MyTagBody extends BodyTagSupport {
 		ResultSetMetaData rsmd = null;
 		
 		BodyContent bc = getBodyContent();
-		MySQLConnection connect=new MySQLConnection("root","raffo",this.host,this.schema);
+		MySQLConnection connect=new MySQLConnection(this.user,this.password,this.host,this.schema);
 		
 		if(bc!=null)
 		{
 			query = bc.getString();
 			printMessage(connect.getSID());
+			printMessage(query);
+			
 			ResultSet rs=connect.Query_rs(query);
 
 			try 
@@ -175,37 +189,6 @@ public class MyTagBody extends BodyTagSupport {
 			
 			bc.clearBody();
 		}
-		
-		/*printMessage("<table class=\"table table-sm\">                  "
-				+"  <thead>                                       "
-				+"    <tr id=\"riga\" bgcolor=\"#ffffd6\">        "
-				+"      <th>#</th>                                "
-				+"      <th>First Name</th>                       "
-				+"      <th>Last Name</th>                        "
-				+"      <th>Username</th>                         "
-				+"    </tr>                                       "
-				+"  </thead>                                      "
-				+"  <tbody>                                       "
-				+"    <tr id=\"riga\" bgcolor=\"#ffffd6\">                                        "
-				+"      <th scope=\"row\">1</th>                    "
-				+"      <td>Mark</td>                             "
-				+"      <td>Otto</td>                             "
-				+"      <td>@mdo</td>                             "
-				+"    </tr>                                       "
-				+"    <tr id=\"riga\" bgcolor=\"#ffffd6\">                                        "
-				+"      <th scope=\"row\">2</th>                    "
-				+"      <td>Jacob</td>                            "
-				+"      <td>Thornton</td>                         "
-				+"      <td>@fat</td>                             "
-				+"    </tr>                                       "
-				+"    <tr id=\"riga\" bgcolor=\"#ffffd6\">                                        "
-				+"      <th scope=\"row\">3</th>                    "
-				+"      <td>Larry </td>"
-				+ "		<td> Bird</td>       "
-				+"      <td>@twitter</td>                         "
-				+"    </tr>                                       "
-				+"  </tbody>                                      "
-				+"</table>                                        ");*/
 		
 		try {
 			JspWriter out = pageContext.getOut();

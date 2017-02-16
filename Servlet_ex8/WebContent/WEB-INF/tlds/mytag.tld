@@ -28,6 +28,14 @@
 		<bodycontent>tagdependent</bodycontent>
 		<info>Esempio2</info>
 		<attribute>
+			<name>user</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>password</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
 			<name>schema</name>
 			<required>true</required>
 		</attribute>
