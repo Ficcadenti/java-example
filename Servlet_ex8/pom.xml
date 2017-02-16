@@ -3,9 +3,9 @@
 	<properties>
 		<servlet_version>2.0</servlet_version>
 		<log4j_version>1.2.17</log4j_version>
-		<hibernate_version>5.2.6.Final</hibernate_version>
 		<mysql_version>5.1.37</mysql_version>
 		<json_version>20160810</json_version>
+		<repo_path>C:/Sviluppo/Progetti/raffoRepository/</repo_path>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<modelVersion>4.0.0</modelVersion>
@@ -94,8 +94,15 @@
 	</build>
 
 	<dependencies>
+		<!-- <dependency> <groupId>com.service.mysql</groupId> <artifactId>MySqlConnect</artifactId> 
+			<version>1.0</version> <scope>system</scope> <systemPath>${repo_path}/com/service/mysql/MySqlConnect/0.0.1/MySqlConnect-0.0.1.jar</systemPath> 
+			</dependency> -->
 
-
+		<dependency>
+			<groupId>MySqlConnect</groupId>
+			<artifactId>MySqlConnect</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jsp-api -->
 		<dependency>
@@ -115,12 +122,6 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>${log4j_version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>${hibernate_version}</version>
 		</dependency>
 
 		<dependency>
