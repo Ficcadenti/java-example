@@ -11,6 +11,8 @@ Raffaele.
 <ul>
   <li><b>Maven</b>: File di configurazione per repository Maven.</li>
   <br>
+  <li><b>MySqlConnect</b>: Classe per connessione ad un database mysql (Eclipse/Maven).</li>
+  <br>
   <li><b>HangmanGame</b>: Il gioco del'impiccato.</li>
   <br>
   <li><b>esempioZIP</b>: Utilizzo della classe java.util.zip per zippare file.</li>
