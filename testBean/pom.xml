@@ -3,7 +3,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>testBean</groupId>
 	<artifactId>testBean</artifactId>
@@ -24,8 +24,8 @@
 							<mainClass>com.raffo.test.testFrame</mainClass>
 						</manifest>
 						<manifestEntries>
-				              <Java-Bean>true</Java-Bean>
-            			</manifestEntries>
+							<Java-Bean>true</Java-Bean>
+						</manifestEntries>
 					</archive>
 				</configuration>
 			</plugin>
@@ -67,16 +67,33 @@
 					<executable>${JAVA_HOME}\bin\javac</executable>
 				</configuration>
 			</plugin>
-			
+
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+
+				<configuration>
+					<server>TomcatServer</server>
+					<mode>war</mode>
+					<path>/${project.artifactId}</path>
+					<username>tomcat</username>
+					<password>tomcat</password>
+					<update>true</update>
+					<warFile>${project.build.directory}/${project.build.finalName}.war</warFile>
+
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
-	  <dependencies>
-	<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
-<dependency>
-    <groupId>javax.servlet.jsp</groupId>
-    <artifactId>jsp-api</artifactId>
-    <version>2.0</version>
-</dependency>
-  </dependencies>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+	</dependencies>
 
 </project>

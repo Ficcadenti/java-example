@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- project coordinates -->
+	<groupId>raffo</groupId>
+	<artifactId>java-example</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>MySqlConnect</module>
+		<module>Servlet_ex1</module>
+		<module>Servlet_ex2</module>
+		<module>Servlet_ex3</module>
+		<module>Servlet_ex4</module>
+		<module>Servlet_ex5</module>
+		<module>Servlet_ex6</module>
+		<module>Servlet_ex7</module>
+		<module>Servlet_ex8</module>
+		<module>testBean</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+
+				<configuration>
+					<server>TomcatServer</server>
+					<mode>war</mode>
+					<path>/${project.artifactId}</path>
+					<username>tomcat</username>
+					<password>tomcat</password>
+					<update>true</update>
+					<warFile>${project.build.directory}/${project.build.finalName}.war</warFile>
+
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
