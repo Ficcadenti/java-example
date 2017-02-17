@@ -11,6 +11,7 @@
 
 	<modules>
 		<module>MySqlConnect</module>
+		<module>Serializzazione_ex1</module>
 		<module>Servlet_ex1</module>
 		<module>Servlet_ex2</module>
 		<module>Servlet_ex3</module>

@@ -6,24 +6,7 @@ import java.sql.SQLException;
 
 public class testConnect {
 
-	private static int getRowCount(ResultSet resultSet) {
-	    if (resultSet == null) {
-	        return 0;
-	    }
-	    try {
-	        resultSet.last();
-	        return resultSet.getRow();
-	    } catch (SQLException exp) {
-	        exp.printStackTrace();
-	    } finally {
-	        try {
-	            resultSet.beforeFirst();
-	        } catch (SQLException exp) {
-	            exp.printStackTrace();
-	        }
-	    }
-	    return 0;
-	}
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,15 +15,15 @@ public class testConnect {
 		int nRow=0;
 		ResultSetMetaData rsmd = null;
 
-		MySQLConnection connect=new MySQLConnection("root","raffo","localhost","3306","agile3");
-		ResultSet rs=connect.Query_rs("SELECT * from tab_operators_lib");
+		MySQLConnection connect=new MySQLConnection("root","raffo","localhost","3306","phpexample");
+		ResultSet rs=connect.Query_rs("SELECT * from tab_01");
 		
 		System.out.println(connect.getSID());
 		try 
 		{
 			rsmd = rs.getMetaData();
 			nCol=rsmd.getColumnCount();
-			nRow=getRowCount(rs);
+			nRow=connect.getRowCount(rs);
 			System.out.println("Numero colonne="+nCol);
 			System.out.println("Numero righe="+nRow);
 		} catch (SQLException e1) {
@@ -64,6 +47,9 @@ public class testConnect {
 				e.printStackTrace();
 			}
 		}
+		
+		connect.close();
+		
 	}
 
 }

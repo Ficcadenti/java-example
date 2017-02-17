@@ -173,7 +173,7 @@ public class MyTagBody extends BodyTagSupport {
 						printTable("<tr id=\"riga\" bgcolor=\"#ffffd6\">");
 						for(int i=1;i<=nCol;i++)
 						{
-							printTable("<th><b>"+rs.getString(i)+"</b></th>");
+							printTable("<td>"+rs.getString(i)+"</td>");
 						}
 						printTable("</tr>");
 					}
@@ -221,24 +221,5 @@ public class MyTagBody extends BodyTagSupport {
 			throw new JspException(ioe.toString());
 		}
 	}
-	
-	private int getRowCount(ResultSet resultSet) 
-	{
-	    if (resultSet == null) {
-	        return 0;
-	    }
-	    try {
-	        resultSet.last();
-	        return resultSet.getRow();
-	    } catch (SQLException exp) {
-	        exp.printStackTrace();
-	    } finally {
-	        try {
-	            resultSet.beforeFirst();
-	        } catch (SQLException exp) {
-	            exp.printStackTrace();
-	        }
-	    }
-	    return 0;
-	}
+
 }

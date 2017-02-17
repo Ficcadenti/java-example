@@ -81,6 +81,16 @@ public class MySQLConnection
         }
     }
     
+    public void close()
+    {
+    	try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    
     public synchronized ResultSet Query_rs(String sqlstm)
     {
         if(connOK==false)
@@ -124,6 +134,25 @@ public class MySQLConnection
         }
         return (int)rsQuery;
     }
+    
+    public int getRowCount(ResultSet resultSet) {
+	    if (resultSet == null) {
+	        return 0;
+	    }
+	    try {
+	        resultSet.last();
+	        return resultSet.getRow();
+	    } catch (SQLException exp) {
+	        exp.printStackTrace();
+	    } finally {
+	        try {
+	            resultSet.beforeFirst();
+	        } catch (SQLException exp) {
+	            exp.printStackTrace();
+	        }
+	    }
+	    return 0;
+	}
     
 }
 
