@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+       <groupId>raffo.test.maven</groupId>
+       <artifactId>Spring</artifactId>
+       <version>1.0</version>
+   </parent>
+	<groupId>raffo.test.maven</groupId>
+	<artifactId>Spring_01</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>Spring_01</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<servlet_version>4.0.0-b01</servlet_version>
+		<log4j_version>1.2.17</log4j_version>
+		<hibernate_version>5.2.6.Final</hibernate_version>
+		<mysql_version>5.1.37</mysql_version>
+		<json_version>20160810</json_version>
+		<spring_version>4.3.10.RELEASE</spring_version>
+		<mojo_version>1.5.0</mojo_version>
+		<jar_version>3.0.2</jar_version>
+		<compiler_version>3.5.1</compiler_version>
+		<junit_version>3.8.1</junit_version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${mojo_version}</version>
+				<executions>
+					<execution>
+						<id>java-run</id>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>raffo.test.maven.Spring_01.App</mainClass>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${jar_version}</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>raffo.test.maven.Spring_01.App</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler_version}</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+					<executable>${JAVA_HOME}\bin\javac</executable>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit_version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring_version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j_version}</version>
+		</dependency>
+	</dependencies>
+</project>

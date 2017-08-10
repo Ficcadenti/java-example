@@ -20,6 +20,9 @@
 		<module>Servlet_ex6</module>
 		<module>Servlet_ex7</module>
 		<module>Servlet_ex8</module>
+		<module>Spring_01</module>
+		<module>Spring_02</module>
+		<module>Spring_03</module>
 		<module>testBean</module>
 	</modules>
 	<build>
