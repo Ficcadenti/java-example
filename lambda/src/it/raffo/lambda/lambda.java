@@ -77,11 +77,11 @@ public class lambda {
 		testButton.addActionListener(e -> System.out.println("Click Detected by Lambda Listner"));
 
 		// Swing stuff
-		//		JFrame frame = new JFrame("Listener Test");
-		//		frame.add(testButton);
-		//		frame.pack();
-		//	    frame.setVisible(true);
-		//	    
+		JFrame frame = new JFrame("Listener Test");
+		frame.add(testButton);
+		frame.pack();
+	    frame.setVisible(true);
+			    
 		List<Persona> iscritti = Arrays.asList(
 				new Persona("Raffaele", "Ficcadenti", "M", 41, "italiana"),
 				new Persona("Valeria", "Greco", "F", 41, "italiana")
