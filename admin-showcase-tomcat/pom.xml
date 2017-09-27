@@ -107,6 +107,7 @@
 		</dependency>
 	</dependencies>
 	<build>
+	<sourceDirectory>src</sourceDirectory>
 		<finalName>jsf-admin-template-tomcat</finalName>
 		<plugins>
 

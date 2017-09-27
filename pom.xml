@@ -12,6 +12,11 @@
 	<modules>
 		<module>MySqlConnect</module>
 		<module>Serializzazione_ex1</module>
+		<module>lambda</module>
+		<module>JSF_ex1</module>
+		<module>JSF_ex2</module>
+		<module>JSF_ex3</module>
+		<module>admin-showcase-tomcat</module>
 		<module>Servlet_ex1</module>
 		<module>Servlet_ex2</module>
 		<module>Servlet_ex3</module>
