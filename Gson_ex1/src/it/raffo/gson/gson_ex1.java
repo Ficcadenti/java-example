@@ -2,12 +2,14 @@ package it.raffo.gson;
 
 import it.raffo.gson.bean.User;
 
+import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 public class gson_ex1 {
 
@@ -17,27 +19,48 @@ public class gson_ex1 {
 		
 		SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd"); 
 		
-		User user = new User();
-		user.setId(1);
-		user.setName("Luca");
-		user.setSurname("Santaniello");
+		User user1 = new User();
+		user1.setId(1);
+		user1.setName("Luca");
+		user1.setSurname("Ficcadenti");
 		try {
-			user.setBirtday(ft.parse("1976-08-14"));
+			user1.setBirtday(ft.parse("1976-11-13"));
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		Gson gson = new Gson();     
-		String userJson = gson.toJson(user);        
-		System.out.println(userJson);
+		User user2 = new User();
+		user2.setId(2);
+		user2.setName("Raffaele");
+		user2.setSurname("Ficcadenti");
+		try {
+			user2.setBirtday(ft.parse("1976-08-14"));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		User user1 = gson.fromJson(userJson, User.class);
-		System.out.println(user1.getId());
-		System.out.println(user1.getName());
-		System.out.println(user1.getSurname());
-		System.out.println(user1.getBirtday());
-
+		List<User> usr = new ArrayList<User>();
+		usr.add(user1);
+		usr.add(user2);
+		
+		Gson gson = new Gson();     
+		String usersJson = gson.toJson(usr);        
+		System.out.println(usersJson);
+		
+		Type listType = new TypeToken<ArrayList<User>>(){}.getType();
+        
+		List<User> u = gson.fromJson(usersJson, listType);
+		
+		for(User elem: u)
+		{
+			System.out.println("ID: "+elem.getId());
+			System.out.println("Nome: "+elem.getName());
+			System.out.println("Cognome: "+elem.getSurname());
+			System.out.println("Compleanno: "+elem.getBirtday());
+		}
+		
 	}
 
 }

@@ -1,22 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>Gson_ex1</groupId>
-	<artifactId>Gson_ex1</artifactId>
+	<groupId>c3p0_ex1</groupId>
+	<artifactId>c3p0_ex1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<servlet_version>4.0.0-b01</servlet_version>
-		<log4j_version>1.2.17</log4j_version>
 		<mojo_version>1.5.0</mojo_version>
 		<jar_version>3.0.2</jar_version>
 		<compiler_version>3.5.1</compiler_version>
+		<c3p0_version>0.9.1.2</c3p0_version>
+		<mysql_version>5.1.37</mysql_version>
 
 		<gson_version>2.8.2</gson_version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<project_name>gson</project_name>
-		<main_class>gson_ex1</main_class>
+		<project_name>c3p0</project_name>
+		<main_class>test_ex1</main_class>
 	</properties>
 
 	<build>
@@ -59,7 +59,7 @@
 					</descriptorRefs>
 				</configuration>
 			</plugin>
-			
+
 			<!-- generazione jar -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -107,6 +107,20 @@
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>${gson_version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${c3p0_version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql_version}</version>
 		</dependency>
 
 	</dependencies>
