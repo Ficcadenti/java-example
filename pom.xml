@@ -12,7 +12,6 @@
 	<modules>
 		<module>MySqlConnect</module>
 		<module>Serializzazione_ex1</module>
-		<module>lambda</module>
 		<module>JSF_ex1</module>
 		<module>JSF_ex2</module>
 		<module>JSF_ex3</module>
@@ -29,6 +28,11 @@
 		<module>Spring_02</module>
 		<module>Spring_03</module>
 		<module>testBean</module>
+		<module>lambda</module>
+		<!-- <module>Generic</module> -->
+		<!--<module>Annotazioni_ex1</module> -->
+		<module>c3p0_ex1</module>
+		<!--<module>CompareTo</module> -->
 	</modules>
 	<build>
 		<plugins>

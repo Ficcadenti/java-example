@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="p0" class="raffo.test.maven.Spring_05.Punto">
+        <property name="x" value="10" />
+        <property name="y" value="20" />
+        <property name="z" value="15" />
+    </bean>
+ 
+</beans>
