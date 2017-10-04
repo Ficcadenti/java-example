@@ -1,4 +1,4 @@
-package raffo.test.maven.Spring_03;
+package it.html.spring.report;
 
 public class TxtReport implements Report {
   
@@ -7,10 +7,10 @@ public class TxtReport implements Report {
     public TxtReport(String path) { this.path = path; }
 
 	public void generate(String data) {
-		System.out.printf("Genera TXT report nel path: %s\n",path);
+		System.out.println("genera txt report");
 	}
 	
 	public void saveToFile() {
-		System.out.printf("File salvato nel path: %s\n",path);
+		System.out.println("File salvato");
 	}	
 }

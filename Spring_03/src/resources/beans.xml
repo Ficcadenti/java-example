@@ -8,12 +8,12 @@
 	<!-- Indica che il bean 'report' è implementato da PdfReport -->
 	<bean id="reportPDF" class="raffo.test.maven.Spring_03.PdfReport">
 		<!-- imposta il parametro per il costruttore -->
-		<constructor-arg value="/report" />
+		<constructor-arg value="Titolo del file1" />
 	</bean>
 	
 	<bean id="reportTXT" class="raffo.test.maven.Spring_03.TxtReport">
 		<!-- imposta il parametro per il costruttore -->
-		<constructor-arg value="/report" />
+		<constructor-arg value="Titolo del file2" />
 	</bean>
 	
 	<!-- associa il bean 'reportGenerator' al nostro ReportGenerator -->

@@ -67,29 +67,31 @@
 					</execution>
 				</executions>
 			</plugin>
-			
-<!-- 			<plugin> -->
-<!-- 				<artifactId>maven-assembly-plugin</artifactId> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<phase>package</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>single</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 				<configuration> -->
-<!-- 					<archive> -->
-<!-- 						<manifest> -->
-<!-- 							<mainClass>raffo.test.maven.${project_name}.${main_class}</mainClass> -->
-<!-- 						</manifest> -->
-<!-- 					</archive> -->
-<!-- 					<descriptorRefs> -->
-<!-- 						<descriptorRef>jar-with-dependencies</descriptorRef> -->
-<!-- 					</descriptorRefs> -->
-<!-- 				</configuration> -->
-<!-- 			</plugin> -->
 
+			<!-- Copia dipendenze nel jar -->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>raffo.test.maven.${project_name}.${main_class}</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+
+			<!-- generazione jar -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -108,6 +110,7 @@
 				</configuration>
 			</plugin>
 
+			<!-- copia risorse nel jar -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>${resources_version}</version>
@@ -135,6 +138,7 @@
 				</executions>
 			</plugin>
 
+			<!-- compilazionea -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${compiler_version}</version>
