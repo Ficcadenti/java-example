@@ -6,28 +6,28 @@
 
 	
 	<!-- Indica che il bean 'report' è implementato da PdfReport -->
-	<bean id="reportPDF" class="raffo.test.maven.Spring_03.PdfReport">
+	<bean id="id_reportPDF" class="raffo.test.maven.Spring_03.PdfReport">
 		<!-- imposta il parametro per il costruttore -->
-		<constructor-arg value="Titolo del file1" />
+		<constructor-arg value="c:/tmp/pdf" />
 	</bean>
 	
-	<bean id="reportTXT" class="raffo.test.maven.Spring_03.TxtReport">
+	<bean id="id_reportTXT" class="raffo.test.maven.Spring_03.TxtReport">
 		<!-- imposta il parametro per il costruttore -->
-		<constructor-arg value="Titolo del file2" />
+		<constructor-arg value="c:/tmp/txt" />
 	</bean>
 	
 	<!-- associa il bean 'reportGenerator' al nostro ReportGenerator -->
 	<bean id="reportGeneratorPDF" class="raffo.test.maven.Spring_03.ReportGenerator">
 		<!-- indica al setter 'report' del reportGenerator di riferirsi ad oggetti -->
 		<!-- istanziati con il bean 'report' (quindi, in questo caso, PdfReport) -->
-		<property name="report" ref="reportPDF" />
+		<property name="report" ref="id_reportPDF" />
 	</bean>
 	
 	<!-- associa il bean 'reportGenerator' al nostro ReportGenerator -->
 	<bean id="reportGeneratorTXT" class="raffo.test.maven.Spring_03.ReportGenerator">
 		<!-- indica al setter 'report' del reportGenerator di riferirsi ad oggetti -->
 		<!-- istanziati con il bean 'report' (quindi, in questo caso, TxtReport) -->
-		<property name="report" ref="reportTXT" />
+		<property name="report" ref="id_reportTXT" />
 	</bean>
 
 	<!-- altri bean applicativi -->
