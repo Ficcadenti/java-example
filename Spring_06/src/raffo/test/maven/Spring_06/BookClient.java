@@ -1,18 +1,12 @@
 package raffo.test.maven.Spring_06;
 
 import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-
-/**
- * Hello world!
- *
- */
 public class BookClient 
 {
 	static Logger log;
