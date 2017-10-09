@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dao-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dao.xsd">
+    <crud dto="Book" table="books">
+        <create method="createBook"/>
+        <read-all method="readBookList"/>
+        <read method="readBook"/>
+        <update method="updateBook"/>
+        <delete method="deleteBook"/>
+    </crud>
+</dao-class>
