@@ -31,18 +31,21 @@ public class BookClient
 		BeanFactory factory=context;
 		BookDao bookDAO=(BookDao)factory.getBean("bookDao");
 		
-		//Insert Promessi Sposi
+//		//Insert Promessi Sposi
 //	    Book book = new Book();
-//	    book.setIsbn("12345678");
-//	    book.setAuthor("Manzoni");
-//	    book.setTitle("I Promessi Sposi");	    
+//	    book.setIsbn("123456782");
+//	    book.setAuthor("Manzoni1");
+//	    book.setTitle("I Promessi Sposi2");	    
 //	    bookDAO.insert(book);
 //	    log.info("Inserito:\t" + book);
 		
 		
 	    List<Book> lista=bookDAO.findAllBooks();
 	    for (Book b : lista)
-	    	System.out.println("\t\t"+b.show());	    	    	
+	    	System.out.println("\t\t"+b.show());	
+	    
+	    Book b=bookDAO.findByISBN("12345678");
+	    System.out.println("libro: \t\t"+b.show());	
 
 		((ClassPathXmlApplicationContext) context).close();
 

@@ -2,58 +2,83 @@ package raffo.test.maven.Spring_04;
 
 import java.util.List;
 
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
-public class BookJdbcDao implements BookDao {
 
-	private JdbcTemplate jdbcTemplate;
+public class BookJdbcDao extends JdbcDaoSupport implements BookDao {
 
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
+	//	private JdbcTemplate jdbcTemplate;
+
+	//	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+	//		this.jdbcTemplate = jdbcTemplate;
+	//	}
 
 	public void insert(Book book) {
 		// TODO Auto-generated method stub
-		jdbcTemplate.update("insert into books (isbn, author, title) values (?, ?, ?)",
-				new Object[] { book.getIsbn(), book.getAuthor(), book.getTitle() }); 
+		SqlParameterSource parameters = new BeanPropertySqlParameterSource(book);
+
+		getJdbcTemplate().update("insert into books (isbn, author, title) values (:isbn, :author, :title)",
+				parameters ); 
 
 	}
 
 	public void update(Book book) {
 		// TODO Auto-generated method stub
-		jdbcTemplate.update("update books set author = ?, title = ? where isbn = ?",
-				new Object[] { book.getIsbn(), book.getAuthor(), book.getTitle() });
+		MapSqlParameterSource parameters = new MapSqlParameterSource();
+		parameters.addValue("isbn", book.getIsbn());
+		parameters.addValue("author", book.getAuthor());
+		parameters.addValue("title", book.getTitle());
+
+		getJdbcTemplate().update("update books set author = :author, title = :title where isbn = :isbn",
+				parameters );
 
 	}
 
 	public void delete(String isbn) {
 		// TODO Auto-generated method stub
-		jdbcTemplate.update("delete from books where isbn = ?", 
-				new Object[] { isbn });
+		MapSqlParameterSource parameters = new MapSqlParameterSource();
+		parameters.addValue("isbn", isbn);
+		getJdbcTemplate().update("delete from books where isbn = :isbn",
+				parameters);
 
 	}
 
 	public Book findByISBN(String isbn) {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 		String sql = "select * from books where isbn = ?";
-		Book book = (Book) jdbcTemplate.queryForObject(
+		Book book = (Book) getJdbcTemplate().queryForObject(
 				sql, new Object[] { isbn },
-				new BookRowMapper());
+				new BeanPropertyRowMapper<Book>(Book.class));
 		return book;
+//		
+//		MapSqlParameterSource parameters = new MapSqlParameterSource();
+//		parameters.addValue("isbn", isbn);
+//		Book book = (Book) getJdbcTemplate().queryForList(
+//				"select * from books where isbn = :isbn",
+//				parameters,
+//				new BeanPropertyRowMapper<Book>(Book.class)
+//				);
+//		return book;
+		
+		
 	}
 
 	public List<Book> findAllBooks() {
 		// TODO Auto-generated method stub
 		String sql = "select * from books";
-		List<Book> books = (List<Book>) jdbcTemplate.query(
-				sql, new BookRowMapper());
+		List<Book> books = (List<Book>) getJdbcTemplate().query(
+				sql, new BeanPropertyRowMapper<Book>(Book.class));
 		return books;
 	}
 
 	public int bookCount() {
 		// TODO Auto-generated method stub
 		String sql = "select count(1) from books";
-		int rowCount = jdbcTemplate.queryForObject(sql, Integer.class);
+		int rowCount = getJdbcTemplate().queryForObject(sql, Integer.class);
 		return rowCount;
 	}
 

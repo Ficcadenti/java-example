@@ -26,7 +26,7 @@ public class Book {
 	
 	public String show()
 	{
-		return (String)""+isbn+": "+author+","+title;
+		return (String)"["+isbn+": "+author+","+title+"]";
 	}
 	
 }
