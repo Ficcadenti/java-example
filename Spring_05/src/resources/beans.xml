@@ -1,13 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-                           http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                     http://www.springframework.org/schema/aop 
+                     http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                     http://www.springframework.org/schema/context
+	                 http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
-    <bean id="p0" class="raffo.test.maven.Spring_05.Punto">
-        <property name="x" value="10" />
-        <property name="y" value="20" />
-        <property name="z" value="15" />
-    </bean>
- 
+	<!-- caricamento file di properties -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		lazy-init="false">
+
+		<property name="locations">
+			<list>
+				<value>classpath:/resources/triangolo.properties</value>
+				<value>classpath:/resources/triangolo2.properties</value>
+			</list>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+
+	<!-- utilizzo delle annotation -->
+	<context:annotation-config />
+
+	<bean id="p1" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="20" />
+		<property name="y" value="20" />
+	</bean>
+
+	<bean id="p2" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="10" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="p3" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="30" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="p4" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="11" />
+		<property name="y" value="33" />
+	</bean>
+
+	<bean id="p5" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="55" />
+		<property name="y" value="55" />
+	</bean>
+
+	<bean id="triangolo" abstract="true" scope="singleton">
+		<property name="tipo" value="triangolo" />
+		<property name="altezza" value="10" />
+		<property name="p1" ref="p1" />
+		<property name="p2" ref="p2" />
+		<property name="p3" ref="p3" />
+	</bean>
+
+	<bean id="triangolo1" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton" parent="triangolo">
+		<property name="tipo" value="Equilatero" />
+		<property name="altezza" value="10" />
+		<property name="p1" ref="p1" />
+		<property name="p2" ref="p2" />
+		<property name="p3" ref="p3" />
+	</bean>
+
+	<bean id="triangolo2" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton">
+		<constructor-arg name="tipo" value="Rettangolo" />
+		<constructor-arg name="altezza" value="15" />
+		<constructor-arg name="p1" ref="p1" />
+		<constructor-arg name="p2" ref="p2" />
+		<constructor-arg name="p3" ref="p3" />
+	</bean>
+
+	<bean id="triangolo3" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton">
+		<constructor-arg index="0" value="${triangolo3.tipo}" />
+		<constructor-arg index="1" value="${triangolo3.altezza}" />
+		<constructor-arg index="2" ref="p1" />
+		<constructor-arg index="3" ref="p2" />
+		<constructor-arg index="4" ref="p3" />
+	</bean>
+
+	<bean id="triangolo4" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton">
+		<constructor-arg type="String" value="${triangolo4.tipo}" />
+		<constructor-arg type="int" value="${triangolo4.altezza}" />
+		<constructor-arg type="Punto" ref="p1" />
+		<constructor-arg type="Punto" ref="p2" />
+		<constructor-arg type="Punto" ref="p3" />
+	</bean>
+
+	<!-- inner bean -->
+	<bean id="triangolo5" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton" parent="triangolo">
+		<property name="tipo" value="Equilatero - Inner bean" />
+		<property name="altezza" value="10" />
+		<property name="p1">
+			<bean class="raffo.test.maven.Spring_05.bean.Punto">
+				<property name="x" value="1" />
+				<property name="y" value="2" />
+			</bean>
+		</property>
+		<property name="p2">
+			<bean class="raffo.test.maven.Spring_05.bean.Punto">
+				<property name="x" value="3" />
+				<property name="y" value="4" />
+			</bean>
+		</property>
+		<property name="p3">
+			<bean class="raffo.test.maven.Spring_05.bean.Punto">
+				<property name="x" value="5" />
+				<property name="y" value="6" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- Alias bean -->
+	<alias name="triangolo5" alias="T-triangle"></alias>
+
+	<!-- <bean class="raffo.test.maven.Spring_05.MyInitBean" /> -->
+	<bean class="raffo.test.maven.Spring_05.MyInitBeanFactory" />
+
+	<!-- bean con ArrayList -->
+	<bean id="pentagono" class="raffo.test.maven.Spring_05.bean.PoligonoAL"
+		scope="singleton">
+		<property name="tipo" value="Pentagono" />
+		<property name="punti">
+			<list>
+				<ref bean="p1"></ref>
+				<ref bean="p2"></ref>
+				<ref bean="p3"></ref>
+				<ref bean="p4"></ref>
+				<ref bean="p5"></ref>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="quadrato" class="raffo.test.maven.Spring_05.bean.PoligonoAL"
+		scope="singleton">
+		<property name="tipo" value="Quadrato" />
+		<property name="punti">
+			<list>
+				<ref bean="p1"></ref>
+				<ref bean="p2"></ref>
+				<ref bean="p3"></ref>
+				<ref bean="p4"></ref>
+			</list>
+		</property>
+	</bean>
+
+	<!-- bean con HashMap -->
+	<bean id="segmento" class="raffo.test.maven.Spring_05.bean.PoligonoHM"
+		scope="singleton">
+		<property name="tipo" value="Segmento" />
+		<property name="punti">
+			<map>
+				<entry key="0" value-ref="p1"></entry>
+				<entry key="1" value-ref="p2"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<!-- bean con HashSet -->
+	<bean id="triangolo6" class="raffo.test.maven.Spring_05.bean.PoligonoHS"
+		scope="singleton">
+		<property name="tipo" value="Triangolo - HashSet" />
+		<property name="punti">
+			<set>
+				<ref bean="p1"></ref>
+				<ref bean="p2"></ref>
+				<ref bean="p3"></ref>
+			</set>
+		</property>
+	</bean>
+
+	<!-- bean con autowired byName -->
+	<bean id="triangolo7" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton" autowire="byName">
+		<property name="tipo" value="Triangolo - AutowiredByName" />
+		<property name="altezza" value="10000" />
+	</bean>
+
+	<!-- bean con autowired constructor -->
+	<bean id="triangolo8" class="raffo.test.maven.Spring_05.bean.Triangolo"
+		scope="singleton" autowire="constructor">
+		<property name="tipo" value="Triangolo - AutowiredConstructor" />
+		<property name="altezza" value="0" />
+	</bean>
 </beans>

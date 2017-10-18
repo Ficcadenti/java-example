@@ -9,17 +9,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BookClient 
 {
-	static Logger log;
+	static Logger _log;
 
 	public static void main( String[] args )
 	{
 		//log4j
-		log = org.apache.log4j.Logger.getLogger(BookClient.class);
+		_log = org.apache.log4j.Logger.getLogger(BookClient.class);
 		String log4jConfPath = "/resources/log4j.properties";
 		PropertyConfigurator.configure(BookClient.class.getResource(log4jConfPath));
 
 		// ...  reperimento dati
-		log.info("Spring_04-JDBC Tutorial starting...");
+		_log.info("Spring_04-JDBC Tutorial starting...");
 
 		ApplicationContext context=new ClassPathXmlApplicationContext(new String[]{"resources/beans.xml"});
 		BeanFactory factory=context;

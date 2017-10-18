@@ -1,13 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:p="http://primefaces.org/ui">
-<h2>JournalDev Tutorials</h2>
-<h2>
-	<p:outputLabel value="JournalDev - JSF2/Primefaces Tutorial"></p:outputLabel>
-</h2>
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<!-- <f:view contentType="text/html"> -->
+<h:head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<h:outputStylesheet library="css" name="prism.css" />
+</h:head>
+
+<h:body>
 
 
+	<h:form>
+
+		<p:growl id="message" showDetail="true" />
+
+		<p:commandButton value="Destroy the World"
+			actionListener="#{dialogView.destroyWorld}" update="message">
+			<p:confirm header="Confirmation" message="Are you sure?"
+				icon="ui-icon-alert" />
+		</p:commandButton>
+
+		<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+			<p:commandButton value="Yes" type="button"
+				styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+			<p:commandButton value="No" type="button"
+				styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+		</p:confirmDialog>
+
+		<ul>
+			<li><h:outputText value="Item1" rendered="true" /></li>
+			<li><h:outputText value="Item2" rendered="true" /></li>
+			<li><h:outputText value="Item3" rendered="false" /></li>
+			<li><p:inputText /></li>
+		</ul>
+
+		<p:inputText />
+		<h1>JSF 2.0 h:outputText Example</h1>
+		<ol>
+			<li>#{user.text}</li>
+
+			<li><h:outputText value="#{user.text}" /></li>
+
+			<li><h:outputText value="#{user.text}" styleClass="abc" /></li>
+
+			<li><h:outputText value="#{user.htmlInput}" /></li>
+
+			<li><h:outputText value="#{user.htmlInput}" escape="false" /></li>
+		</ol>
+
+		<p:growl id="growl" life="2000" />
+
+		<p:commandButton value="Ajax Submit" id="ajax" update="growl"
+			styleClass="ui-priority-primary" />
+
+		<p:commandButton value="Non-Ajax Submit" id="nonAjax"
+			actionListener="#{buttonView.buttonAction}" ajax="false" />
+
+		<p:commandButton value="With Icon" id="withIcon"
+			actionListener="#{buttonView.buttonAction}" update="growl"
+			icon="ui-icon-disk" />
+
+		<p:commandButton actionListener="#{buttonView.buttonAction}"
+			id="iconOnly" update="growl" icon="ui-icon-disk" title="Icon Only" />
+
+		<p:commandButton value="Disabled" id="disabled" disabled="true" />
+	</h:form>
+
+</h:body>
+<!-- </f:view> -->
 </html>

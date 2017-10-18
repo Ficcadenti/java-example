@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                     http://www.springframework.org/schema/aop 
+                     http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                     http://www.springframework.org/schema/context
+	                 http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	
+
+	<!-- utilizzo delle annotation -->
+	<context:annotation-config />
+
+	<bean id="pa1" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="20" />
+		<property name="y" value="20" />
+	</bean>
+
+	<bean id="pa2" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="10" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="pa3" class="raffo.test.maven.Spring_05.bean.Punto"
+		init-method="initIt" destroy-method="cleanUp">
+		<property name="x" value="30" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="ta1" class="raffo.test.maven.Spring_05.bean.TriangoloAnnotation"
+		scope="singleton" >
+		<property name="tipo" value="Triangolo con Annotation" />
+		<property name="altezza" value="10" />
+	</bean>
+
+</beans>

@@ -1,7 +1,5 @@
 package it.raffo.gson;
 
-import it.raffo.gson.bean.User;
-
 import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,6 +8,8 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import it.raffo.gson.User;
 
 public class gson_ex1 {
 
