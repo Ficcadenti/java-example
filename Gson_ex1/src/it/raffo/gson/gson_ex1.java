@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import it.raffo.gson.User;
@@ -45,7 +46,8 @@ public class gson_ex1 {
 		usr.add(user1);
 		usr.add(user2);
 		
-		Gson gson = new Gson();     
+    	
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();  
 		String usersJson = gson.toJson(usr);        
 		System.out.println(usersJson);
 		
