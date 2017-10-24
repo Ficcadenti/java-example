@@ -8,11 +8,24 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
 import it.raffo.gson.User;
 
 public class gson_ex1 {
+	
+	 public static String toPrettyFormat(String jsonString) 
+	  {
+	      JsonParser parser = new JsonParser();
+	      JsonObject json = parser.parse(jsonString).getAsJsonObject();
+
+	      Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	      String prettyJson = gson.toJson(json);
+
+	      return prettyJson;
+	  }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
