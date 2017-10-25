@@ -77,7 +77,7 @@ public class NetClientGet {
 	public static void main(String[] args) {
 		test_get();
 		
-		test_post();
+//		test_post();
 		
 		//		String param="localhost://test/pippo?nome=raffaele&cognome=ficcadenti&email=r.ficcadenti@e-tech.net&email=raffaele.ficcadenti@gmail.com";
 		//		System.out.println(param);
@@ -93,7 +93,9 @@ public class NetClientGet {
 		System.out.println("Test Rest Client GET");
 		try {
 
-			URL url = new URL("http://localhost:8080/testREST/api/test_get/valeria/greco/");
+			//URL url = new URL("http://localhost:8080/testREST/api/test_get/valeria/greco/");
+			URL url = new URL("http://localhost:8080/springmvc/test_gson");
+			
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", "application/json");

@@ -12,7 +12,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
-import it.raffo.gson.User;
+import it.raffo.gson.bean.User;
 
 public class gson_ex1 {
 	
