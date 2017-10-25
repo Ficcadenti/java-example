@@ -10,25 +10,25 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>MySqlConnect</module>
-		<module>Serializzazione_ex1</module>
-		<module>JSF_ex1</module>
-		<module>JSF_ex2</module>
-		<module>JSF_ex3</module>
-		<module>admin-showcase-tomcat</module>
-		<module>Servlet_ex1</module>
-		<module>Servlet_ex2</module>
-		<module>Servlet_ex3</module>
-		<module>Servlet_ex4</module>
-		<module>Servlet_ex5</module>
-		<module>Servlet_ex6</module>
-		<module>Servlet_ex7</module>
-		<module>Servlet_ex8</module>
-		<module>Spring_01</module>
-		<module>Spring_02</module>
-		<module>Spring_03</module>
-		<module>testBean</module>
-		<module>lambda</module>
+		<module>java/MySqlConnect</module>
+		<module>java/Serializzazione_ex1</module>
+		<module>JSF/JSF_ex1</module>
+		<module>JSF/JSF_ex2</module>
+		<module>JSF/JSF_ex3</module>
+		<module>PrimeFaces/admin-showcase-tomcat</module>
+		<module>Servlet/Servlet_ex1</module>
+		<module>Servlet/Servlet_ex2</module>
+		<module>Servlet/Servlet_ex3</module>
+		<module>Servlet/Servlet_ex4</module>
+		<module>Servlet/Servlet_ex5</module>
+		<module>Servlet/Servlet_ex6</module>
+		<module>Servlet/Servlet_ex7</module>
+		<module>Servlet/Servlet_ex8</module>
+		<module>Spring/Spring_01</module>
+		<module>Spring/Spring_02</module>
+		<module>Spring/Spring_03</module>
+		<module>java/testBean</module>
+		<module>java/lambda</module>
 		<!-- <module>Generic</module> -->
 		<!--<module>Annotazioni_ex1</module> -->
 		<module>c3p0_ex1</module>
