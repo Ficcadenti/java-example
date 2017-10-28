@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="${bootstrapCSS}"
 	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
 	crossorigin="anonymous">
+</link>
 
 <script rel="stylesheet" href="${jqueryJS}"
 	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -24,7 +25,7 @@
 	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
 	crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="${bootstrapJS}"
+<script rel="stylesheet" href="${bootstrapJS}"
 	integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 	crossorigin="anonymous">
 </script>
