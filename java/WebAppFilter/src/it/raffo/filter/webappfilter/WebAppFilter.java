@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package it.raffo.filter.webappfilter;
 
 import java.io.BufferedWriter;
@@ -22,7 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  *
- * @author Sogei
+ * @author 	Raffaele Ficcadenti
+ * 			raffaele.ficcadenti@gmail.com
  */
 public class WebAppFilter implements Filter {
 
@@ -31,16 +27,16 @@ public class WebAppFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("WebAppFilter started");
+        System.out.println("WebAppFilter: started");
         this.context = filterConfig.getServletContext();
         log_file_name = filterConfig.getInitParameter("logfile");
         
-        System.out.println("WebAppFilter:log_file_name = "+log_file_name);
+        System.out.println("WebAppFilter: log_file_name = "+log_file_name);
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("WebAppFilter in action");
+        System.out.println("WebAppFilter: in action");
         String log  = "";
         HttpServletRequest req = (HttpServletRequest) request;
 		Enumeration<String> params = req.getParameterNames();
@@ -48,14 +44,14 @@ public class WebAppFilter implements Filter {
 			String name = params.nextElement();
 			String value = request.getParameter(name);
                         //System.out.println("Parametro  "+ name + "=" + value);
-                        log += "\r\n"+ name + "=" + value;
+                        log += "\r\n Parametro: ["+ name + "] = " + value;
 			
 		}
 		
 		Cookie[] cookies = req.getCookies();
 		if(cookies != null){
 			for(Cookie cookie : cookies){
-                            log += "\r\n"+ cookie.getName() + "="  +cookie.getValue();
+                            log += "\r\n Cookie: ["+ cookie.getName() + "] = "  +cookie.getValue();
                             
                             
 				
@@ -78,9 +74,9 @@ public class WebAppFilter implements Filter {
     out.println(log);
         out.close();
     } catch (IOException e) {
-        //exception handling left as an exercise for the reader
+       e.printStackTrace();
     }
-    }
+}
     
     
     
