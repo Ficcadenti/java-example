@@ -1,0 +1,120 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>WebAppFilter</groupId>
+	<artifactId>WebAppFilter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<servlet_version>4.0.0-b01</servlet_version>
+		<log4j_version>1.2.17</log4j_version>
+		<mojo_version>1.5.0</mojo_version>
+		<jar_version>3.0.2</jar_version>
+		<compiler_version>3.5.1</compiler_version>
+		<javax_servlet_api_version>4.0.0</javax_servlet_api_version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<project_name>filter</project_name>
+		<main_class>webappfilter</main_class>
+	</properties>
+
+	<build>
+
+		<!-- directory sorgenti -->
+		<sourceDirectory>src</sourceDirectory>
+
+		<plugins>
+			<!-- compilazione java -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler_version}</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+					<executable>${JAVA_HOME}\bin\javac</executable>
+				</configuration>
+			</plugin>
+
+			<!-- Copia dipendenze nel jar -->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>it.raffo.${project_name}.${main_class}</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+
+			<!-- generazione jar -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${jar_version}</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>./lib/</classpathPrefix>
+							<mainClass>it.raffo.${project_name}.${main_class}</mainClass>
+						</manifest>
+						<manifestEntries>
+							<Class-Path>resources .</Class-Path>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<!-- exec:play -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${mojo_version}</version>
+				<executions>
+					<execution>
+						<id>java-run</id>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>it.raffo.${project_name}.${main_class}</mainClass>
+					<cleanupDaemonThreads>false</cleanupDaemonThreads>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${javax_servlet_api_version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+	</dependencies>
+
+
+	<description>Google GSON</description>
+	<url>https://www.raffaeleficcadenti.it</url>
+</project>
