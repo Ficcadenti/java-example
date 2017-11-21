@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 
 
 @Configuration
-@ComponentScan("it.raffo.Spring_08")
+@ComponentScan("it.raffo.Spring_08.bean")
 @PropertySource("classpath:/resources/concerto.properties")
 public class ShowConfig {
 }

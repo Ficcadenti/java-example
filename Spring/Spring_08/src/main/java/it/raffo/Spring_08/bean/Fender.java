@@ -3,15 +3,15 @@ package it.raffo.Spring_08.bean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component(value="stratocaster") 
-public class Chitarra implements Strumento {
+@Component(value="fender") 
+public class Fender implements Strumento {
 	private String suono;
 	
-	public Chitarra() {
+	public Fender() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Chitarra(String suono) {
+	public Fender(String suono) {
 		super();
 		this.suono = suono;
 	}
@@ -20,7 +20,7 @@ public class Chitarra implements Strumento {
 		return suono;
 	}
 
-	@Value("${show.stratocaster.sound}")
+	@Value("${show.fender.sound}")
 	public void setSuono(String suono) {
 		this.suono = suono;
 	}

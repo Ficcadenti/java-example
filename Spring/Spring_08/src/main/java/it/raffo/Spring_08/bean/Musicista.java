@@ -10,7 +10,7 @@ public class Musicista implements Artista{
 	/* il nome del musicista */
 	private String name;
 	/* lo strumento suonato dal musicista */
-	private Strumento instrument;
+	private Fender instrument;
 	
 	public Musicista() {
 		super();
@@ -18,7 +18,7 @@ public class Musicista implements Artista{
 	}
 
 	@Autowired
-	public Musicista(@Value("${show.roger.name}")String name, Strumento instrument) {
+	public Musicista(@Value("${show.roger.name}")String name, Fender instrument) {
 		super();
 		this.name = name;
 		this.instrument = instrument;
@@ -36,7 +36,7 @@ public class Musicista implements Artista{
 		return instrument;
 	}
 
-	public void setInstrument(Strumento instrument) {
+	public void setInstrument(Fender instrument) {
 		this.instrument = instrument;
 	}
 

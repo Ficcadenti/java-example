@@ -19,5 +19,9 @@
 	<bean id="stratocaster" class="it.raffo.Spring_07.bean.Chitarra" >
 		<property name="suono" value="Dark Side Of The Moon" />
 	</bean>
+	
+	<bean id="fender" class="it.raffo.Spring_07.bean.Chitarra" >
+		<property name="suono" value="Astronomy Domine" />
+	</bean>
 
 </beans>
