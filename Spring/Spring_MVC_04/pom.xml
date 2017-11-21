@@ -129,6 +129,14 @@
 			<version>${gson_version}</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.5.Final</version>
+		</dependency>
+
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -147,19 +155,19 @@
 				</configuration>
 			</plugin>
 			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${compiler_version}</version>
-                <configuration>
-                    <source>${java_source_version}</source>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler_version}</version>
+				<configuration>
+					<source>${java_source_version}</source>
 					<target>${java_target_version}</target>
-                    <compilerArgument>-Xlint:all</compilerArgument>
-                    <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
-                    <fork>true</fork>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+					<fork>true</fork>
 					<executable>${JAVA_HOME}\bin\javac</executable>
-                </configuration>
-            </plugin>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>

@@ -29,14 +29,17 @@
 
 	<div class="container">
 		<form:form action="showTriangolo" method="GET" commandName="triangoloComm">
+			<form:errors path="*" cssClass="alert alert-warning alert-dismissible fade show" role="alert" element="div"/>
 			<div class="form-group">
 				<label for="type">Type:&nbsp;</label>
 				<form:input path="type" class="form-control" placeholder="type" id="type" />
+				<form:errors path="type" cssClass="error"></form:errors>
 			</div>
 			<div class="form-group">
 				<label for="altezza">Altezza:&nbsp;</label>
 				<form:input path="altezza" class="form-control" placeholder="type"
 					id="altezza" />
+				<form:errors path="altezza" cssClass="error"></form:errors>
 			</div>
 			<button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Press button" >&nbsp;Submit</button>
 		</form:form>  <!-- form -->

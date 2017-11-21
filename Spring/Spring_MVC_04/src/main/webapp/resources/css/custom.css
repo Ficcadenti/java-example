@@ -4,3 +4,8 @@ body {
         font-family: 'EB Garamond', serif;
         font-size: 48px;
 }
+
+.error {
+	color: #ff0000;
+	font-size: 12px;
+}

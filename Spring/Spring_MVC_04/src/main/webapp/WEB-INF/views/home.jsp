@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page session="false"%>
 <html>
 <head>
@@ -28,6 +29,7 @@
 		<h1>Hello world!</h1>
 		<p>Test Spring MVC!!!!!</p>
 	</div>
-	<a href="formTriangolo">Inserisci un triangolo.</a>
+	<a href="formTriangolo">Inserisci un triangolo (BOOTSTRAP).</a><br>
+	<a href="formTriangolo">Inserisci un triangolo (JSF).</a>
 </body>
 </html>

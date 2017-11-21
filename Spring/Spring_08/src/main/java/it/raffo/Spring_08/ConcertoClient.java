@@ -24,9 +24,9 @@ public class ConcertoClient {
 		ApplicationContext context = new AnnotationConfigApplicationContext(ShowConfig.class);
 		BeanFactory factory=context;
 
-		Musicista JimiHandrix = (Musicista) factory.getBean("roger");
+		Musicista musicista = (Musicista) factory.getBean("roger");
 
-		_log.info(JimiHandrix.perform());
+		_log.info(musicista.perform());
 
 		((AnnotationConfigApplicationContext) context).close();
 
