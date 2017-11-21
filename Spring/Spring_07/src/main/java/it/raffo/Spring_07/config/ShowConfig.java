@@ -14,6 +14,13 @@ public class ShowConfig {
 	public Artista hendrix() {
 		return new Musicista("Jimi Hendrix", stratocaster());
 	}
+	
+	@Bean
+	public Artista roger() {
+		return new Musicista("Roger Waters", contrabasso());
+	}
+	
+	
 	@Bean
 	public Strumento stratocaster() {
 		Chitarra stratocaster = new Chitarra();
@@ -21,10 +28,6 @@ public class ShowConfig {
 		return stratocaster;
 	}
 	
-	@Bean
-	public Artista roger() {
-		return new Musicista("Roger Waters", contrabasso());
-	}
 	@Bean
 	public Strumento contrabasso() {
 		Chitarra contrabasso = new Chitarra();

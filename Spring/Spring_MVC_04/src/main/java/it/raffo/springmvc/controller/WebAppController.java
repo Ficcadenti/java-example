@@ -1,6 +1,8 @@
 package it.raffo.springmvc.controller;
 
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -11,8 +13,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import it.raffo.springmvc.model.Triangolo;
 
@@ -20,7 +22,7 @@ import it.raffo.springmvc.model.Triangolo;
  * Handles requests for the application home page.
  */
 @Controller
-public class WebAppController {
+public class WebAppController implements HandlerExceptionResolver{
 	
 	private static final Logger logger = LoggerFactory.getLogger(WebAppController.class);
 	
@@ -39,6 +41,12 @@ public class WebAppController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/upload", method = RequestMethod.GET)
+	public String upload() {
+		logger.info("GET: /home");
+		return "upload";
+	}
+	
 	@RequestMapping(value = "/formTriangolo", method = RequestMethod.GET)
 	public String triangolo(Model model) {
 		logger.info("GET: /formTriangolo");
@@ -50,7 +58,6 @@ public class WebAppController {
 		
 		return "formTriangolo";
 		
-//		return new ModelAndView("formTriangolo","triangoloComm",new Triangolo());
 	}
 	
 	@RequestMapping(value = "/showTriangolo", method = RequestMethod.GET)
@@ -113,6 +120,13 @@ public class WebAppController {
 			model.addAttribute("altezza",triangolo.getAltezza());
 			return new ModelAndView("showTriangolo1");
 		}
+	}
+
+	@Override
+	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
+			Exception ex) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

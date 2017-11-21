@@ -24,7 +24,7 @@ public class ConcertoClient {
 		String[] resources={"classpath:/resources/beans.xml"};
 
 		ApplicationContext context=new ClassPathXmlApplicationContext(resources);
-		BeanFactory factory=context;
+		BeanFactory factory=(BeanFactory)context;
 		
 		Musicista DavidGilmour=(Musicista)factory.getBean("david");
 		_log.info(DavidGilmour.perform());

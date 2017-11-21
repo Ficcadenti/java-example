@@ -1,13 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ page session="false"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home</title>
-
 <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCSS" />
 <spring:url value="/resources/css/custom.css" var="customCSS" />
 <spring:url value="/resources/css/custom_fonts.css" var="googleFontCSS" />
@@ -29,10 +26,15 @@
 		<h1>Hello world!</h1>
 		<p>Test Spring MVC!!!!!</p>
 	</div>
-	<ul>
-		<li><a href="formTriangolo">Inserisci un triangolo (BOOTSTRAP).</a></li>
-		<li><a href="formTriangolo1">Inserisci un triangolo (JSF).</a></li>
-		<li><a href="upload">Test upload file.</a></li>
-	</ul>
+
+	<div class="container">
+		<form:form action="formUpload" method="POST"
+			enctype="multipart/form-data">
+			<input type="file" name="file"/>
+			<button type="submit" class="btn btn-primary" data-toggle="tooltip"
+				data-placement="top" title="Press button">&nbsp;Upload</button>
+		</form:form><!-- form -->
+	</div>
+	<!-- container -->
 </body>
 </html>

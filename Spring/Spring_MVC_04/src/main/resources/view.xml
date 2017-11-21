@@ -16,11 +16,15 @@
         <property name="url" value="WEB-INF/views/showTriangolo.jsp" />
     </bean>
     
-     <bean id="formTriangolo1" class="org.springframework.web.servlet.view.JstlView">
+    <bean id="formTriangolo1" class="org.springframework.web.servlet.view.JstlView">
         <property name="url" value="WEB-INF/views/formTriangolo1.jsp" />
     </bean>
     
     <bean id="showTriangolo1" class="org.springframework.web.servlet.view.JstlView">
         <property name="url" value="WEB-INF/views/showTriangolo1.jsp" />
+    </bean>
+    
+    <bean id="upload" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="WEB-INF/views/upload.jsp" />
     </bean>
 </beans> 
