@@ -24,7 +24,15 @@
         <property name="url" value="WEB-INF/views/showTriangolo1.jsp" />
     </bean>
     
-    <bean id="upload" class="org.springframework.web.servlet.view.JstlView">
-        <property name="url" value="WEB-INF/views/upload.jsp" />
+    <bean id="formUpload" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="WEB-INF/views/formUpload.jsp" />
+    </bean>
+    
+    <bean id="showUpload" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="WEB-INF/views/showUpload.jsp" />
+    </bean>
+    
+    <bean id="errors" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="WEB-INF/views/errors.jsp" />
     </bean>
 </beans> 

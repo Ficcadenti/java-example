@@ -5,6 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -32,6 +33,26 @@ public class WebAppConfig extends WebMvcConfigurerAdapter
 		resolver.setLocation(resource);
 
 		return resolver;  
+	}
+	
+	@Bean
+	public ViewResolver viewResolver()
+	{
+		InternalResourceViewResolver res=new InternalResourceViewResolver();
+		res.setPrefix("/WEB-INF/views/");
+		res.setSuffix(".jsp");
+		res.setExposeContextBeansAsAttributes(true);
+		return res;
+	}
+	
+	
+	@Bean(name="multipartResolver")
+	public CommonsMultipartResolver createMultipartResolver()
+	{
+		CommonsMultipartResolver resolver=new CommonsMultipartResolver();
+		resolver.setDefaultEncoding("utf-8");
+		resolver.setMaxUploadSize(9341391);
+		return resolver;
 	}
 
 }

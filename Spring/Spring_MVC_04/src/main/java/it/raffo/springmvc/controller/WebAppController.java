@@ -1,6 +1,10 @@
 package it.raffo.springmvc.controller;
 
 
+import static org.hamcrest.CoreMatchers.instanceOf;
+
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
@@ -9,10 +13,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MaxUploadSizeExceededException;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -41,10 +50,33 @@ public class WebAppController implements HandlerExceptionResolver{
 		return "home";
 	}
 	
-	@RequestMapping(value = "/upload", method = RequestMethod.GET)
-	public String upload() {
-		logger.info("GET: /home");
-		return "upload";
+	@RequestMapping(value = "/errors", method = RequestMethod.GET)
+	public String errors() {
+		logger.info("GET: /errors");
+		return "errors";
+	}
+	
+	@RequestMapping(value = "/formUpload", method = RequestMethod.GET)
+	public String formUpload() {
+		logger.info("GET: /formUpload");
+		return "formUpload";
+	}
+	
+	@RequestMapping(value = "/showUpload", method = RequestMethod.POST)
+	public ModelAndView showUpload(@RequestParam("name") String name, @RequestParam("file") MultipartFile file, Exception e, Model model) throws IOException 
+	{
+		logger.info("POST: /showUpload");
+		if(!file.isEmpty())
+		{
+			ModelAndView modelAndView=new ModelAndView("showUpload");
+			byte[] bytes=file.getBytes();
+			modelAndView.addObject("name", name);
+			return modelAndView;
+		}
+		else
+		{
+			return new ModelAndView("errors");
+		}
 	}
 	
 	@RequestMapping(value = "/formTriangolo", method = RequestMethod.GET)
@@ -72,13 +104,13 @@ public class WebAppController implements HandlerExceptionResolver{
 		if(result.hasErrors())
 		{
 			logger.info("error: "+result.getFieldError("altezza"));
-			model.addAttribute("triangoloComm", triangolo);
+			mev.addObject("triangoloComm", triangolo);
 			mev.setViewName("formTriangolo");
 		}
 		else
 		{
-			model.addAttribute("type",triangolo.getType());
-			model.addAttribute("altezza",triangolo.getAltezza());
+			mev.addObject("type",triangolo.getType());
+			mev.addObject("altezza",triangolo.getAltezza());
 			mev.setViewName("showTriangolo");
 		}
 		
@@ -107,7 +139,7 @@ public class WebAppController implements HandlerExceptionResolver{
 			BindingResult result,
 			Model model)
 	{
-		logger.info("GET: /showTriangolo1");
+		logger.info("POST: /showTriangolo1");
 		if(result.hasErrors())
 		{
 			logger.info("error: "+result.getFieldError("altezza"));
@@ -125,8 +157,18 @@ public class WebAppController implements HandlerExceptionResolver{
 	@Override
 	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
 			Exception ex) {
-		// TODO Auto-generated method stub
-		return null;
+		logger.info("GET: /resolveException");
+		if(ex instanceof MaxUploadSizeExceededException)
+		{
+			ModelAndView modelAndView=new ModelAndView("errors");
+			modelAndView.addObject("error", ex.getMessage());
+			logger.info("Errore: "+ex.getMessage());
+			return modelAndView;
+		}
+		else
+		{
+			return new ModelAndView("errors");
+		}
 	}
 	
 	

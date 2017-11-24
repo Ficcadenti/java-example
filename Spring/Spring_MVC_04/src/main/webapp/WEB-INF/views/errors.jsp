@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home</title>
+<title>Errors</title>
 
 <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCSS" />
 <spring:url value="/resources/css/custom.css" var="customCSS" />
@@ -29,10 +29,7 @@
 		<h1>Hello world!</h1>
 		<p>Test Spring MVC!!!!!</p>
 	</div>
-	<ul>
-		<li><a href="formTriangolo">Inserisci un triangolo (BOOTSTRAP).</a></li>
-		<li><a href="formTriangolo1">Inserisci un triangolo (JSF).</a></li>
-		<li><a href="formUpload">Test upload file.</a></li>
-	</ul>
+	<h1>Upload Error</h1>
+	<h2>${error}</h2>
 </body>
 </html>

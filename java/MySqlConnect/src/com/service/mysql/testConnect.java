@@ -15,8 +15,8 @@ public class testConnect {
 		int nRow=0;
 		ResultSetMetaData rsmd = null;
 
-		MySQLConnection connect=new MySQLConnection("root","raffo","localhost","3306","phpexample");
-		ResultSet rs=connect.Query_rs("SELECT * from tab_01");
+		MySQLConnection connect=new MySQLConnection("root","root","localhost","3306","test");
+		ResultSet rs=connect.Query_rs("SELECT * from persona");
 		
 		System.out.println(connect.getSID());
 		try 

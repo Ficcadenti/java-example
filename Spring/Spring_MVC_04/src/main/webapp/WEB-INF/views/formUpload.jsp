@@ -24,12 +24,15 @@
 <body>
 	<div class="jumbotron text-center">
 		<h1>Hello world!</h1>
-		<p>Test Spring MVC!!!!!</p>
+		<p>Test Spring MVC - Upload File !!!</p>
 	</div>
 
 	<div class="container">
-		<form:form action="formUpload" method="POST"
+		<form:form action="showUpload" method="POST"
 			enctype="multipart/form-data">
+
+				
+			<input type="text" name="name"/>
 			<input type="file" name="file"/>
 			<button type="submit" class="btn btn-primary" data-toggle="tooltip"
 				data-placement="top" title="Press button">&nbsp;Upload</button>

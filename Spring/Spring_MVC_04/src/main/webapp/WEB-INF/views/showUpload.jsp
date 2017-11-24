@@ -1,13 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ page session="false"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home</title>
-
+<title>Show Triangolo</title>
 <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCSS" />
 <spring:url value="/resources/css/custom.css" var="customCSS" />
 <spring:url value="/resources/css/custom_fonts.css" var="googleFontCSS" />
@@ -22,17 +20,16 @@
 <script type="application/x-javascript" src="${jqueryJS}"></script>
 <script type="application/x-javascript" src="${popperJS}"></script>
 <script type="application/x-javascript" src="${bootstrapJS}"></script>
-
 </head>
 <body>
 	<div class="jumbotron text-center">
 		<h1>Hello world!</h1>
 		<p>Test Spring MVC!!!!!</p>
 	</div>
-	<ul>
-		<li><a href="formTriangolo">Inserisci un triangolo (BOOTSTRAP).</a></li>
-		<li><a href="formTriangolo1">Inserisci un triangolo (JSF).</a></li>
-		<li><a href="formUpload">Test upload file.</a></li>
-	</ul>
+
+	<div class="container">
+		<h1>Il file "${name}" è stato caricato correttamente. !!!! </h1>
+		
+	</div> <!-- container -->
 </body>
 </html>

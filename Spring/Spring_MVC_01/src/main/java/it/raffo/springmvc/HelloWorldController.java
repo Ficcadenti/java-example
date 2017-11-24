@@ -4,6 +4,7 @@ package it.raffo.springmvc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -24,9 +25,9 @@ public class HelloWorldController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/helloWorld", method = RequestMethod.GET)
-	public String helloWorld() {
-		logger.info("GET: helloWorld");
+	@RequestMapping(value = "/helloWorld/{id}", method = RequestMethod.GET)
+	public String helloWorld(@PathVariable("id") int id) {
+		logger.info("GET: helloWorld/"+id);
 		return "hello";
 	}
 	
