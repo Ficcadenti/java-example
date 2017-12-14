@@ -145,7 +145,10 @@ public class testRESTService {
 		System.out.println(usersJson);
 
 		// return HTTP response 200 in case of success
-		return Response.status(200).entity(usersJson).build();
+		return Response.status(200).entity(usersJson)
+				.header("Access-Control-Allow-Origin", "*")
+	            .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT, OPTIONS, HEAD")
+				.build();
 	}
 
 }
