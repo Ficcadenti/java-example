@@ -1,3 +1,3 @@
 <jboss-web>
-    <context-root>testREST</context-root>
+    <context-root>testRest</context-root>
 </jboss-web>
