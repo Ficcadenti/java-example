@@ -5,6 +5,10 @@
 
 factoryConfiguration.json
 
+### Java ###
+# Compiled class file
+*.class
+
 ### Eclipse ###
 
 .metadata
