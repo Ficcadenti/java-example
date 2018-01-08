@@ -1,0 +1,2 @@
+jboss-cli.bat --connect
+[standalone@localhost:9990 /] /subsystem=datasources/jdbc-driver=mysql/:add(driver-module-name=com.mysql.driver,driver-name=mysql,jdbc-compliant=false,driver-class-name=com.mysql.jdbc.Driver)
