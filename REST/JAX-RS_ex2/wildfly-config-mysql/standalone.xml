@@ -423,6 +423,9 @@
             </mail-session>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:naming:2.0">
+        		<bindings>
+        			 <simple name="java:global/mystring" value="Ciao Raffaele JNDI" type="java.lang.String" />
+        		</bindings>
             <remote-naming/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:pojo:1.0"/>

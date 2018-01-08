@@ -1,0 +1,3 @@
+<jboss-web>
+    <context-root>testJNDI</context-root>
+</jboss-web>

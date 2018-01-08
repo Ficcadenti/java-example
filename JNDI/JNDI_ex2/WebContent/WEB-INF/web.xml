@@ -3,7 +3,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
-	<display-name>JAX-RS_ex2</display-name>
+	<display-name>JNDI_ex2</display-name>
 	<servlet>
 		<servlet-name>ServletAdaptor</servlet-name>
 		<servlet-class>com.sun.jersey.server.impl.container.servlet.ServletAdaptor</servlet-class>
@@ -11,7 +11,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ServletAdaptor</servlet-name>
-		<url-pattern>/cdi/*</url-pattern>
+		<url-pattern>/jndi/*</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
@@ -21,8 +21,9 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-	<session-config>
-		<session-timeout>1</session-timeout>
-	</session-config>
-
+	<env-entry>
+		<env-entry-name>java:global/mystring_raffo</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>Hello World</env-entry-value>
+	</env-entry>
 </web-app>
