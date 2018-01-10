@@ -10,8 +10,6 @@ import java.sql.Statement;
 
 import javax.annotation.Resource;
 import javax.enterprise.context.RequestScoped;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import javax.sql.DataSource;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;

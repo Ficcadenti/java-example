@@ -1,5 +1,6 @@
 package it.raffo.jaxb;
 
+
 import java.io.StringWriter;
 
 import javax.xml.bind.JAXB;
@@ -8,6 +9,7 @@ import it.raffo.jaxb.bean.Libro;
 import it.raffo.jaxb.bean.Utente;
 
 public class Main {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println ("JAXB - Test v 1.0");
@@ -30,5 +32,9 @@ public class Main {
 		StringWriter sw=new StringWriter();
 		JAXB.marshal(u, sw);
 		System.out.println(sw.toString()); 
+
+		
 	}
+	
+	
 }
