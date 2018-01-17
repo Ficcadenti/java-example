@@ -1,0 +1,3533 @@
+<?xml version="1.0" encoding="UTF-8"?><ns2:Register.Afa xmlns:ns2="urn:publicid:-:DGTAXUD:COPIS:MESSAGE:1.0" xmlns="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:ns3="urn:publicid:-:DGTAXUD:GENERAL:REFERENCESET:1.0">
+    <ns2:Afa>
+        <ns2:Afa.Id>IT99990487</ns2:Afa.Id>
+        <ns2:App.Type>UAFA</ns2:App.Type>
+        <ns2:Reception.Date>2016-11-03</ns2:Reception.Date>
+        <ns2:Language>IT</ns2:Language>
+        <ns2:Exofficio>0</ns2:Exofficio>
+        
+        <ns2:PreAfa.Id>IT20161103185252000017</ns2:PreAfa.Id>
+    </ns2:Afa>
+    <ns2:Applicant>
+        <ns2:Uuid>e8560b460e2b467ba7f53f157e104901</ns2:Uuid>
+        <ns2:Name>LUXOTTICA GROUP S.p.A. </ns2:Name>
+        <ns2:Address>Piazzale Cadorna 3</ns2:Address>
+        <ns2:Town>Milano</ns2:Town>
+        <ns2:Postcode>20123</ns2:Postcode>
+        <ns2:CountryCode>IT</ns2:CountryCode>
+        <ns2:Vat>10182640150</ns2:Vat>
+        <ns2:National.Nr>PRE7067</ns2:National.Nr>
+        <ns2:Phone>+390286334765</ns2:Phone>
+        <ns2:Mobile>+393457775126</ns2:Mobile>
+        <ns2:Mail>alessandro.farris@luxottica.com</ns2:Mail>
+        <ns2:Url>http://www.luxottica.com</ns2:Url>
+        <ns2:Status>RH</ns2:Status>
+    </ns2:Applicant>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>AT</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>6e0bba41b2294be0be2295a507daa9f1</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Christian Olbort</ns2:Name>
+            <ns2:Address>Oppolzerg. 6, Top 11, A-1110</ns2:Address>
+            <ns2:Town>Wien</ns2:Town>
+            <ns2:CountryCode>AT</ns2:CountryCode>
+            <ns2:Phone>+4319057550</ns2:Phone>
+            <ns2:Mobile>+436645204710</ns2:Mobile>
+            <ns2:Mail>christian.olbort@at.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>2934e5a9d20b43a69670786a0b85607c</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>BE</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>73630374379d40b3ac8af11c4ce88b3e</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>SNB-REACT</ns2:Name>
+            <ns2:Address>Amstelveenseweg 864</ns2:Address>
+            <ns2:Town>Amsterdam</ns2:Town>
+            <ns2:CountryCode>BE</ns2:CountryCode>
+            <ns2:Phone>+31206406363</ns2:Phone>
+            <ns2:Mail>customs@react.org</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>95fc65c3729648c88803a533917d3a5a</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>BG</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>97d3b28e3d87453e862178f09a099260</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Zivko Mijatovic and Partners</ns2:Name>
+            <ns2:Address>5 Dame Gruev Str.</ns2:Address>
+            <ns2:Town>Sofia</ns2:Town>
+            <ns2:CountryCode>BG</ns2:CountryCode>
+            <ns2:Phone>+35929434045</ns2:Phone>
+            <ns2:Mail>legal@zm-p.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>2acd5db28e024cfeb0003f845f2795ac</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>CY</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>5cf52643ce744b79a488fd13ad48cb01</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Lenia Kontopoulou</ns2:Name>
+            <ns2:Address>7a Androcleous Street,</ns2:Address>
+            <ns2:Town>Nicosia</ns2:Town>
+            <ns2:CountryCode>CY</ns2:CountryCode>
+            <ns2:Phone>+35722755214</ns2:Phone>
+            <ns2:Mail>lenia@hadjipanayis.com.cy</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>e204ca8d57da4d19950757066356660a</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>CZ</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>d504e2dc98074273aaecfd222376ec49</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>András Benedek</ns2:Name>
+            <ns2:Address>Capital Square, 2nd tower, ground floor</ns2:Address>
+            <ns2:Town>Budapest</ns2:Town>
+            <ns2:CountryCode>HU</ns2:CountryCode>
+            <ns2:Phone>+3613741044</ns2:Phone>
+            <ns2:Mail>andras.benedek@hu.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>ae23d7327cd54c94a2041e5cace09f3b</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>DE</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>26a2e31990d74b3a975daccab616ed19</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>REACT Germany</ns2:Name>
+            <ns2:Address>Schenkelstraße 9a</ns2:Address>
+            <ns2:Town>Düren</ns2:Town>
+            <ns2:CountryCode>DE</ns2:CountryCode>
+            <ns2:Phone>+490242195229</ns2:Phone>
+            <ns2:Mail>germany@react.org</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>0ef50d3b9bcc4c2980ecb2bf79134bb2</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>DK</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>cea4ea7c628c41efaccddd05c5ba1210</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Johansson Henrik</ns2:Name>
+            <ns2:Address>Hangovagen 19, Hus 1, Plan 6</ns2:Address>
+            <ns2:Town>Stockholm</ns2:Town>
+            <ns2:CountryCode>SE</ns2:CountryCode>
+            <ns2:Phone>+46703060107</ns2:Phone>
+            <ns2:Mail>Henrik.Johansson@nordic.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>8b865defa5a84ec9ad208047886a1441</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>EE</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>d5cffa40471440f8bc2279956b3b1d7e</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Ulle Kask</ns2:Name>
+            <ns2:Address>Alberta 13</ns2:Address>
+            <ns2:Town>Riga</ns2:Town>
+            <ns2:CountryCode>EE</ns2:CountryCode>
+            <ns2:Phone>+37167216507</ns2:Phone>
+            <ns2:Mail>Ulle.Kask@pl.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>c94eac17c0e0418bad53c7617a3dc9be</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>ES</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>4198ad0244e945af85db9e260c19dad5</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Pinto Ruiz &amp; Del Valle</ns2:Name>
+            <ns2:Address>S.L.P. - C/ Guadalquivir, nº 22, Bajo 28002</ns2:Address>
+            <ns2:Town>Madrid</ns2:Town>
+            <ns2:CountryCode>ES</ns2:CountryCode>
+            <ns2:Phone>+34917454958</ns2:Phone>
+            <ns2:Mail>eochoa@pintoruizdelvalle.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>02536f98421748e19278f0dd510443ab</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>FI</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>fa3e646ac9f14d588edfff1672edec7b</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Kim Morelius</ns2:Name>
+            <ns2:Address>Hangövägen 19</ns2:Address>
+            <ns2:Town>Stockholm</ns2:Town>
+            <ns2:CountryCode>SE</ns2:CountryCode>
+            <ns2:Phone>+358405610480</ns2:Phone>
+            <ns2:Mail>kim.morelius@nordic.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>817b54460cc940cb81e0e7e734d95623</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>FR</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>a18de9e3a12448819fbe5b7aaee39715</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Christine Beylot</ns2:Name>
+            <ns2:Address>80 route des lucioles - Les espaces de Sophia. Bat</ns2:Address>
+            <ns2:Town>Valbonne</ns2:Town>
+            <ns2:CountryCode>FR</ns2:CountryCode>
+            <ns2:Phone>+330492966607</ns2:Phone>
+            <ns2:Mail>christine.beylot@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>173637f442744e6bbca9db061cee666a</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>GB</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>741b99098bb448fe98ea0207d915ad0c</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Detain UK</ns2:Name>
+            <ns2:Address>60 Newport Drive</ns2:Address>
+            <ns2:Town>Alcester Warwickshire B49 5BJ</ns2:Town>
+            <ns2:CountryCode>GB</ns2:CountryCode>
+            <ns2:Phone>+7786455133</ns2:Phone>
+            <ns2:Mail>detain-uk@hotmail.co.uk</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>6ae982e9d5ea4194b24c3b19546212ee</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>GR</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>9103e4a6b85e40e69c5b0c1d7c14f0f8</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Parlalis Lefteris</ns2:Name>
+            <ns2:Address>3 Anthousas Av.</ns2:Address>
+            <ns2:Town>Pallini</ns2:Town>
+            <ns2:CountryCode>GR</ns2:CountryCode>
+            <ns2:Phone>+302106696236</ns2:Phone>
+            <ns2:Mail>lefterisparlalis@gr.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>3fc2f37b74564e439e4340ec2c449c72</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>HR</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>2d1c6e9ba47042d49a5b0f2973f15a1b</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Karolina Biondic</ns2:Name>
+            <ns2:Address>Ulica Rijeke Rase</ns2:Address>
+            <ns2:Town>Novigrad</ns2:Town>
+            <ns2:CountryCode>HR</ns2:CountryCode>
+            <ns2:Phone>+00385913355130</ns2:Phone>
+            <ns2:Mail>karolina.biondic@hr.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>284610ecae92415f880a5f9c6fbf59d3</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>HU</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>0700b821fc2346daa2b66c20123c5556</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>András Benedek</ns2:Name>
+            <ns2:Address>Capital Square, 2nd tower, ground floor</ns2:Address>
+            <ns2:Town>Budapest</ns2:Town>
+            <ns2:CountryCode>HU</ns2:CountryCode>
+            <ns2:Phone>+3613741044</ns2:Phone>
+            <ns2:Mail>andras.benedek@hu.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>ce95b22c48774673b1608009f0d790b8</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>IE</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>0d38178462ac4ad6a6fe515f0aedba8d</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>REACT UK</ns2:Name>
+            <ns2:Address>Dallam Court, Dallam Lane</ns2:Address>
+            <ns2:Town>Warrington</ns2:Town>
+            <ns2:CountryCode>GB</ns2:CountryCode>
+            <ns2:Phone>+353868921378</ns2:Phone>
+            <ns2:Mail>cdenardo@react.org</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>b156a25a517040f99f84f3d8f4553c13</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>IT</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>9eeb370b47b84260a4398ea0ee50cd1e</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>REACT ITALY</ns2:Name>
+            <ns2:Address>Via Ponte Vetero, 15</ns2:Address>
+            <ns2:Town>Milan</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+390280509450</ns2:Phone>
+            <ns2:Mail>mbassi@react.org</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>1860a4c1682c4ac58834fddc07c5a6ab</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>LT</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>9b067c587f284ef0b05bc4509192c410</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Uldis Berzins</ns2:Name>
+            <ns2:Address>Alberta 13</ns2:Address>
+            <ns2:Town>Riga</ns2:Town>
+            <ns2:CountryCode>LV</ns2:CountryCode>
+            <ns2:Phone>+37167216507</ns2:Phone>
+            <ns2:Mail>uldisberzins@pl.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>89a73efd4eae4381893365ed3f6bb4a6</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>LU</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>b52597b1067342e2b7ebc15e2a0df632</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>SNB-REACT</ns2:Name>
+            <ns2:Address>Amstelveenseweg 864</ns2:Address>
+            <ns2:Town>Amsterdam</ns2:Town>
+            <ns2:CountryCode>BE</ns2:CountryCode>
+            <ns2:Phone>+31206406363</ns2:Phone>
+            <ns2:Mail>customs@react.org</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>43e9c45d01024c22adc59fc127a17eab</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>LV</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>587b32a68b0b4aa4a05e5375e0d87f11</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Uldis Berzins</ns2:Name>
+            <ns2:Address>Alberta 13</ns2:Address>
+            <ns2:Town>Riga</ns2:Town>
+            <ns2:CountryCode>LV</ns2:CountryCode>
+            <ns2:Phone>+37167216507</ns2:Phone>
+            <ns2:Mail>uldisberzins@pl.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>8012067b5c53412c9daf9d57f8326e3c</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>MT</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>458f3e3013a64884a15d9d19d0ec60ab</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Class Company Ltd</ns2:Name>
+            <ns2:Address>UBT 13/14, Ind. Estate</ns2:Address>
+            <ns2:Town>San Gwann. SGN3000</ns2:Town>
+            <ns2:CountryCode>MT</ns2:CountryCode>
+            <ns2:Phone>+35623811160</ns2:Phone>
+            <ns2:Mail>helena.tua@classoptical.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>2c09f864b365412cb0abe91994d54542</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>NL</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>ae9b1acebbce4b5f8fa65f493f6e32c9</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>REACT Netherlands</ns2:Name>
+            <ns2:Address>Amstelveenseweg 864</ns2:Address>
+            <ns2:Town>Amsterdam</ns2:Town>
+            <ns2:CountryCode>NL</ns2:CountryCode>
+            <ns2:Phone>+31206406363</ns2:Phone>
+            <ns2:Mail>customs@react.org</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>b9652858007446ac9105844bb6d04ff9</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>PL</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>e86b34088dce4671a05cee91bcefb526</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>MALGORZATA SAMBORSKA</ns2:Name>
+            <ns2:Address>LUXOTTICA POLAND SP. Z O.O. - SOLTYSA DYTMARA 3/U2</ns2:Address>
+            <ns2:Town>KRAKOW 30-211</ns2:Town>
+            <ns2:CountryCode>PL</ns2:CountryCode>
+            <ns2:Phone>+48663311909</ns2:Phone>
+            <ns2:Mail>Malgorzata.Samborska@pl.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>2ad3b2a45ea4487ea7ae71be9edde115</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>PT</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>eff3bf8577b14f0db386a94bb63357e0</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Marques Bom &amp; Associados, Sociea</ns2:Name>
+            <ns2:Address>Av.ª Duque de Loulé, n.º 5 - 6.º, 1050-085</ns2:Address>
+            <ns2:Town>Lisbon</ns2:Town>
+            <ns2:CountryCode>PT</ns2:CountryCode>
+            <ns2:Phone>+351213504510</ns2:Phone>
+            <ns2:Mail>nuno.alexandrino@marquesbom.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>c2661d9665bb4ac6980226fa114c2a92</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>RO</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>167854add1b140c1894eb95d64643bda</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Turcu&amp;Turcu</ns2:Name>
+            <ns2:Address>17, Ana Davila Street</ns2:Address>
+            <ns2:Town>Bucharest,</ns2:Town>
+            <ns2:CountryCode>RO</ns2:CountryCode>
+            <ns2:Phone>+40214113716</ns2:Phone>
+            <ns2:Mail>office@turcu.ro</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>df2c8a2c17644b31b1ba4f4f12423cb8</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>SE</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>55c5713fb1364394a0b3e3f765424f01</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Johansson Henrik</ns2:Name>
+            <ns2:Address>Hangovagen 19, Hus 1, Plan 6</ns2:Address>
+            <ns2:Town>Stockholm</ns2:Town>
+            <ns2:CountryCode>SE</ns2:CountryCode>
+            <ns2:Phone>+46703060107</ns2:Phone>
+            <ns2:Mail>Henrik.Johansson@nordic.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>60ccddea980843d3b5c6103ad96140ee</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>SI</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>b9015d05bfd24cd28399f906ecccf153</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>Karolina Biondic</ns2:Name>
+            <ns2:Address>Ulica Rijeke Raše 1</ns2:Address>
+            <ns2:Town>Novigrad</ns2:Town>
+            <ns2:CountryCode>HR</ns2:CountryCode>
+            <ns2:Phone>+38552729408</ns2:Phone>
+            <ns2:Mail>karolina.biondic@hr.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>5f51e7ed4a6a4001850aca26f934280c</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ms.Applicable>
+        <ns2:CountryCode>SK</ns2:CountryCode>
+        <ns2:ContactPerson>
+            <ns2:Uuid>9d7fc09ee2ee4750956aeb95bc1f8331</ns2:Uuid>
+            <ns2:Contact.Type>ADM</ns2:Contact.Type>
+            <ns2:Name>András Benedek</ns2:Name>
+            <ns2:Address>Capital Square, 2nd tower, ground floor</ns2:Address>
+            <ns2:Town>Budapest</ns2:Town>
+            <ns2:CountryCode>HU</ns2:CountryCode>
+            <ns2:Phone>+3613741044</ns2:Phone>
+            <ns2:Mail>andras.benedek@hu.luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+        <ns2:ContactPerson>
+            <ns2:Uuid>adaeca5de8b3494eb23a4d7479bf72a2</ns2:Uuid>
+            <ns2:Contact.Type>TEC</ns2:Contact.Type>
+            <ns2:Name>Alan Zasso</ns2:Name>
+            <ns2:Address>Via Valcozzena 10</ns2:Address>
+            <ns2:Town>Agordo (BL)</ns2:Town>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Phone>+3904376441</ns2:Phone>
+            <ns2:Mail>anticontraffazione@luxottica.com</ns2:Mail>
+        </ns2:ContactPerson>
+    <ns2:Consignment.Proc>0</ns2:Consignment.Proc>
+</ns2:Ms.Applicable>
+    <ns2:Ipr>
+        <ns2:Uuid>4d3aa7cd16c643eb8b7ade6086655b4e</ns2:Uuid>
+        <ns2:Id>10000001</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>000697904/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>1999-04-08</ns2:Fill.Date>
+        <ns2:Expiry.Date>2017-12-02</ns2:Expiry.Date>
+        <ns2:Trademark>v vogue</ns2:Trademark>
+        <ns2:Description>26.04.05,26.04.06,26.04.24,27.05.21,27.99.22</ns2:Description>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>24.17.02</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>7a988855f5104deeb9c8e6b7446feabd</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole e montature per occhiali da sole; occhiali da vista e montature per occhiali da vista; occhiali estetici e montature per occhiali estetici; occhiali per ciclisti, motociclisti, scooteristi, automobilisti, tennisti, sciatori, nuotatori, canoisti, paracadutisti, e relative montature; montature per occhiali, lenti per occhiali, astucci e custodie per occhiali.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>72e67fb65ac64ba2af9c3ce23506670c</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>166b119c3358bc605d5c0da855ad2ee42508406d</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>0ebbb5be89564eba8d3bd8f34ec0057e</ns2:Uuid>
+        <ns2:Id>10000002</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>000859447/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>1999-10-01</ns2:Fill.Date>
+        <ns2:Expiry.Date>2018-06-23</ns2:Expiry.Date>
+        <ns2:Description>14.03.20</ns2:Description>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>14.03.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>36c6285bb5a944b98e98f90b6f2c5df1</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali, montature per occhiali, vetri per occhiali, visiere, paraocchi, articoli di occhialeria e di ottica e relativi elementi, astucci, custodie ed involucri.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>a5e31239ed894c30b4749c4b1a6d95d5</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>81dd133d1792c9bfadf91cae97a8d92636cd1cce</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>56597e6bb49a4d5bb88ebfe8ee02a088</ns2:Uuid>
+        <ns2:Id>10000003</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>006092829/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2008-07-17</ns2:Fill.Date>
+        <ns2:Expiry.Date>2017-07-11</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN LIGHT ADAPTIVE</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>ee4fd3cc592440efb22a740bd293f401</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere di protezione; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>23eda42c083c49c6b7263cb98adac5a6</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>16</ns2:Nice.Class>
+            <ns2:Description>Biglietti, inviti, cartelle stampa, pass, articoli in carta non compresi in altre classi; penne; adesivi.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>a2dfbbae21644d8e9c7b81e4a47c2bf6</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Vendita al dettaglio, in negozi e tramite reti informatiche (internet), di occhiali, loro componenti ed accessori, articoli di abbigliamento, calzature.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>586c922c7292492892025f739ab23b14</ns2:Uuid>
+        <ns2:Id>10000004</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>005739982/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2008-02-19</ns2:Fill.Date>
+        <ns2:Expiry.Date>2017-03-07</ns2:Expiry.Date>
+        <ns2:Trademark>NEVER HIDE</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>0ec10cddb419472e9a8cf1e306ba376e</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>3bc635a89aac4de8892f42beaafc1203</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>25</ns2:Nice.Class>
+            <ns2:Description>Articoli di abbigliamento, scarpe, cappelleria.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>f10255aa5c674819b25c575bd1d15df5</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Vendita al dettaglio, in negozi e tramite reti informatiche (internet), di occhiali, loro componenti ed accessori, articoli di abbigliamento, calzature.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>fd00a46cea8b432891f03d45c5e069e2</ns2:Uuid>
+        <ns2:Id>10000005</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>006090914/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2008-07-17</ns2:Fill.Date>
+        <ns2:Expiry.Date>2017-07-11</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN VISION</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>4395f54d6a4a491f9e440e3ea2ecbbbf</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere di protezione; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>93f5f828dbe449cd9d91ed702534a5e2</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>16</ns2:Nice.Class>
+            <ns2:Description>Biglietti, inviti, cartelle stampa, pass, articoli in carta non compresi in altre classi; penne; adesivi.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>ee980483974d4b74a421bd0c7531af74</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Vendita al dettaglio, in negozi e tramite reti informatiche (internet), di occhiali, loro componenti ed accessori, articoli di abbigliamento, calzature.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>17dd11ec30b14b5fa155357a29da4db3</ns2:Uuid>
+        <ns2:Id>10000006</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009067554/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-09-20</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-04-29</ns2:Expiry.Date>
+        <ns2:Trademark>G-15</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>7f696ecb017f49568ac34c4becd3f2fe</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>6f8603408ab443a78a1c5946461b5aaa</ns2:Uuid>
+        <ns2:Id>10000007</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009067612/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-09-20</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-04-29</ns2:Expiry.Date>
+        <ns2:Trademark>OUTDOORSMAN</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>43a9c11f07b54a8196dd5e094c378fd3</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>5f2895fac199446589565195cf0994b8</ns2:Uuid>
+        <ns2:Id>10000008</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009067471/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-09-20</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-04-29</ns2:Expiry.Date>
+        <ns2:Trademark>CARAVAN</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>9d9d23cc530e44f191d33bc292a88f02</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>44beca6538614033a714572cbaa01737</ns2:Uuid>
+        <ns2:Id>10000009</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>000624403/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>1999-11-08</ns2:Fill.Date>
+        <ns2:Expiry.Date>2017-09-03</ns2:Expiry.Date>
+        <ns2:Trademark>PERSOL</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>eb9262e2004548709dcbdf481a47e8d5</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali, montature per occhiali, vetri e lenti per occhiali, occhiali da sole, visiere, paraocchi, maschere e occhiali protettivi, articoli per occhiali e articoli di ottica, custodie e contenitori per occhiali, materiali (metallici e non-metallici) per la produzione degli articoli di cui sopra.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>a567db6256d7405f9146e5c8380deca6</ns2:Uuid>
+        <ns2:Id>10000010</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009067448/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-09-20</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-04-29</ns2:Expiry.Date>
+        <ns2:Trademark>B-15</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>c2f9649c6fc34c0e8a791b6ae7c76e6e</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>94a1206484a24bb9bbaf602210c9b51a</ns2:Uuid>
+        <ns2:Id>10000011</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009067455/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-09-20</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-04-29</ns2:Expiry.Date>
+        <ns2:Trademark>BALORAMA</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>4ea5cffbbe72433ab8e5b9a47dc99468</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>3bdedf3098714c0a8b8dd0bb2b7edac1</ns2:Uuid>
+        <ns2:Id>10000012</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009955568/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2011-10-14</ns2:Fill.Date>
+        <ns2:Expiry.Date>2021-05-10</ns2:Expiry.Date>
+        <ns2:Trademark>PREDATOR</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>c7d4f9fe83334ac8aececbcacbd23a4b</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>e9713eac49b3420ab4983d26c8f1083e</ns2:Uuid>
+        <ns2:Id>10000013</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>000563544/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>1998-11-04</ns2:Fill.Date>
+        <ns2:Expiry.Date>2017-06-10</ns2:Expiry.Date>
+        <ns2:Trademark>V</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>26.01.03</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>b848b314037f4498827da86cafc3b9f3</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, montature, lenti, astucci e catene per occhiali.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>ff608275c6d943f3b8810d693e59a05b</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>cc7ee296a9c27aa8de13ff008ba06d97ed320ab4</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>db3283e64357495d86dd51609b776230</ns2:Uuid>
+        <ns2:Id>10000014</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010950921/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-10-17</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-06-08</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN TECH LITEFORCE</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.05.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>6ab198a4154046bba741b8213a8269a5</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>de0c55880bf64b67a4eaa34dc99db663</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>d48b4248ffdf5e33f97f740a44555d0597c4c5ba</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>c9dbe48d3af9499ab163034133683a6f</ns2:Uuid>
+        <ns2:Id>10000015</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>011912201/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2013-10-21</ns2:Fill.Date>
+        <ns2:Expiry.Date>2023-06-19</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>d3a396dca4fb46349c4eea07c4d18002</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Servizi di vendita di prodotti ottici al dettaglio e tramite reti informatiche mondiali o Internet.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>b9659c033a1f4ce180840e1b9acc5433</ns2:Uuid>
+        <ns2:Id>10000016</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010949253/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-10-17</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-06-08</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN YOUNGSTER</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>b7da499ada1446839b393ebd9a26bbbc</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>0f35d68a051b4a0c85c876ea157380db</ns2:Uuid>
+        <ns2:Id>10000017</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>011040227/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-12-12</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-07-13</ns2:Expiry.Date>
+        <ns2:Trademark>RARE PRINTS</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>16.03.13</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>cf1aa7ba009544518027cd334e967c01</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche, aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>0cc68931bb41492facf257e026144fb0</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>e964d40e42c1ea77c2cc6aa016fb45715ba62969</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>7deb8b4a839444f0aa3c12be5834dc3f</ns2:Uuid>
+        <ns2:Id>10000018</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010949675/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-10-17</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-06-08</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN LIGHTRAY</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.05.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>90741e6fcfd04c9ea43f4e2936ed9a68</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>332c75e9f51b40a5aa590eeae49526a9</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>8ec1351117b671a2c3a64507d7d762c4d75a09bc</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>871717c2daf648c9b47cb0d005ec8ce7</ns2:Uuid>
+        <ns2:Id>10000019</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010951614/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-12-10</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-06-08</ns2:Expiry.Date>
+        <ns2:Trademark>NEVER HIDE NOISE</ns2:Trademark>
+        <ns2:Description>16.01.17</ns2:Description>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>02.01.09</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>b017e7d3d29449149f8d5ef321bd125e</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Pubblicità; gestione di affari commerciali; amministrazione commerciale; lavori di ufficio; vendita al dettaglio ed all'ingrosso (eccetto il loro trasporto) in negozi o reti informatiche mondiali di occhiali, lenti, montature, astucci e custodie per occhiali, maschere.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>9dd6cbbab37e493683391a89b64d0d28</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>41</ns2:Nice.Class>
+            <ns2:Description>Educazione; formazione; divertimento; attività sportive e culturali.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>e79274c47eb140e8b0887fd18b9b2322</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>06ebeeeba97af9c160517d4aa43aafc6f0dc7f2a</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>a86c1520f6f5426b95ee9f11924c4352</ns2:Uuid>
+        <ns2:Id>10000020</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010951465/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-11-01</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-06-08</ns2:Expiry.Date>
+        <ns2:Trademark>NEVER HIDE FILMS</ns2:Trademark>
+        <ns2:Description>26.01.10,26.03.04,26.03.06</ns2:Description>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>26.01.03</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>5c43a58168884d2ba6d294d244312536</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Pubblicità; gestione di affari commerciali; amministrazione commerciale; lavori di ufficio; vendita al dettaglio ed all'ingrosso (eccetto il loro trasporto) in negozi o reti informatiche mondiali di occhiali, lenti, montature, astucci e custodie per occhiali, maschere.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>ea14bd54c46047e79fb38309bce4b9d0</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>41</ns2:Nice.Class>
+            <ns2:Description>Educazione; formazione; divertimento; attività sportive e culturali.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>8c0cbda4dd964b579db28665560ac51a</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>e189ef7e108cf774254210c36a4060cef6f1f0a0</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>b6e72edce19745be82535cb7565b1709</ns2:Uuid>
+        <ns2:Id>10000021</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>011040383/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-12-12</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-07-13</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN FLIP OUT</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>2c18cf8ac19e43d79f25c4c2336b079d</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche, aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>3a8213490fd14946938a9c4443469653</ns2:Uuid>
+        <ns2:Id>10000022</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>011096336/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2014-08-02</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-08-03</ns2:Expiry.Date>
+        <ns2:Trademark>RB</ns2:Trademark>
+        <ns2:Description>27.99.18</ns2:Description>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.99.02</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>a9c0fdbefe5a4ed5af82507fed55844d</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; naselli, lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>da13be343c46411daee24df1726aaa48</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>7d40cd7f2ab7b90a1bcd72418d486571f8cf880e</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>0a512a59ce4b410a98541f9cccb66e5f</ns2:Uuid>
+        <ns2:Id>10000023</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>011912292/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2013-10-21</ns2:Fill.Date>
+        <ns2:Expiry.Date>2023-06-19</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.05.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>6d1fdb8c1b084a36877be68837c1d93d</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Servizi di vendita di prodotti ottici al dettaglio e tramite reti informatiche mondiali o Internet.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>25dc3170d25044518f751dc9e98883e6</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>8096b5185dd66af2120b67935833e6f103449082</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>9435893d7d3f452ea812fb6a91cff05d</ns2:Uuid>
+        <ns2:Id>10000024</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010863595/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-09-18</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-05-07</ns2:Expiry.Date>
+        <ns2:Trademark>G-31</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>16d519754a124f498f3dd62e5b2ea516</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>acc7625704a54486ae1ac8bb37a0841c</ns2:Uuid>
+        <ns2:Id>10000025</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010863561/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-09-28</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-05-07</ns2:Expiry.Date>
+        <ns2:Trademark>AMBERMATIC</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>cef1cfeffb404474afd75a1771af0089</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>0b652852e9d945fc80bd29a8adaf72fa</ns2:Uuid>
+        <ns2:Id>10000026</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009954819/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2011-10-14</ns2:Fill.Date>
+        <ns2:Expiry.Date>2021-05-10</ns2:Expiry.Date>
+        <ns2:Trademark>HIGHSTREET</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>5308a8be43d94976b3685c4ae2bbba98</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti da sole, da vista ed estetiche; aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>d7540cc7b15f4eff9515e61b6fb00465</ns2:Uuid>
+        <ns2:Id>10000027</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>005571971/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2007-11-29</ns2:Fill.Date>
+        <ns2:Expiry.Date>2016-12-20</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN VISIONARY AWARD</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>897a128417d042b28bf755e653f9dde4</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>16</ns2:Nice.Class>
+            <ns2:Description>Biglietti, inviti, cartelle stampa, pass, articoli in carta in generale; penne; adesivi.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>c56c0708e5af4eeb8c5bed3914a405f3</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>25</ns2:Nice.Class>
+            <ns2:Description>Articoli di abbigliamento, scarpe, cappelleria.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>0652661c233d49adaf6eb6d43e79a24d</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>41</ns2:Nice.Class>
+            <ns2:Description>Educazione; formazione; divertimento; attività sportive e culturali; organizzazione e direzione di conferenze, convegni, congressi e manifestazioni di intrattenimento; conferimento di premi; progettazione, organizzazione, produzione e svolgimento di programmi e cerimonie per il conferimento di premi.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>1a6b64d64b064b799947822018646c36</ns2:Uuid>
+        <ns2:Id>10000028</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>001956465/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2001-12-03</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-11-16</ns2:Expiry.Date>
+        <ns2:Trademark>RAY-BAN</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>9b3fa912815141328b6a843d69839818</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>3</ns2:Nice.Class>
+            <ns2:Description>Saponi ad uso personale, profumi, cosmetici, lozioni per capelli, dopobarba.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>74e18018f0fa44319b98329923f3b410</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>14</ns2:Nice.Class>
+            <ns2:Description>Gioielleria, bigiotteria; orologi e cronometri; orologi e cronometri in metallo prezioso; strumenti cronometrici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>7c7702a3eab6460f9d6fd4d11c6f6237</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>16</ns2:Nice.Class>
+            <ns2:Description>Porta agende; agende; penne e matite; porta fotografie; stampati; block-notes; calendari; periodici; prodotti di editoria.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>9c98c83384ea43019a376bef064261bb</ns2:Uuid>
+            <ns2:Id>10000004</ns2:Id>
+            <ns2:Nice.Class>18</ns2:Nice.Class>
+            <ns2:Description>Prodotti di pelletteria quali borse, sacche, zaini, valigie, bauli e prodotti del genere in cuoio.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>c83248d048254ee9b5472bf41d5bfe77</ns2:Uuid>
+            <ns2:Id>10000005</ns2:Id>
+            <ns2:Nice.Class>25</ns2:Nice.Class>
+            <ns2:Description>Abbigliamento, cappelleria e calzature, il tutto per uomo, donna e bambino.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>967c663ae8f5400cac3ec5ff90698d07</ns2:Uuid>
+        <ns2:Id>10000029</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>010799261/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2012-09-11</ns2:Fill.Date>
+        <ns2:Expiry.Date>2022-04-11</ns2:Expiry.Date>
+        <ns2:Trademark>PERSOL</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.05.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>3b4d89d05bcc4ab3af98183f95b3e086</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, occhiali per l'esercizio di attività sportive; montature per occhiali e maschere; parti e accessori per occhiali ovvero lenti (da sole, da vista, estetiche), aste ed altre parti di ricambio, astucci e custodie per occhiali e maschere; supporti ed espositori per occhiali; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; articoli e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>96fb82913f464343875d6e871c0abed4</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>049a8716ab9db42fc12174910aeca14550c1e92a</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>c94554409179487795f24eb3f520ac6f</ns2:Uuid>
+        <ns2:Id>10000030</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009271974/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-12-13</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-07-26</ns2:Expiry.Date>
+        <ns2:Trademark>WAYFARER</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>5b739af0883740a78f74344716ef0f50</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>29c76666d0424eae967f0ea3b6e837c2</ns2:Uuid>
+        <ns2:Id>10000031</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009271883/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2010-12-13</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-07-26</ns2:Expiry.Date>
+        <ns2:Trademark>CLUBMASTER</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>e7de936dfb7f4f84a5cb7c34ebdf5039</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>b843d2fe12a64cf998dd314f1e24722f</ns2:Uuid>
+        <ns2:Id>10000032</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>009271701/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2011-01-21</ns2:Fill.Date>
+        <ns2:Expiry.Date>2020-07-26</ns2:Expiry.Date>
+        <ns2:Trademark>Ray-Ban</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.05.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>aeca05de3aef4114bdb987f56f99ef65</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>3</ns2:Nice.Class>
+            <ns2:Description>Saponi ad uso personale; profumi; olii essenziali; cosmetici; lozioni per capelli; dopobarba; dentifrici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>a792120d39024f90a9aba241f356711f</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>14</ns2:Nice.Class>
+            <ns2:Description>Metalli preziosi e loro leghe e prodotti in tali materie o placcati non compresi in altre classi; gioielleria; bigiotteria; pietre preziose; orologeria e strumenti cronometrici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>f4e2aecfe8544febb957386ad29e2cc2</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>16</ns2:Nice.Class>
+            <ns2:Description>Porta agende; agende; penne e matite; porta fotografie; stampati; block-notes; calendari; periodici; prodotti di editoria.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>e99fb0d743af423d8a59d5be05314348</ns2:Uuid>
+            <ns2:Id>10000004</ns2:Id>
+            <ns2:Nice.Class>18</ns2:Nice.Class>
+            <ns2:Description>Cuoio e sue imitazioni, e articoli in queste materie non compresi in altre classi; pelli di animali; bauli e valigie; ombrelli, ombrelloni e bastoni da passeggio; fruste e articoli di selleria.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>3e4c40ad16c54787b356d485a088b299</ns2:Uuid>
+            <ns2:Id>10000005</ns2:Id>
+            <ns2:Nice.Class>25</ns2:Nice.Class>
+            <ns2:Description>Abbigliamento, cappelleria e calzature, il tutto per uomo, donna e bambino</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>24097121fb934187ac2a5e9675bbb430</ns2:Uuid>
+            <ns2:Id>10000006</ns2:Id>
+            <ns2:Nice.Class>35</ns2:Nice.Class>
+            <ns2:Description>Pubblicità; gestione di affari commerciali; amministrazione commerciale; lavori di ufficio; vendita al dettaglio ed all'ingrosso (eccetto il loro trasporto) in negozi o reti informatiche mondiali di cosmetici, profumi, prodotti per la bellezza, metalli preziosi, articoli di gioielleria, orologi, articoli di cancelleria, prodotti di editoria, prodotti di pelletteria, abbigliamento, cappelleria, calzature, occhiali, lenti, montature, astucci e custodie per occhiali, maschere.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>dd7293f4b52449699a4e2a5fbeb170aa</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>979aeded9cfaa0f04183d3945b63b45e4d9c8d9a</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>497cc218d35c4781a59a88509c5d8c92</ns2:Uuid>
+        <ns2:Id>10000033</ns2:Id>
+        <ns2:Ipr.Type>CTM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>004934618/EM</ns2:Ipr.Number>
+        <ns2:Fill.Date>2007-04-12</ns2:Fill.Date>
+        <ns2:Expiry.Date>2026-03-02</ns2:Expiry.Date>
+        <ns2:Trademark>Ray·Ban</ns2:Trademark>
+        <ns2:Description>26.04.05,26.04.22,29.01.01</ns2:Description>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>26.04.02</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>4e1f719cba23450c881512525d6f790d</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Occhiali da sole, occhiali da vista, occhiali estetici, occhiali di protezione, maschere ed occhiali per l'esercizio di attività sportive; lenti per occhiali e maschere; supporti per occhiali, montature per occhiali e maschere; astucci e custodie per occhiali e maschere; catene per occhiali; lenti a contatto e contenitori per lenti a contatto, lenti di ingrandimento; binocoli; apparecchi e strumenti ottici.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>378fe9677ad9464fa545b7271bdb798d</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>deb2be561f267c17f866055b10237adfdf7d71d7</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>9c7d9870f8d34da096478b7991cf9848</ns2:Uuid>
+        <ns2:Id>10000034</ns2:Id>
+        <ns2:Ipr.Type>ITM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>475597/WO</ns2:Ipr.Number>
+        <ns2:Fill.Date>1983-02-07</ns2:Fill.Date>
+        <ns2:Expiry.Date>2023-02-07</ns2:Expiry.Date>
+        <ns2:Trademark>Persol</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Vienna>27.05.01</ns2:Vienna>
+        <ns2:Good>
+            <ns2:Uuid>a1e68ca6d45340658282c688a231561c</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Scientific, nautical, surveying, electric (including wireless apparatus), photographic, cinematographic, optical, weighing, measuring, signalling, checking (supervision), life-saving and teaching apparatus and instruments; coin or token-operated automatic apparatus; speaking machines; cash registers, calculating machines; fire extinguishers and, in particular, optical articles and eyewear in general and, in particular, correcting spectacles, sunglasses, eye-shades, masks and protective spectacle</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>df00a8bdbfd942d0a35cacd7737f22e6</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>21</ns2:Nice.Class>
+            <ns2:Description>Small portable household and kitchen utensils and containers (not of precious metal or coated therewith); combs and sponges; brushes (except paintbrushes); brush-making materials, cleaning instruments and equipment; steel wool; unworked or semi-worked glass (except glass used in building), glassware, porcelain and earthenware not included in other classes.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>6594526fcbca4549b6e7a6164b112d99</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>25</ns2:Nice.Class>
+            <ns2:Description>Clothing for men, women and children, underlinen, boots, shoes and slippers and, in particular, woven fabric and knitted clothing, hosiery, skirts, smocks, blouses, sashes for wear, ties, hats, belts.</ns2:Description>
+        </ns2:Good>
+        <ns2:Attachment>
+            <ns2:Att.Id>e1de33b3209b477ba6d3ab49cd2fcc5c</ns2:Att.Id>
+            <ns2:Type>image/jpeg</ns2:Type>
+            <ns2:Image.Category>23</ns2:Image.Category>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>4e8133fe974aeaecf7e924550fabe3bd8fa2d680</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Ipr>
+    <ns2:Ipr>
+        <ns2:Uuid>15bbe4dddade458e8da3e158f02b294c</ns2:Uuid>
+        <ns2:Id>10000035</ns2:Id>
+        <ns2:Ipr.Type>ITM</ns2:Ipr.Type>
+        <ns2:Ipr.Number>309169/WO</ns2:Ipr.Number>
+        <ns2:Fill.Date>1966-02-18</ns2:Fill.Date>
+        <ns2:Expiry.Date>2026-02-18</ns2:Expiry.Date>
+        <ns2:Trademark>PERSOL</ns2:Trademark>
+        <ns2:Registered>0</ns2:Registered>
+        <ns2:Good>
+            <ns2:Uuid>94e2cb0d7ffb4613859fdf652d2055b4</ns2:Uuid>
+            <ns2:Id>10000001</ns2:Id>
+            <ns2:Nice.Class>1</ns2:Nice.Class>
+            <ns2:Description>Produits chimiques destinés à l'industrie, la science, la photographie, l'agriculture, l'horticulture, la sylviculture; engrais pour les terres (naturels et artificiels); compositions extinctrices; trempes et préparations pour la soudure; produits chimiques destinés à conserver les aliments; matières tannantes; substances adhésives destinées à l'industrie; résines.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>ad0c7ce4acfd4f49ad0e563b2789f779</ns2:Uuid>
+            <ns2:Id>10000002</ns2:Id>
+            <ns2:Nice.Class>2</ns2:Nice.Class>
+            <ns2:Description>Couleurs, vernis, laques; préservatifs contre la rouille et contre la détérioration du bois; matières tinctoriales; mordants; résines; métaux en feuilles et en poudre pour peintres et décorateurs.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>4e4da5cdf92241f9ab1c099b815a8191</ns2:Uuid>
+            <ns2:Id>10000003</ns2:Id>
+            <ns2:Nice.Class>3</ns2:Nice.Class>
+            <ns2:Description>Préparations pour blanchir et autres substances pour lessiver; préparations pour nettoyer, polir, dégraisser et abraser; savons; parfumerie, huiles essentielles, cosmétiques, lotions pour les cheveux; dentifrices.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>cef1d10003864a9baafd42466406197a</ns2:Uuid>
+            <ns2:Id>10000004</ns2:Id>
+            <ns2:Nice.Class>5</ns2:Nice.Class>
+            <ns2:Description>Produits pharmaceutiques, vétérinaires et hygiéniques; produits diététiques pour enfants et malades; emplâtres, matériel pour pansements; matières pour plomber les dents et pour empreintes dentaires; désinfectants; préparations pour détruire les mauvaises herbes et les animaux nuisibles.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>82abfe129ba74c858f8999ee8998392c</ns2:Uuid>
+            <ns2:Id>10000005</ns2:Id>
+            <ns2:Nice.Class>6</ns2:Nice.Class>
+            <ns2:Description>Métaux communs bruts et mi-ouvrés et leurs alliages; ancres, enclumes, cloches, matériaux à bâtir laminés et fondus; rails et autres matériaux métalliques pour les voies ferrées; chaînes (à l'exception des chaînes motrices pour véhicules); câbles et fils métalliques non électriques; serrurerie; tuyaux métalliques; coffres-forts et cassettes; billes d'acier; fers à cheval; clous et vis; autres produits en métal (non précieux) non compris dans d'autres classes; minerais.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>749a4a03866a43af9a76a4024d358af8</ns2:Uuid>
+            <ns2:Id>10000006</ns2:Id>
+            <ns2:Nice.Class>9</ns2:Nice.Class>
+            <ns2:Description>Appareils et instruments scientifiques, nautiques, géodésiques, électriques (y compris la T.S.F.), photographiques, cinématographiques, optiques, de pesage, de mesurage, de signalisation, de contrôle (inspection), de secours (sauvetage) et d'enseignement; appareils automatiques déclenchés par l'introduction d'une pièce de monnaie ou d'un jeton; machines parlantes; caisses enregistreuses, machines à calculer; appareils extincteurs.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>e0a9dc840b5e4c08b95f9cbd0243f416</ns2:Uuid>
+            <ns2:Id>10000007</ns2:Id>
+            <ns2:Nice.Class>10</ns2:Nice.Class>
+            <ns2:Description>Instruments et appareils chirurgicaux, médicaux, dentaires et vétérinaires (y compris les membres, les yeux et les dents artificiels).</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>8397973c1fe74beba0123f54c2d025d6</ns2:Uuid>
+            <ns2:Id>10000008</ns2:Id>
+            <ns2:Nice.Class>14</ns2:Nice.Class>
+            <ns2:Description>Métaux précieux et leurs alliages et objets en ces matières ou en plaqué (excepté coutellerie, fourchettes et cuillers); joaillerie, pierres précieuses; horlogerie et autres instruments chronométriques.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>cb49da091ba0426f9462aa68ffa3e236</ns2:Uuid>
+            <ns2:Id>10000009</ns2:Id>
+            <ns2:Nice.Class>16</ns2:Nice.Class>
+            <ns2:Description>Papier et articles en papier, carton et articles en carton; imprimés, journaux et périodiques, livres; articles pour reliures; photographies; papeterie; matières adhésives (pour la papeterie); matériaux pour les artistes; pinceaux; machines à écrire et articles de bureau (à l'exception des meubles); matériel d'instruction ou d'enseignement (à l'exception des appareils); cartes à jouer; caractères d'imprimerie; clichés.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>5736d4bdc96c4232829a2a1f34991b14</ns2:Uuid>
+            <ns2:Id>10000010</ns2:Id>
+            <ns2:Nice.Class>17</ns2:Nice.Class>
+            <ns2:Description>Gutta-percha, gomme élastique, balata et succédanés, objets fabriqués en ces matières non compris dans d'autres classes; matières servant à calfeutrer, à étouper et à isoler; amiante, mica et leurs produits; tuyaux flexibles non métalliques.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>307e3b6bdfdc430dbbd55f0626c2b564</ns2:Uuid>
+            <ns2:Id>10000011</ns2:Id>
+            <ns2:Nice.Class>18</ns2:Nice.Class>
+            <ns2:Description>Cuir et imitations du cuir, articles en ces matières non compris dans d'autres classes; peaux, malles et valises; parapluies et cannes; fouets, harnais et sellerie.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>1465efc64d0842849e1c4b89f599f6db</ns2:Uuid>
+            <ns2:Id>10000012</ns2:Id>
+            <ns2:Nice.Class>20</ns2:Nice.Class>
+            <ns2:Description>Meubles, glaces, cadres; articles (non compris dans d'autres classes) en bois, liège, roseau, jonc, osier, en corne, os, ivoire, baleine, écaille, ambre, nacre, écume de mer, celluloïd et succédanés de toutes ces matières.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>a75ac43db98844a09649f2376d516ebd</ns2:Uuid>
+            <ns2:Id>10000013</ns2:Id>
+            <ns2:Nice.Class>21</ns2:Nice.Class>
+            <ns2:Description>Petits ustensiles et récipients portatifs pour le ménage et la cuisine (non en métaux précieux ou en plaqué), peignes et éponges; brosses (à l'exception des pinceaux); matériaux pour la brosserie; instruments et matériel de nettoyage; paille de fer; verrerie, porcelaine et faïence non comprises dans d'autres classes.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>9b42f2b661f54ce6859e4c7727d1dd2d</ns2:Uuid>
+            <ns2:Id>10000014</ns2:Id>
+            <ns2:Nice.Class>24</ns2:Nice.Class>
+            <ns2:Description>Tissus, couvertures de lit et de table; articles textiles non compris dans d'autres classes.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>8bad7d80757d415fae1d4d63d0c2bf86</ns2:Uuid>
+            <ns2:Id>10000015</ns2:Id>
+            <ns2:Nice.Class>25</ns2:Nice.Class>
+            <ns2:Description>Vêtements, y compris les bottes, les souliers et les pantoufles.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>25842578873a4d099d55c72c99bd1656</ns2:Uuid>
+            <ns2:Id>10000016</ns2:Id>
+            <ns2:Nice.Class>28</ns2:Nice.Class>
+            <ns2:Description>Jeux, jouets; articles de gymnastique et de sport (à l'exception des vêtements); ornements et décorations pour arbres de Noël.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>75813e2b1417421f90ffdee404087797</ns2:Uuid>
+            <ns2:Id>10000017</ns2:Id>
+            <ns2:Nice.Class>32</ns2:Nice.Class>
+            <ns2:Description>Bière, ale et porter, eaux minérales et gazeuses et autres boissons non alcooliques; sirops et autres préparations pour faire des boissons.</ns2:Description>
+        </ns2:Good>
+        <ns2:Good>
+            <ns2:Uuid>8137524a653d4e1e8625210bf130063c</ns2:Uuid>
+            <ns2:Id>10000018</ns2:Id>
+            <ns2:Nice.Class>33</ns2:Nice.Class>
+            <ns2:Description>Vins, spiritueux et liqueurs.</ns2:Description>
+        </ns2:Good>
+    </ns2:Ipr>
+    <ns2:Good_Detail>
+        <ns2:Uuid>da33821b3ae545acaeb5aaeadab9c45f</ns2:Uuid>
+        <ns2:Id>10000001</ns2:Id>
+        <ns2:Item.Type>AUTH</ns2:Item.Type>
+        <ns2:Description>Occhiali da sole</ns2:Description>
+        <ns2:Customs.Value>0</ns2:Customs.Value>
+        <ns2:National.Value>0</ns2:National.Value>
+        <ns2:Community.Value>0</ns2:Community.Value>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>7e5a095ee3124fe7a6cdb0da9c370213</ns2:Uuid>
+            <ns2:Ipr.Id>10000001</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>49682754499f43cfbe889cefa471447b</ns2:Uuid>
+            <ns2:Ipr.Id>10000013</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Production.Place>
+            <ns2:Uuid>34c6608be6334d719d2efbc60c4bc5b2</ns2:Uuid>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Production.Place>
+            <ns2:Uuid>82c5188d13f845bcae65b15ca5a4273f</ns2:Uuid>
+            <ns2:CountryCode>CN</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Involved.Company>
+            <ns2:Uuid>2b6a693deef445b78b85b28a89f8a915</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA BELGIUM NV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>a236a3ba53a7496499541e9c1a0958c5</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORDIC AB</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>c07777248f3d4c01b68fdd6e9be6e13b</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA TRISTAR (DONGGUAN) OPTICAL CO LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>d721a1cf635d4192b195720c5155ccd2</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA INTERNATIONAL DISTRIBUTION SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>94540f7c322d45e6b62db740dae87b55</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FRANCE SASU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>778d65d41b32470888a42962711bb907</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA  (SWITZERLAND) AG</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>f46774a1dbfe4818b21f1bc585b8572a</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FASHION BRILLEN VERTRIEBS GMBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>ca0bb2360a9a421d87cca5e94d164535</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA VERTRIEBSGESELLSCHAFT MBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>535885d19f5546009ed14ae9ac43cf37</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HELLAS AE</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>9567f694ff27438a92f3c60d730123cd</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA IBERICA SAU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>62d949f811d449c691030c18843d783e</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA POLAND SP ZOO</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>3272f6cb61ea43ed8a8c7020778d5573</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA PORTUGAL COMERCIO DE OPTICA SA</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>55f9cbdd95854e0eba877387f4279644</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA S.R.L.</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>d97dca526ed546c9b4124cd4fa403040</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA ITALIA SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>1e262bcf54744dc99aa3a1fcdb56fc68</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORGE AS</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>154b6c26b0644f438b086c253107f862</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HOLLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>752b3db96aaf487a80984655bf881e6d</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORTH EUROPE LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>eccd716f656b4f2db97c5f80d61f3be6</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA CENTRAL EUROPE KFT</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>878e92530ccf4cb4ae8e8018a0118426</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NEDERLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Trader>
+            <ns2:Uuid>a1ae787671e947a99b141b26d730da43</ns2:Uuid>
+            <ns2:National.Nr>LUXOTTICA INTERNATIO</ns2:National.Nr>
+        </ns2:Trader>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>d6ff53dedd764b8ba9e35b8755d150a2</ns2:Uuid>
+            <ns2:Id>70000001</ns2:Id>
+            <ns2:Position>Immagine principale</ns2:Position>
+            <ns2:Description>Immagine principale</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>6fea0b0f2e4f40c0bec1d94085f2d2c7</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>891c529cdd30fd862688d1f7e8849ad378b4bc52</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>62e91a2738474ec898fe42cceec16175</ns2:Uuid>
+            <ns2:Id>70000002</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Temples' logo detail</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>c71f0ed30839456dba8671546f33520c</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>a62ecdc3d2f0ad04ae6653e72ceb4f5fcbb03fe0</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>67c0624d76cf496ea9ce7008e74f3ce3</ns2:Uuid>
+            <ns2:Id>70000003</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside left temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>6d19c43e39134211b8762890c5cf5c5e</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>9b12786e61b5cd33a074319911bf52a4ce377a12</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>c94e57a67b1b4117aca48fa9cb11e3c6</ns2:Uuid>
+            <ns2:Id>70000004</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Logo details</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>77f690912d7241f081ef023ee84c073d</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>49570bb89566910ab5e191654b9d257fee54ba50</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>f0d2f5fe656e4d7e8e32b68bfd252e3d</ns2:Uuid>
+            <ns2:Id>70000005</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside right temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>f3b3c0772964476496a2c2c914f78ee5</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>4139e8c665d4a7bc13a9a45db86ef592ac47526a</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+    <ns2:Confidential>0</ns2:Confidential>
+</ns2:Good_Detail>
+    <ns2:Good_Detail>
+        <ns2:Uuid>5f8224dff8684c43b2ca645e7c23cb49</ns2:Uuid>
+        <ns2:Id>10000002</ns2:Id>
+        <ns2:Item.Type>AUTH</ns2:Item.Type>
+        <ns2:Description>Occhiali da sole</ns2:Description>
+        <ns2:Customs.Value>0</ns2:Customs.Value>
+        <ns2:National.Value>0</ns2:National.Value>
+        <ns2:Community.Value>0</ns2:Community.Value>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>486bbcb5abb7487e92551f1afae2edbe</ns2:Uuid>
+            <ns2:Ipr.Id>10000002</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>ded418aeb5954a5f9f0303226a56b464</ns2:Uuid>
+            <ns2:Ipr.Id>10000009</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>55b1b7eccca94d58b3c034d89c43b198</ns2:Uuid>
+            <ns2:Ipr.Id>10000029</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>930ffe21f6404cfb82b887d6be82a2b2</ns2:Uuid>
+            <ns2:Ipr.Id>10000034</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>16ae493166814988b4984b8c5637fbf8</ns2:Uuid>
+            <ns2:Ipr.Id>10000035</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Production.Place>
+            <ns2:Uuid>94e7322d71a34b7eb0a77a02f3f6f82e</ns2:Uuid>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Involved.Company>
+            <ns2:Uuid>fc3de1d2211b48fa9786f1fd3158d734</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA VERTRIEBSGESELLSCHAFT MBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>40caa1394ac74633a23aee5676c9700d</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA ITALIA SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>20fa4f828bb54b0eb7a3e6cf37d928b5</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORGE AS</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>df61145ac4a14436bf4e02bf91cc99d9</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NEDERLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>bf7d39f809df4e76b4c845bbda0692a2</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORDIC AB</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>577b1dcbd71841bf8a25adecd3043d52</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA POLAND SP ZOO</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>1bbe13b7ffcf4308aa04e07c78187842</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FASHION BRILLEN VERTRIEBS GMBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>209549843e764c1aa21ec7facb19e125</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FRANCE SASU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>8c90338317194cbc9bb2570b8ac3f864</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA INTERNATIONAL DISTRIBUTION SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>c9cec4e454384b6db5b3b7c61134e777</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HOLLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>87791a7b075e412f9e9e9b4e2a399196</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA  (SWITZERLAND) AG</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>7f983a3c2983449783d4c85d679e211c</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA PORTUGAL COMERCIO DE OPTICA SA</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>a669217eac8141a990bd4c2759ed9196</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORTH EUROPE LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>551ba9a5164e41d5933b0cd7144816da</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA CENTRAL EUROPE KFT</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>115391d5f467474cad9b53e406b7d88c</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA IBERICA SAU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>b4b857353df64807b678c5f887a055ea</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA BELGIUM NV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>a08fd8f6fe9c454f8829f38a652f9ee4</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HELLAS AE</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>272baa9d28a84b11948c1f50b018ee60</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA S.R.L.</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Trader>
+            <ns2:Uuid>3c77aa72c5cc4f0e8691819b611af15d</ns2:Uuid>
+            <ns2:National.Nr>LUXOTTICA INTERNATIO</ns2:National.Nr>
+        </ns2:Trader>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>f3a1babf1b6f4293990be14b3ce21276</ns2:Uuid>
+            <ns2:Id>70000006</ns2:Id>
+            <ns2:Position>Immagine principale</ns2:Position>
+            <ns2:Description>Immagine principale</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>082c2185a03a48b89e762830fe177cb8</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>d20e539e66698f541fb283cf8b0ef6ff6c36053f</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>f4f643263e864a54bc103e68ac05d749</ns2:Uuid>
+            <ns2:Id>70000007</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Detail temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>4a61911254764aa890f416ee64bbc4f9</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>e1e500b8d6e4f023b92061cbee67a21ec452c726</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>82283239540d4dcfba076505aab35e2c</ns2:Uuid>
+            <ns2:Id>70000008</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside right temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>72cebea593d841089e263f64b4c77f87</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>1b2a50af9c59e205d91a8e8019d581ec8d6e5bed</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>930b9b0970074735aa2ad5bc775d6364</ns2:Uuid>
+            <ns2:Id>70000009</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Lens logo</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>59e6bf07a60e43c9bf04db7fa34eeeea</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>9ba729b12ce5c32f0889af66b95978312e62622a</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>8e1c6b8ab033435eba174562029066fd</ns2:Uuid>
+            <ns2:Id>70000010</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside left temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>e5ed61772f5f4335b2ad9788c9fd8f9b</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>156ee81c31e5ca9c5200569e5d9e6d45f2db9bcb</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+    <ns2:Confidential>0</ns2:Confidential>
+</ns2:Good_Detail>
+    <ns2:Good_Detail>
+        <ns2:Uuid>eaf139aa2d3c42f087f1f7438edd734c</ns2:Uuid>
+        <ns2:Id>10000003</ns2:Id>
+        <ns2:Item.Type>AUTH</ns2:Item.Type>
+        <ns2:Description>Occhiali da sole</ns2:Description>
+        <ns2:Customs.Value>0</ns2:Customs.Value>
+        <ns2:National.Value>0</ns2:National.Value>
+        <ns2:Community.Value>0</ns2:Community.Value>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>adde043395774163852fb2d75ab0c999</ns2:Uuid>
+            <ns2:Ipr.Id>10000003</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>229d3385515a4c4f96508381f761a6c4</ns2:Uuid>
+            <ns2:Ipr.Id>10000004</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>40883e16ca814d3d944d364f55d37c44</ns2:Uuid>
+            <ns2:Ipr.Id>10000005</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>f0652a542f354a00a960129d76dff5c9</ns2:Uuid>
+            <ns2:Ipr.Id>10000006</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>2cfe1f3e36e54055b19f0a2168662167</ns2:Uuid>
+            <ns2:Ipr.Id>10000007</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>b8021602e3434cd5bdbddf94d8ba6f3e</ns2:Uuid>
+            <ns2:Ipr.Id>10000008</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>5df040ca0ac840589d17a3f2dcd5a52a</ns2:Uuid>
+            <ns2:Ipr.Id>10000010</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>e288fa33fd4a491eac72454179a1ed44</ns2:Uuid>
+            <ns2:Ipr.Id>10000011</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>db4fc3f4300f4cfbb303d6dc75a0219a</ns2:Uuid>
+            <ns2:Ipr.Id>10000012</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>23d0ecc25e5e41bbaad711c2b21dcdd8</ns2:Uuid>
+            <ns2:Ipr.Id>10000014</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>1b9150e78f214dbcbde19b3d5f507a62</ns2:Uuid>
+            <ns2:Ipr.Id>10000015</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>889ba75b4abf4993b5fabaa439595671</ns2:Uuid>
+            <ns2:Ipr.Id>10000016</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>dbaeaa6d63a346b59b030405d7f4c55c</ns2:Uuid>
+            <ns2:Ipr.Id>10000017</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>bd697557c2204fac8d25bb1e5ed79e36</ns2:Uuid>
+            <ns2:Ipr.Id>10000018</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>14d6322233e84ee79512e5f4762ae1f5</ns2:Uuid>
+            <ns2:Ipr.Id>10000019</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>e8e58b818745431a90355916d8ef1aba</ns2:Uuid>
+            <ns2:Ipr.Id>10000020</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>d851f44b62c9413aac22fbb470c63cd3</ns2:Uuid>
+            <ns2:Ipr.Id>10000021</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>e47db7dad2974a82b901ae6d3d105159</ns2:Uuid>
+            <ns2:Ipr.Id>10000022</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>4112a0c232604a58967c24372edb11b4</ns2:Uuid>
+            <ns2:Ipr.Id>10000023</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>08b834121a8f425eb70762b6819ae9c4</ns2:Uuid>
+            <ns2:Ipr.Id>10000024</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>15e12850b02c4396868cbe9dd8c640a9</ns2:Uuid>
+            <ns2:Ipr.Id>10000025</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>44d32d84f1cc469f99c8f990627f7b5d</ns2:Uuid>
+            <ns2:Ipr.Id>10000026</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>4cc4721fe38e4396a3dde0eceb4180a3</ns2:Uuid>
+            <ns2:Ipr.Id>10000027</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>a47bfbe88d5f4deb80f72191219241d7</ns2:Uuid>
+            <ns2:Ipr.Id>10000028</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>59ef59ed359e4123bd04f2ed90f66527</ns2:Uuid>
+            <ns2:Ipr.Id>10000030</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>2fb11c2498b545f09b0bf3143805b6f6</ns2:Uuid>
+            <ns2:Ipr.Id>10000031</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>3f2d15ce6d3f4a14992240fc43be8d07</ns2:Uuid>
+            <ns2:Ipr.Id>10000032</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>9e6d5e80de374162aa41033b7a3c6cb2</ns2:Uuid>
+            <ns2:Ipr.Id>10000033</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Production.Place>
+            <ns2:Uuid>d38949c2c2f346718ecde588f18f9802</ns2:Uuid>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Involved.Company>
+            <ns2:Uuid>f08ce36bb85544bb98808eeca90fe51b</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA PORTUGAL COMERCIO DE OPTICA SA</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>5f22e7928178489dbadfaa7f66095443</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NEDERLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>32b302d9fe074f179677dd94fcc363a4</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORTH EUROPE LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>27be4e2519f648f9a4c5585bbe6a4ebb</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORGE AS</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>6b00e9462511497abbc7c04eaf8b9c82</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA IBERICA SAU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>1fb67d9e95d2403aa783092781524a5c</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA BELGIUM NV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>4195f74717684fcda969b8968f166206</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORDIC AB</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>e5c4972288a14f83a988deb1a400708e</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA CENTRAL EUROPE KFT</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>134587c618254685a86d5d6840b2dbac</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA VERTRIEBSGESELLSCHAFT MBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>df9ac804f1da48c0bfbf377511b5278f</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FASHION BRILLEN VERTRIEBS GMBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>31d98b291f9243629038d8d2dcd5be62</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA POLAND SP ZOO</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>513daf5749ef4b2f997afdfdafa7b92b</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA S.R.L.</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>e85615c1d62247ec86d0baef4028b0b0</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FRANCE SASU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>3966e00beb7f4cafbfe6f7f76babab97</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA  (SWITZERLAND) AG</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>edda605871ed425297a327c1d7785859</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA ITALIA SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>0d0fc3fcf2d14f5494ef1e060f3bd484</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA INTERNATIONAL DISTRIBUTION SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>5549d6f60acd4123817b87b07ddcddec</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HELLAS AE</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>37e35624057f4041b9aa3a95a0ead215</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HOLLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Trader>
+            <ns2:Uuid>a8149fd5f9354c8dbc6d0edd25292948</ns2:Uuid>
+            <ns2:National.Nr>LUXOTTICA INTERNATIO</ns2:National.Nr>
+        </ns2:Trader>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>9441ad978d594f10b045621c62870638</ns2:Uuid>
+            <ns2:Id>70000011</ns2:Id>
+            <ns2:Position>Immagine principale</ns2:Position>
+            <ns2:Description>Immagine principale</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>6be3ba5a81664a2cbe2384f20f4e88ff</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>e89ca8d8f4f6f83de465b8562f95bdc05a3f23c2</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>298e234771c64ed187e9ffb11831f1b8</ns2:Uuid>
+            <ns2:Id>70000012</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Logo on right lens</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>5309c7ef31144e6f85a43100abc25dff</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>b621b1603849bf9638a4b660a0663fc13d3ff6f9</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>6e381554300b495e9d2c81ba6ed27267</ns2:Uuid>
+            <ns2:Id>70000013</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside left temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>28c28c81f97a4a1b8f4e0bd53e77bccd</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>14eca694c318708cd1eae03801c071fc5406b96a</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>4dd0b47844d1430589756e599cce8865</ns2:Uuid>
+            <ns2:Id>70000014</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Product detail</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>04102551662c4b78846ca5333f9f647a</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>4191501f2dc3ed92da5da6aa9128842c17c4dc7e</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>e432ffbdfcb0485a9f4df1913deecd7b</ns2:Uuid>
+            <ns2:Id>70000015</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Logo on outside temples</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>bf24e042f251405a8b912c2f045be706</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>b438b89494974a085481c2bec5909800ea78a237</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>f9a23a79566843d5b5682ae0231ae198</ns2:Uuid>
+            <ns2:Id>70000016</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside right temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>719d7587335343b6a9bb6105bd534d93</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>285f562d0e755df866b4e0cd2c49a241c44a65a9</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+    <ns2:Confidential>0</ns2:Confidential>
+</ns2:Good_Detail>
+    <ns2:Good_Detail>
+        <ns2:Uuid>779af55cb46246f688a0f824d9ced699</ns2:Uuid>
+        <ns2:Id>10000004</ns2:Id>
+        <ns2:Item.Type>AUTH</ns2:Item.Type>
+        <ns2:Description>Occhiali da sole</ns2:Description>
+        <ns2:Customs.Value>0</ns2:Customs.Value>
+        <ns2:National.Value>0</ns2:National.Value>
+        <ns2:Community.Value>0</ns2:Community.Value>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>a95bfabfb9eb43df8d88e978f102d3f9</ns2:Uuid>
+            <ns2:Ipr.Id>10000003</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>3d5b7b7dee7046ecb2458f9d822cdf81</ns2:Uuid>
+            <ns2:Ipr.Id>10000004</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>8f9e606e98064c3fad4bec4bc2b6de55</ns2:Uuid>
+            <ns2:Ipr.Id>10000005</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>b85fa8393a564bc18648f264591b7025</ns2:Uuid>
+            <ns2:Ipr.Id>10000006</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>1f5ff55bc6e2429babb1771b77d8d0fc</ns2:Uuid>
+            <ns2:Ipr.Id>10000007</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>c96d45e565944f278467c0c7943febde</ns2:Uuid>
+            <ns2:Ipr.Id>10000008</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>900cea2d47ac48deb6d048f2a64cc7e8</ns2:Uuid>
+            <ns2:Ipr.Id>10000010</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>dacae1c48a9a46e0a426ec0bd39d35f9</ns2:Uuid>
+            <ns2:Ipr.Id>10000011</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>6d0ee1e4c01b48bab30f45410d2be9bd</ns2:Uuid>
+            <ns2:Ipr.Id>10000012</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>1e7ec74820fc428f8f774a3a81f73ec9</ns2:Uuid>
+            <ns2:Ipr.Id>10000014</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>55b3a7b835fc4d6d90d0cc907d5e8dd6</ns2:Uuid>
+            <ns2:Ipr.Id>10000015</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>a3bd97a69a2e4f85acc132f70f9182d8</ns2:Uuid>
+            <ns2:Ipr.Id>10000016</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>28a7a744667b47b4ad774c9155cfbb71</ns2:Uuid>
+            <ns2:Ipr.Id>10000017</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>6e46fcbc5c6140219a0abe44641ab26c</ns2:Uuid>
+            <ns2:Ipr.Id>10000018</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>676a8546d8744b79bbaffa4737110fa9</ns2:Uuid>
+            <ns2:Ipr.Id>10000019</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>551f242e4fc5411c95d8fce8c6a5ea66</ns2:Uuid>
+            <ns2:Ipr.Id>10000020</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>43984aeb959143d3a7a6ade5bbc1d323</ns2:Uuid>
+            <ns2:Ipr.Id>10000021</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>914bef6e075e48e299af9bea00dc44e6</ns2:Uuid>
+            <ns2:Ipr.Id>10000022</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>c92603a575f943a0b6f61d4a0c3b8aa0</ns2:Uuid>
+            <ns2:Ipr.Id>10000023</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>2732657812a341b6af18b25012dcc9c3</ns2:Uuid>
+            <ns2:Ipr.Id>10000024</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>bddf43aa03374870ad3a44b87ca6e535</ns2:Uuid>
+            <ns2:Ipr.Id>10000025</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>8752614cb77f4a5dab6bb9ce3fe10277</ns2:Uuid>
+            <ns2:Ipr.Id>10000026</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>71e13eed13cb478e9e439d8c8a53ce9e</ns2:Uuid>
+            <ns2:Ipr.Id>10000027</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>2acc78bc3685498c81987698aa7407dd</ns2:Uuid>
+            <ns2:Ipr.Id>10000028</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>d1807278605844c2acebeee13dcbb5b1</ns2:Uuid>
+            <ns2:Ipr.Id>10000030</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>9556b9029382412e9d1febd9dea37103</ns2:Uuid>
+            <ns2:Ipr.Id>10000031</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>b79c9c059e7c43288f66cf27827f4e39</ns2:Uuid>
+            <ns2:Ipr.Id>10000032</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>cc7049c57b834f239099d37aabea5ba2</ns2:Uuid>
+            <ns2:Ipr.Id>10000033</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Production.Place>
+            <ns2:Uuid>241171f761e24163901c194054415a3a</ns2:Uuid>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Involved.Company>
+            <ns2:Uuid>17766ff4ac6346aea493d12ed758df02</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HELLAS AE</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>21971f7c6bfe4807b26ecfa132222871</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA BELGIUM NV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>7980ab6a1c17442196d874858a8e4548</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HOLLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>c871a7c4c2844a5b944a814c0f453622</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FASHION BRILLEN VERTRIEBS GMBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>5c9880eb70fd4be6ae5de6980628488e</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA VERTRIEBSGESELLSCHAFT MBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>d35c9172287544509ade2d0b5c48e610</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA IBERICA SAU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>fbda5a42cc0346498cf9b37f93c4ba86</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORDIC AB</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>d12a033c2c4a48878bec09901bffbebe</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA POLAND SP ZOO</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>ff824f1e05534af9a6fc70becc21d088</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA PORTUGAL COMERCIO DE OPTICA SA</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>0c97115d8a4040389408a89575c17b61</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA CENTRAL EUROPE KFT</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>1492bad2243a41db990d34ed015f0f97</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORGE AS</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>5a30c68bd08c4e0db3b5df7b85ec0152</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA INTERNATIONAL DISTRIBUTION SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>4d8a70334e514a21b9958382a205053c</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NEDERLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>47b2d6d18b234aaa88280e305140269e</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA  (SWITZERLAND) AG</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>c31aee5ea33d4aefacbe31a0f6c5ae99</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORTH EUROPE LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>e0763018e6a64e49be9fce8bc3e0f45b</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA ITALIA SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>53e6dde63f93471eb13a238f7e73789d</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA S.R.L.</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>8288bc6be6234849ae592dafe18ca438</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FRANCE SASU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Trader>
+            <ns2:Uuid>a3e71a7d5efb4e7aa7ce4f08c3e50761</ns2:Uuid>
+            <ns2:National.Nr>LUXOTTICA INTERNATIO</ns2:National.Nr>
+        </ns2:Trader>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>b7f3c4c1ee474c20ac1ed7bb35b56b30</ns2:Uuid>
+            <ns2:Id>70000017</ns2:Id>
+            <ns2:Position>Immagine principale</ns2:Position>
+            <ns2:Description>Immagine principale</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>7d0ba77c2032428190348391cc5fc52f</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>c9d6e48e58b9afccc3cc82a7dfa9d8bb00f5c18a</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>47c24001953f4bca90c9334d0f23c31b</ns2:Uuid>
+            <ns2:Id>70000018</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Right lens logo</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>f2650807a4e9426f9270e5fb3d72e965</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>ea1a6cd1d096ccea88c5f481989102e32faafba0</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>e345af77443e4b7c92c809bbe59756d1</ns2:Uuid>
+            <ns2:Id>70000019</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Product details</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>16b4da74306643ab9a47944b35be1f6f</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>99c4b97d5793dd977788c1a0bd664da385b9038b</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>4ec7ff20294a406fb410dba8cef8a156</ns2:Uuid>
+            <ns2:Id>70000020</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside right temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>c7756f4fd57340a68ce50c61a2d06e86</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>5ca4793b7742c4fc0a6208ea64ccb3211090b112</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>7f00dd45b2764dacbf4307ac67e1942f</ns2:Uuid>
+            <ns2:Id>70000021</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside left temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>bd1b6c3f169945e6998e2b20404f1807</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>3de2881e1c32b062567223302644dee111ec1157</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+    <ns2:Confidential>0</ns2:Confidential>
+</ns2:Good_Detail>
+    <ns2:Good_Detail>
+        <ns2:Uuid>d0cf347925a54489b6fa9b71ba55bb07</ns2:Uuid>
+        <ns2:Id>10000005</ns2:Id>
+        <ns2:Item.Type>AUTH</ns2:Item.Type>
+        <ns2:Description>Occhiali da sole</ns2:Description>
+        <ns2:Customs.Value>0</ns2:Customs.Value>
+        <ns2:National.Value>0</ns2:National.Value>
+        <ns2:Community.Value>0</ns2:Community.Value>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>748e0db35e4c4ded92dfd42363006f5a</ns2:Uuid>
+            <ns2:Ipr.Id>10000003</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>3fdfb21c36ae4d20852a3e821d76391a</ns2:Uuid>
+            <ns2:Ipr.Id>10000004</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>d4d9c1b3916745c4943f77a48c0d13e6</ns2:Uuid>
+            <ns2:Ipr.Id>10000005</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>f55d35d9ff9c4d19bb7784d50fa6ad24</ns2:Uuid>
+            <ns2:Ipr.Id>10000006</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>259aae011ef44cd6a757ac1b8086b31d</ns2:Uuid>
+            <ns2:Ipr.Id>10000007</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>c1a8c39f22c64951b0d2be2c5ce0452f</ns2:Uuid>
+            <ns2:Ipr.Id>10000008</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>ab1c1102127f4809ba7968f4219c9e81</ns2:Uuid>
+            <ns2:Ipr.Id>10000010</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>aa1dcb2d9a5b4993a6d9dd5e61c1bf4a</ns2:Uuid>
+            <ns2:Ipr.Id>10000011</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>2bcc64da9fa04c58ad6fb241d470e116</ns2:Uuid>
+            <ns2:Ipr.Id>10000012</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>5ea97101ee6849c69681e7a2a22f91b8</ns2:Uuid>
+            <ns2:Ipr.Id>10000014</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>ff11328077a04b02885eaafe8763afd5</ns2:Uuid>
+            <ns2:Ipr.Id>10000015</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>f98e78f49f964cde9adaa41b1e75630e</ns2:Uuid>
+            <ns2:Ipr.Id>10000016</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>fd2a18d35b5842ffac9e19a3acd84048</ns2:Uuid>
+            <ns2:Ipr.Id>10000017</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>6e71306b8de848f9808af64b03b8a557</ns2:Uuid>
+            <ns2:Ipr.Id>10000018</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>4b5bc2acd1a6438a8590d55f12ff9f4e</ns2:Uuid>
+            <ns2:Ipr.Id>10000019</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>8534025246134c8dafec07dde835bbc4</ns2:Uuid>
+            <ns2:Ipr.Id>10000020</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>276cd4adbd4f49b19180b93f644686a6</ns2:Uuid>
+            <ns2:Ipr.Id>10000021</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>09c8d3c20f8d401b9b12643af658de96</ns2:Uuid>
+            <ns2:Ipr.Id>10000022</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>24809eae1c1a49ca8be6ee51d9e2be05</ns2:Uuid>
+            <ns2:Ipr.Id>10000023</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>2e60752818a1423eb0e2938d191dd85a</ns2:Uuid>
+            <ns2:Ipr.Id>10000024</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>d49ef41a08d342439720bd64cf5011f7</ns2:Uuid>
+            <ns2:Ipr.Id>10000025</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>ea94e4e49df6455bb12957c2c93f6840</ns2:Uuid>
+            <ns2:Ipr.Id>10000026</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>f5c119a62fa34483864a6854e05071a4</ns2:Uuid>
+            <ns2:Ipr.Id>10000027</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>8ab25132913f43578cea961c53e4dae8</ns2:Uuid>
+            <ns2:Ipr.Id>10000028</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>9efb477c88c9482b9d11a06e65a83093</ns2:Uuid>
+            <ns2:Ipr.Id>10000030</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>65b4cf6c6baf45ae9db1804f753666c7</ns2:Uuid>
+            <ns2:Ipr.Id>10000031</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>69ec1055512f47c098ea9ae17c2b3e96</ns2:Uuid>
+            <ns2:Ipr.Id>10000032</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>63aee49b00e443a4a0c88d716021ff1a</ns2:Uuid>
+            <ns2:Ipr.Id>10000033</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Production.Place>
+            <ns2:Uuid>758ab595e235489b8e13044f652cefc4</ns2:Uuid>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Involved.Company>
+            <ns2:Uuid>92e6a60d5d554b58905ecbaf5472adb4</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA BELGIUM NV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>abf8ef44e31f458b83b09ff34731eb8f</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA INTERNATIONAL DISTRIBUTION SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>8c11c1eb0935420fb8f4a62b210ce0c0</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NEDERLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>f938c1d832894f368fb73484f9b1839c</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA PORTUGAL COMERCIO DE OPTICA SA</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>9cd8323809af419f8c0e5b24ad72a721</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORDIC AB</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>3456efcabb63483c9ffac64d0595665b</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA VERTRIEBSGESELLSCHAFT MBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>a573ec354e9f4535b206c1e6eb48dfce</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA  (SWITZERLAND) AG</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>162705071e9c44d388fd4abb1fc562a1</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA ITALIA SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>40d46fe1e1124dfbb0c9c2f68fa0ddcd</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA POLAND SP ZOO</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>f6f7a44f40fb42bc9f02877888893b6f</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORGE AS</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>a5933339480c46378e41942fd9f08005</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA S.R.L.</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>2b0d2de11ae4480aa35b3730d13b6356</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HOLLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>ffe0977d2d1649368d2f2d69e6cb02e0</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HELLAS AE</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>d0e920bf605f46fa9ebc58dedec37c28</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA IBERICA SAU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>767987d216764f858ec2fd863eb1ea26</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORTH EUROPE LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>4356c75a6c5142c2bce51c2ce989b7f5</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FASHION BRILLEN VERTRIEBS GMBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>2529b5eddb05403094a61f175cd2ba37</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FRANCE SASU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>f8fcc4e6fb094c4aabed9b6d700d543c</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA CENTRAL EUROPE KFT</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Trader>
+            <ns2:Uuid>1c2a2e9820ce48c6bdb31b70cac1e04c</ns2:Uuid>
+            <ns2:National.Nr>LUXOTTICA INTERNATIO</ns2:National.Nr>
+        </ns2:Trader>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>81fe2a73e502459e9191cab6ef9011e5</ns2:Uuid>
+            <ns2:Id>70000022</ns2:Id>
+            <ns2:Position>Immagine principale</ns2:Position>
+            <ns2:Description>Immagine principale</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>47438a705ea548e38860879a281b2512</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>11a975f13d4131b9d3e1629cbf108d5a039ccb57</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>40b48235009e44eb95226a1da672ced2</ns2:Uuid>
+            <ns2:Id>70000023</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Logo on temples - detail -</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>d4d1e3f94d4846e98831ec28d6a43536</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>b94331b91a56d2974ddc31e0b477a4ed32d69035</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>71502b7bdae24894a1e8c2f3683452e2</ns2:Uuid>
+            <ns2:Id>70000024</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside left temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>b810a0f2b8464812a1eea0c093522bef</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>06469be12e3091b8bd2606cc36a1360d08170aa2</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>bb638f7dbf4b408a9fa3ee33cf144342</ns2:Uuid>
+            <ns2:Id>70000025</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Inside right temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>a254beb587c042a0a0f16c480517e5f5</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>c9e56d29d180ae3e9bc957a32cd8d788bed864a3</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>beb427657d464937ad4b43a544e30e96</ns2:Uuid>
+            <ns2:Id>70000026</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Logo on right lens</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>8d76638ee99c4e55b4d78abe120b352e</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>10f1bba0c61865042796cccb618c23b582729d53</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+    <ns2:Confidential>0</ns2:Confidential>
+</ns2:Good_Detail>
+    <ns2:Good_Detail>
+        <ns2:Uuid>ed85015f6aed4164a2c76403fbddd18b</ns2:Uuid>
+        <ns2:Id>10000006</ns2:Id>
+        <ns2:Item.Type>AUTH</ns2:Item.Type>
+        <ns2:Description>Occhiali da sole</ns2:Description>
+        <ns2:Customs.Value>0</ns2:Customs.Value>
+        <ns2:National.Value>0</ns2:National.Value>
+        <ns2:Community.Value>0</ns2:Community.Value>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>930ff7b815ab4503a3015245c71e0e46</ns2:Uuid>
+            <ns2:Ipr.Id>10000003</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>d0dc4a43e93a483586bd54bb52e4a730</ns2:Uuid>
+            <ns2:Ipr.Id>10000004</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>99c7592e06e54e129a98e563bfe9276a</ns2:Uuid>
+            <ns2:Ipr.Id>10000005</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>b490db5cf54e48a4a7adb51ce5d3e528</ns2:Uuid>
+            <ns2:Ipr.Id>10000006</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>a50d328218b64e1c81d572b8d5e7d858</ns2:Uuid>
+            <ns2:Ipr.Id>10000007</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>499e8706d31f4fd5a314afd8ae5cbbd7</ns2:Uuid>
+            <ns2:Ipr.Id>10000010</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>97777102e31747b2bf5c1d69f6f07c98</ns2:Uuid>
+            <ns2:Ipr.Id>10000011</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>30951dccc97b4a46936a81c28cc02d49</ns2:Uuid>
+            <ns2:Ipr.Id>10000012</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>943a0a2814aa434fa21f70729aa51a74</ns2:Uuid>
+            <ns2:Ipr.Id>10000014</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>3eb40ae9b59d4bd0869601a90e8f4d80</ns2:Uuid>
+            <ns2:Ipr.Id>10000015</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>a857b0c1a1124974a95395fa37da8101</ns2:Uuid>
+            <ns2:Ipr.Id>10000016</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>9d220192d3314eed8427cf395decbde9</ns2:Uuid>
+            <ns2:Ipr.Id>10000017</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>6fef180d0e124a2d9302fdc7e7b92b8b</ns2:Uuid>
+            <ns2:Ipr.Id>10000018</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>0a7a8473345046aab2a15f20ce185147</ns2:Uuid>
+            <ns2:Ipr.Id>10000019</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>bdf93184b4834b52ba8f7b7409f47819</ns2:Uuid>
+            <ns2:Ipr.Id>10000020</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>cfc4062b6a35417fbb307ef6b7edc690</ns2:Uuid>
+            <ns2:Ipr.Id>10000021</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>32b54c96592a4fcbb907a0b5f5789cc2</ns2:Uuid>
+            <ns2:Ipr.Id>10000022</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>29e865ce25ff454a9812ccce7b7c336a</ns2:Uuid>
+            <ns2:Ipr.Id>10000023</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>76b284045d644708b3ef34f72dd29aba</ns2:Uuid>
+            <ns2:Ipr.Id>10000024</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>5624fae2c6de4e89a14e20058332999e</ns2:Uuid>
+            <ns2:Ipr.Id>10000025</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>947dd9d130dd4959b1656afe84bb7bdb</ns2:Uuid>
+            <ns2:Ipr.Id>10000026</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>b20380b1eb5a4d37bd03242a136e6a12</ns2:Uuid>
+            <ns2:Ipr.Id>10000027</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>9c13641f5db840aa8d65130cbd3da9b7</ns2:Uuid>
+            <ns2:Ipr.Id>10000028</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>da475ae9dd28470b884662551b0993c4</ns2:Uuid>
+            <ns2:Ipr.Id>10000030</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>aa4cca4095b546f6b2763752f4d3138b</ns2:Uuid>
+            <ns2:Ipr.Id>10000031</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>663a3be1d95147d5908a99f65eec0c0c</ns2:Uuid>
+            <ns2:Ipr.Id>10000032</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Associated.Ipr>
+            <ns2:Uuid>002e552a7bd84edcb52b651abe139abd</ns2:Uuid>
+            <ns2:Ipr.Id>10000033</ns2:Ipr.Id>
+        </ns2:Associated.Ipr>
+        <ns2:Production.Place>
+            <ns2:Uuid>bd51b8889adb4c4a8a98f432d5f8cab8</ns2:Uuid>
+            <ns2:CountryCode>CN</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Production.Place>
+            <ns2:Uuid>df654aee3fea47178b6cdd4e33708910</ns2:Uuid>
+            <ns2:CountryCode>IT</ns2:CountryCode>
+            <ns2:Confidential>0</ns2:Confidential>
+        </ns2:Production.Place>
+        <ns2:Involved.Company>
+            <ns2:Uuid>99f5a7d6d34146198695bbad7e7667a7</ns2:Uuid>
+            <ns2:Role>MAN</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA TRISTAR (DONGGUAN) OPTICAL CO LTD</ns2:Name>
+            <ns2:CountryCode>CN</ns2:CountryCode>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>b728ddd3370245f1b4f35c7731cf6a2b</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA PORTUGAL COMERCIO DE OPTICA SA</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>368a05b848124cc2b71c281712cf40d5</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HELLAS AE</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>df72861e308b4086aa20d99b0e211e53</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FASHION BRILLEN VERTRIEBS GMBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>272dc09b9fdc4083860d914b09166fde</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORTH EUROPE LTD</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>21840c2c06534cbc99050c27d60a3e70</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA VERTRIEBSGESELLSCHAFT MBH</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>2e6c7b5eff7247ca914dd58117790456</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORGE AS</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>66209cf5d5d341fb90c19b631b4a3530</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA INTERNATIONAL DISTRIBUTION SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>1734ff4995334a7fbc1eba8c02577707</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA FRANCE SASU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>4e92020b5908483bbf03a3e88712fc00</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA BELGIUM NV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>fcf2ac40c0884888beb7ef8562c1f8e7</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA HOLLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>85e9ae7b7c3042ef8a6f4ffa5644a190</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NORDIC AB</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>fa9d571c3290466482fca10d90bff4e7</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA NEDERLAND BV</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>6a31404d370f44a9a48e94536256bbeb</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA ITALIA SRL</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>741ae6db43cc4cd4817328c9bad51058</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA IBERICA SAU</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>92ac7a7e731546329250c19489a74287</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA  (SWITZERLAND) AG</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>8e76f2e10e1a470884c74fb855cb17c1</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA CENTRAL EUROPE KFT</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Involved.Company>
+            <ns2:Uuid>9d7c7d7a6cb9469c85af3600b564dfc2</ns2:Uuid>
+            <ns2:Role>DIS</ns2:Role>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Name>LUXOTTICA POLAND SP ZOO</ns2:Name>
+        </ns2:Involved.Company>
+        <ns2:Trader>
+            <ns2:Uuid>fa5fabda92944f52b870c50e7fa80016</ns2:Uuid>
+            <ns2:National.Nr>LUXOTTICA INTERNATIO</ns2:National.Nr>
+        </ns2:Trader>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>5edf5d9b3fde496cabe415c010f06cc5</ns2:Uuid>
+            <ns2:Id>70000027</ns2:Id>
+            <ns2:Position>Immagine principale</ns2:Position>
+            <ns2:Description>Immagine principale</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>d238ced1740647528540906241f597e6</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>144a53f29c50344c3451bf246a4c5fbd3de95b19</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>da3828b416fe474a8832cf3c096def4c</ns2:Uuid>
+            <ns2:Id>70000028</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Logo lens detail</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>09a2a14e9d914762a6de19416fe33f30</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>1236b1492e8d243787330d9be675c90ddc58071e</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>a6a9f4cb88eb46bf9b34d158b660c983</ns2:Uuid>
+            <ns2:Id>70000029</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Right inside temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>a1911a60e2a74f56b52ef200902e4f1a</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>b377eff99e2b14c801976d0af7198bf230c9c5c4</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+        <ns2:Good.Distinctive.Feature>
+            <ns2:Uuid>b761536d7f5b4baeb8601031735bb544</ns2:Uuid>
+            <ns2:Id>70000030</ns2:Id>
+            <ns2:Position>Product detail</ns2:Position>
+            <ns2:Description>Immagini del prodotto Descrizione: Left inside temple</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Attachment>
+                <ns2:Att.Id>cb8e2442c7f84bf1a1ed16e754bcea9a</ns2:Att.Id>
+                <ns2:Type>image/jpeg</ns2:Type>
+                <ns2:Image.Category>23</ns2:Image.Category>
+                <ns2:Confidential>0</ns2:Confidential>
+                <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+                <ns2:Checksum.Value>6fd917e5ec766c82cac790ec0844927b4a677e94</ns2:Checksum.Value>
+            </ns2:Attachment>
+        </ns2:Good.Distinctive.Feature>
+    <ns2:Confidential>0</ns2:Confidential>
+</ns2:Good_Detail>
+    <ns2:Additional.Info>
+        <ns2:Uuid>a5e669faa1374d35a2ec8a4c08046b56</ns2:Uuid>
+        <ns2:Id>10000001</ns2:Id>
+        <ns2:Info.Type>PreAfa id</ns2:Info.Type>
+        <ns2:Description>PreAfa id</ns2:Description>
+        <ns2:Confidential>0</ns2:Confidential>
+    </ns2:Additional.Info>
+    <ns2:Additional.Info>
+        <ns2:Uuid>3ea48b98b6e64b4ba6790285582f4bfe</ns2:Uuid>
+        <ns2:Id>10000002</ns2:Id>
+        <ns2:Info.Type>PDF Generated</ns2:Info.Type>
+        <ns2:Description>PDF Generated</ns2:Description>
+        <ns2:Confidential>0</ns2:Confidential>
+        <ns2:Attachment>
+            <ns2:Att.Id>08b04ecf47a04eadb5df6736b819f8ec</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Annex 3 in language [English] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>4e7ee45f52374a4075421a3277d8c43e1d308260</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>41bd3462eea74fe097164debb9eab96d</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA in lingua [Italian] per it part 3/4</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>c75935c6adfb3a3eed46bf4e8d3cc1e17316fcea</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>4dc7d27315b4449086ddf8fd25c1b760</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Antrag auf Tätigwerden in Sprache [German] for it part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>fcf864f62c4a7d6e4089a5d294c81858c0e391ab</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>651fa55f626741f0ad4918bf2bdadc44</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA in lingua [Italian] per it part 1/4</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>cd551ab5944ee8d3791a905082c9d28c82aa089a</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>040de78e1a6b4ebc98b4600363d0499f</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA in language [English] for it part 1/2</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>90b90cee84cfd78d5912e6a1ac4ff193e6e4188e</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>1aa53daaff314f2ca7c42ffaa47fc37f</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Allegato 1 in lingua [Italian] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>4fe4c7eaca144bd4ff329b370dc94ccdb62e9c25</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>3a52699c2e5b47be9e87f1ac191f13e2</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA in language [English] for it part 2/2</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>5e6a9ab599719fdb317086917e658f09276bb403</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>893f926a3c8242b2b10c56fbf78ac961</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Annexe 1 en [French] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>2b4dfec8485e2c781f15186fa3de107ee732cdff</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>23ce1bb52e94425b963d79435604e793</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Anhang 2 in Sprache [German] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>4f618a82f1006f0abd8c92c01a644165c5fc93a8</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>55d4cc13bcac477d9275ff978278ca4d</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Annexe 3 en [French] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>53d3fe53ded4b6c789e5d683f0ba09378b28652c</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>83374e9367364002acf70ab2f24686ff</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA dans la langue [French] pour it part 5/6</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>cbbc3e12b8bf5a166e0d53b125426ead6c9d7458</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>bf0fb3f825864f14b4508e9932ab5beb</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA dans la langue [French] pour it part 4/6</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>740ea1e9925baa71f210f3e789a3a53b3f506176</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>6d2ed139a9c44072a499308a1b7be11e</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Annex 1 in language [English] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>b448c3f358c735b21ff2053a0e26ef905ae9a4f5</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>78444f9c18cd4224b0dbeb0b22b5987d</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA in lingua [Italian] per it part 2/4</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>076b640f11453880c5fb6f0f9b08759ab06fa64d</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>8745daa23e6843518e19bad14e4c274c</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Annexe 2 en [French] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>c613bb779ffc92b2ddc7b4fd030cc8a157acf7b2</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>adf0c6bb00d74a4bb8e7727764815592</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Allegato 3 in lingua [Italian] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>28eda0f2740e546bcf70828ee10121afdbea439a</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>1e865aedb08d4300aed94ecea0b0df6e</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Allegato 2 in lingua [Italian] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>b8068fa1c9492c8345a4ce46518ff0a1dbab25ec</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>3f67d6981a7242b99392da87dde2523f</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA dans la langue [French] pour it part 3/6</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>00a53168731e6c48e3a9b6045486077f66a1c1ff</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>ad176fe3df9e4b259aa36c958c26869d</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA dans la langue [French] pour it part 2/6</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>516fa20ca333d447d26d0f32bfbcfd917e491c59</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>0b39075371604ddaa0aadad897969b9f</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Annex 2 in language [English] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>548037be11302d51f54ae4a90c8d6bcf55cd32e1</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>159ea43a8b68420aa4e28a522ea762ee</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Anhang 3 in Sprache [German] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>355f3b5e63ee8a9e8063eb2a757a926fea62260e</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>9fd4bf676ed746ceb72b5d47a0607a68</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA dans la langue [French] pour it part 1/6</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>a40258f47917d3091b3a16253a100c41de140152</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>ca93be64c77e4399b208effb9f791006</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA dans la langue [French] pour it part 6/6</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>2f2a3cb451bfd6a38839be515bed1d238fdf1c3e</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>8adb5955da584dd18d8a15e7c33edee5</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>Anhang 1 in Sprache [German] part 1/1</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>b6739f1f91483ee3bbe8a6d32a41ccad95e3bacd</ns2:Checksum.Value>
+        </ns2:Attachment>
+        <ns2:Attachment>
+            <ns2:Att.Id>c63dca28a1a941ae93f40f68cc41210c</ns2:Att.Id>
+            <ns2:Type>application/pdf</ns2:Type>
+            <ns2:Description>AFA in lingua [Italian] per it part 4/4</ns2:Description>
+            <ns2:Confidential>0</ns2:Confidential>
+            <ns2:Checksum.Type>SHA1</ns2:Checksum.Type>
+            <ns2:Checksum.Value>b631da8f6f2d591d01ecffab992c0b0fdc33c990</ns2:Checksum.Value>
+        </ns2:Attachment>
+    </ns2:Additional.Info>
+</ns2:Register.Afa>

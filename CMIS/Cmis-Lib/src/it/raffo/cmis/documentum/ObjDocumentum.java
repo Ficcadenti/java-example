@@ -4,85 +4,102 @@ import java.util.Map;
 
 import org.apache.chemistry.opencmis.commons.PropertyIds;
 
+public class ObjDocumentum
+{
 
-public class ObjDocumentum {
-	
 	/* Mappatura costanti prese da PropertyIds per il file di properties */
-	public static final String NAME = PropertyIds.NAME;
-	public static final String OBJECT_TYPE_ID = PropertyIds.OBJECT_TYPE_ID;
-	
-	
-	private byte contenuto[] = null;
-	private String mimeType = "";
-	private String cmisType = "";
-	private String fileNameCmis = null;
-	private String fileNameOrig = null;
-	private String ObjectID     = null;
-	private Map<String, Object> properties = null;
-	
+	public static final String	NAME			= PropertyIds.NAME;
+	public static final String	OBJECT_TYPE_ID	= PropertyIds.OBJECT_TYPE_ID;
+
+	private byte				contenuto[]		= null;
+	private String				mimeType		= "";
+	private String				cmisType		= "";
+	private String				fileNameCmis	= null;
+	private String				fileNameOrig	= null;
+	private String				ObjectID		= null;
+	private Map<String, Object>	properties		= null;
+
+	public String getCmisType()
+	{
+		return this.cmisType;
+	}
+
+	public byte[] getContenuto()
+	{
+		return this.contenuto;
+	}
+
+	public String getFileNameCmis()
+	{
+		return this.fileNameCmis;
+	}
+
+	public String getFileNameOrig()
+	{
+		return this.fileNameOrig;
+	}
+
+	public String getMimeType()
+	{
+		return this.mimeType;
+	}
+
+	public String getObjectID()
+	{
+		return this.ObjectID;
+	}
+
+	public Map<String, Object> getProperties()
+	{
+		return this.properties;
+	}
+
 	public String info()
 	{
 		String str = "";
-		str=str+"\n";
-		str=str+"fileNameCmis = "+fileNameCmis+"\n";
-		str=str+"fileNameOrig = "+fileNameOrig+"\n";
-		str=str+"ObjectID     = "+ObjectID+"\n";
-		str=str+"mimeType     = "+mimeType+"\n";
-		str=str+"cmisType     = "+cmisType+"\n";
+		str = str + "\n";
+		str = str + "fileNameCmis = " + this.fileNameCmis + "\n";
+		str = str + "fileNameOrig = " + this.fileNameOrig + "\n";
+		str = str + "ObjectID     = " + this.ObjectID + "\n";
+		str = str + "mimeType     = " + this.mimeType + "\n";
+		str = str + "cmisType     = " + this.cmisType + "\n";
 		return str;
-		
+
 	}
 
-	public String getFileNameCmis() {
-		return fileNameCmis;
+	public void setCmisType(String cmisType)
+	{
+		this.cmisType = cmisType;
 	}
-	
-	public void setFileNameCmis(String fileNameCmis) {
-		this.fileNameCmis = fileNameCmis;
-	}
-	
-	public String getFileNameOrig() {
-		return fileNameOrig;
-	}
-	
-	public void setFileNameOrig(String fileNameOrig) {
-		this.fileNameOrig = fileNameOrig;
-	}
-	
-	public String getMimeType() {
-		return mimeType;
-	}
-	
-	public void setMimeType(String mimeType) {
-		this.mimeType = mimeType;
-	}
-	public Map<String, Object> getProperties() {
-		return properties;
-	}
-	public void setProperties(Map<String, Object> properties) {
-		this.properties = properties;
-	}
-	public byte[] getContenuto() {
-		return contenuto;
-	}
-	public void setContenuto(byte contenuto[]) {
+
+	public void setContenuto(byte contenuto[])
+	{
 		this.contenuto = contenuto;
 	}
 
-	public String getObjectID() {
-		return ObjectID;
+	public void setFileNameCmis(String fileNameCmis)
+	{
+		this.fileNameCmis = fileNameCmis;
 	}
 
-	public void setObjectID(String objectID) {
-		ObjectID = objectID;
-	}
-	
-	public String getCmisType() {
-		return cmisType;
+	public void setFileNameOrig(String fileNameOrig)
+	{
+		this.fileNameOrig = fileNameOrig;
 	}
 
-	public void setCmisType(String cmisType) {
-		this.cmisType = cmisType;
+	public void setMimeType(String mimeType)
+	{
+		this.mimeType = mimeType;
 	}
-	
+
+	public void setObjectID(String objectID)
+	{
+		this.ObjectID = objectID;
+	}
+
+	public void setProperties(Map<String, Object> properties)
+	{
+		this.properties = properties;
+	}
+
 }
