@@ -18,7 +18,7 @@ import javax.ws.rs.core.MediaType;
 public class SimpleRestService
 {
 
-	@Resource(lookup = "java:/test1")
+	@Resource(lookup = "java:/testJPA")
 	DataSource datasource;
 
 	@GET

@@ -1,5 +1,5 @@
 # java-example
-<strong>Esempi in java (Eclipse & NetBeans)</strong>
+<strong>Esempi in java (Eclipse e NetBeans)</strong>
 <br>
 <br>
 (c) 09/2016 - Raffaele Ficcadenti (raffaele.ficcadenti@gmail.com) <br>

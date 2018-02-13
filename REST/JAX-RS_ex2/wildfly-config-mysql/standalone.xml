@@ -140,7 +140,7 @@
         <subsystem xmlns="urn:jboss:domain:core-management:1.0"/>
         <subsystem xmlns="urn:jboss:domain:datasources:5.0">
             <datasources>
-                <datasource jta="true" jndi-name="java:/test1" pool-name="test1" enabled="true" use-ccm="false">
+                <datasource jta="true" jndi-name="java:/testJPA" pool-name="testJPA" enabled="true" use-ccm="false">
                     <connection-url>jdbc:mysql://localhost:3306/jpa_test</connection-url>
                     <driver-class>com.mysql.jdbc.Driver</driver-class>
                     <driver>mysql</driver>
@@ -423,9 +423,9 @@
             </mail-session>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:naming:2.0">
-        		<bindings>
-        			 <simple name="java:global/mystring" value="Ciao Raffaele JNDI" type="java.lang.String" />
-        		</bindings>
+            <bindings>
+                <simple name="java:global/mystring" value="Ciao Raffaele JNDI" type="java.lang.String"/>
+            </bindings>
             <remote-naming/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:pojo:1.0"/>
@@ -540,9 +540,4 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-    <deployments>
-        <deployment name="mysql-connector-java-5.1.45.zip" runtime-name="mysql-connector-java-5.1.45.zip">
-            <content sha1="58dd59887455f28b7f26fd0c342dad478af29a2e"/>
-        </deployment>
-    </deployments>
 </server>

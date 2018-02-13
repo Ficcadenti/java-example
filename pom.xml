@@ -31,7 +31,7 @@
 		<module>java/lambda</module>
 		<!-- <module>Generic</module> -->
 		<!--<module>Annotazioni_ex1</module> -->
-		<module>c3p0_ex1</module>
+		<module>Java/c3p0_ex1</module>
 		<!--<module>CompareTo</module> -->
 	</modules>
 	<build>

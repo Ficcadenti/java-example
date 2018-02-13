@@ -2,11 +2,11 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/git/sharedLib/eclipselink/jlib/moxy/javax.mail_1.4.0.v201005080615.jar"/>
-	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/git/sharedLib/eclipselink/jlib/moxy/javax.validation_1.1.0.v201304101302.jar"/>
-	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/git/sharedLib/eclipselink/jlib/moxy/jaxb-core_2.2.11.v201407311112.jar"/>
-	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/git/sharedLib/eclipselink/jlib/moxy/jaxb-xjc_2.2.11.v201407311112.jar"/>
-	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/git/sharedLib/eclipselink/jlib/moxy/org.glassfish.javax.json_1.0.4.v201311181159.jar"/>
-	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/git/sharedLib/eclipselink/jlib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/GitHub/sharedLib/eclipselink/jlib/moxy/javax.mail_1.4.0.v201005080615.jar"/>
+	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/GitHub/sharedLib/eclipselink/jlib/moxy/javax.validation_1.1.0.v201304101302.jar"/>
+	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/GitHub/sharedLib/eclipselink/jlib/moxy/jaxb-core_2.2.11.v201407311112.jar"/>
+	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/GitHub/sharedLib/eclipselink/jlib/moxy/jaxb-xjc_2.2.11.v201407311112.jar"/>
+	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/GitHub/sharedLib/eclipselink/jlib/moxy/org.glassfish.javax.json_1.0.4.v201311181159.jar"/>
+	<classpathentry kind="lib" path="D:/Sviluppo/Progetti/GitHub/sharedLib/eclipselink/jlib/eclipselink.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
