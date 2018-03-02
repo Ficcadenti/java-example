@@ -6,7 +6,7 @@
 Ho cercato di raccogliere in questo repository, le basi della programmazione Java.
 Per ogni correzione o suggerimento, non esitate a scrivermi.<br>
 Se volete provare ogni singolo esempio andate sul mio sito <a href="http://www.raffaeleficcadenti.it/">www.raffaeleficcadenti.it</a> nella sezione: <a href="https://www.raffaeleficcadenti.it">i miei sviluppi/Corso Java</a>.<br>
-Buon 'coding'.
+Buon 'coding'...
 Raffaele.
 <ul>
   <li><b>Maven</b>: File di configurazione per repository Maven.</li>
