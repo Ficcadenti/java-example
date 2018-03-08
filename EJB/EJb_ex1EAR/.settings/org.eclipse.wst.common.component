@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EJb_ex1EAR">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="EJb_ex1.jar" deploy-path="/" handle="module:/resource/EJb_ex1/EJb_ex1">
+            <dependent-object>Module_1520454986720</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaas_ex1.war" deploy-path="/" handle="module:/resource/jaas_ex1/jaas_ex1">
+            <dependent-object>Module_1520496545724</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: EJb_ex1Client.jar
+
