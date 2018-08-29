@@ -1,44 +1,32 @@
 package it.raffo.jaxrs;
 
+import java.io.Serializable;
+
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-
 
 @ApplicationScoped
-public class ApplicationData {
-	/**
-	 * 
-	 */
-	private int cont;
-	
-	@Inject
-	private SessionData sessData;
-	
-	
+public class ApplicationData implements Serializable
+{
+	private static final long	serialVersionUID	= 6365843015407004813L;
+	private int					cont;
+
+	public ApplicationData()
+	{
+		System.out.println("ApplicationData");
+	}
+
+	public synchronized int incCounter()
+	{
+		this.cont = this.cont + 1;
+		System.out.println("CONT=" + this.cont);
+		return this.cont;
+	}
+
 	@PostConstruct
 	public void init()
 	{
 		System.out.println("@PostConstruct - ApplicationData");
 	}
-	
-	
-	public ApplicationData() {
-		System.out.println("ApplicationData");
-	}
 
-
-	public synchronized int incCounter()
-	{
-		cont=cont+1;
-		System.out.println("CONT="+cont);
-		return cont;
-	}
-	
-	public String getInfo() {
-		int appCounter=incCounter();
-		int sessCounter=sessData.incCounter();
-		String str="\nappcounter = "+appCounter+", sessCounter = "+sessCounter+"\n";
-        return str;	
-	}
 }
