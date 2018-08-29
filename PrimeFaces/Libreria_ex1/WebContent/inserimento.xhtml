@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+
+<h:body>
+	<h:form>
+
+		<p:growl id="growl" sticky="true" showDetail="true" />
+
+		<p:wizard flowListener="#{beanWizard.onFlowProcess}">
+			<p:tab id="libro" title="Libro">
+				<p:panel header="Info libro">
+					<p:messages />
+					<h:panelGrid columns="2" columnClasses="label, value">
+						<h:outputText value="Titolo: " />
+						<p:inputText value="#{beanWizard.libro.titolo}" />
+
+						<h:outputText value="Serie " />
+						<p:inputText value="#{beanWizard.libro.serie}" />
+
+						<h:outputText value="Collana: " />
+						<p:inputText value="#{beanWizard.libro.collana}" />
+
+						<h:outputText value="Anno: " />
+						<p:inputText value="#{beanWizard.libro.anno}" />
+
+						<h:outputText value="Lingua: " />
+						<p:inputText value="#{beanWizard.libro.lingua}" />
+
+						<h:outputText value="Pagine: " />
+						<p:inputText value="#{beanWizard.libro.pagine}" />
+
+						<h:outputText value="Prezzo: " />
+						<p:inputText value="#{beanWizard.libro.prezzo}" />
+
+						<h:outputText value="ISBN: " />
+						<p:inputText value="#{beanWizard.libro.isbn}" />
+
+						<h:outputText value="Autore: " />
+						<p:inputText value="#{beanWizard.libro.id_autore}" />
+
+						<h:outputText value="Editore: " />
+						<p:inputText value="#{beanWizard.libro.id_editore}" />
+
+						<h:outputText value="Skip to last: " />
+						<h:selectBooleanCheckbox value="#{beanWizard.skip}" />
+					</h:panelGrid>
+				</p:panel>
+			</p:tab>
+
+
+
+			<p:tab id="editore" title="Editore">
+				<p:panel header="info editore">
+					<p:messages />
+					<p:panelGrid columns="2" columnClasses="label, value">
+						<h:outputText value="Nome: " />
+						<p:inputText value="#{beanWizard.editore.nome}" />
+
+						<h:outputText value="Indirizzo: " />
+						<p:inputText value="#{beanWizard.editore.indirizzo}" />
+
+						<h:outputText value="Sito: " />
+						<p:inputText value="#{beanWizard.editore.sito}" />
+
+						<h:outputText value="Skip to last: " />
+						<h:selectBooleanCheckbox value="#{beanWizard.skip}" />
+					</p:panelGrid>
+				</p:panel>
+
+
+			</p:tab>
+
+			<p:tab id="autore" title="Autore">
+				<p:panel header="info autore">
+					<p:messages />
+					<h:panelGrid columns="2" columnClasses="label, value">
+						<h:outputText value="Nome: " />
+						<p:inputText value="#{beanWizard.autore.nome}" />
+
+						<h:outputText value="Cognome: " />
+						<p:inputText value="#{beanWizard.autore.cognome}" />
+
+						<h:outputText value="Nazionalita: " />
+						<p:inputText value="#{beanWizard.autore.nazionalita}" />
+
+						<h:outputText value="Anno di nascita: " />
+						<p:inputText value="#{beanWizard.autore.annoDiNascita}" />
+
+						<h:outputText value="Skip to last: " />
+						<h:selectBooleanCheckbox value="#{beanWizard.skip}" />
+					</h:panelGrid>
+					<p:commandButton value="Submit" actionListener="#{beanWizard.save}"
+						ajax="false" update="growl" />
+				</p:panel>
+			</p:tab>
+
+
+
+		</p:wizard>
+
+
+
+
+	</h:form>
+</h:body>
+
+</html>

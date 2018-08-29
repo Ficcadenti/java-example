@@ -1,0 +1,77 @@
+.ui-clock {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background: white !important;
+	display: block;
+	font-size: 60px !important;
+	padding: 25px;
+	padding-left: 35px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.bottoneIndex {
+	font-size: 35px !important;
+	padding: 35px 0;
+	width: -webkit-fill-available;
+}
+
+.ui-button.ui-state-default.green-button {
+	background-color: #1f9e53;
+	border-color: #107533;
+}
+
+.ui-button.ui-state-default.green-button.ui-state-hover {
+	background-color: #2eb971;
+}
+
+.ui-button.ui-state-default.green-button.ui-state-active {
+	background-color: #178544;
+}
+
+.ui-button.ui-state-default.red-button {
+	background-color: #FF0000;
+	border-color: #9c1627;
+}
+
+.ui-button.ui-state-default.red-button.ui-state-hover {
+	background-color: #e10005;
+}
+
+.ui-button.ui-state-default.red-button.ui-state-active {
+	background-color: #bf0005;
+}
+
+.ui-panelgrid .ui-panelgrid-cell {
+	border-size: 0px;
+	border-style: none;
+	border-color: white;
+	padding: 4px 10px;
+}
+
+.ui-widget-header .ui-inputfield, .ui-widget-content .ui-inputfield {
+	font-size: 30px;
+	height: 65px;
+	width: -webkit-fill-available;
+}
+
+.tabellaIndex {
+	border-collapse: unset;
+	width: -webkit-fill-available;
+}
+
+.selectIndex {
+	width: -webkit-fill-available;
+	font-size: 35px;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+	margin-top: 25px;
+}
+
+.centroLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}

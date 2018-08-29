@@ -1,0 +1,3 @@
+<jboss-web>
+    <context-root>JSF_ex3</context-root>
+</jboss-web>
