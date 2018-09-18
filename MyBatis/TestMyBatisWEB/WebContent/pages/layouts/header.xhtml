@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:composition>
+	<h:form>
+		<div class="header">
+			<b:image value="/resources/images/logo-innovaway.png" style-class="logo" />
+			<div class="header-right">
+				<h:commandLink value="Home" ajax="false" actionListener="#{menuBean.setCurrentView(0)}"
+					styleClass="#{menuBean.currentView==0 ? 'active' : ''}" action="/pages/home.xhtml?faces-redirect=true" />
+				<h:commandLink value="Contatti" ajax="false" actionListener="#{menuBean.setCurrentView(1)}"
+					styleClass="#{menuBean.currentView==1 ? 'active' : ''}" action="/pages/home.xhtml?faces-redirect=true" />
+				<h:commandLink value="Login" ajax="false" actionListener="#{menuBean.setCurrentView(2)}"
+					styleClass="#{menuBean.currentView==2 ? 'active' : ''}" action="login.xhtml?faces-redirect=true"
+					rendered="#{!menuBean.isLogged()}" />
+				<h:commandLink value="Logout" ajax="false" styleClass="#{menuBean.currentView==3 ? 'active' : ''}"
+					action="#{loginBean.logout()}" rendered="#{menuBean.isLogged()}" />
+			</div>
+		</div>
+		<div class="padding-top-30"></div>
+	</h:form>
+</ui:composition>
+</html>

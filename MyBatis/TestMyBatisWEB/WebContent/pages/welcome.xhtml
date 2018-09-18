@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>MyBatis - Homepage</title>
+</h:head>
+
+<h:body>
+	<ui:composition template="/pages/layouts/basic-layout.xhtml">
+		<ui:define name="content">
+			<h:form id="formHome">
+				<div class="col-sm-3 col-md-3 col-lg-3"></div>
+				<b:panel title="MyBatis - Esempio 01" span="6" look="primary">
+					<b:panelGrid columns="1">
+						JNDI: java:/test
+						<br />
+						Database: test
+					</b:panelGrid>
+				</b:panel>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

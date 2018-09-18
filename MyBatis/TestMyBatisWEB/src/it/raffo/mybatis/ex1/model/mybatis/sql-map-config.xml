@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL" />
+		<setting name="logImpl" value="LOG4J" />
+	</settings>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC">
+				<property name="commitRequired" value="true" />
+			</transactionManager>
+
+			<dataSource type="JNDI">
+				<property name="data_source" value="java:/test" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<mapper
+			class="it.raffo.mybatis.ex1.model.mybatis.mapper.TestMapper" />
+	</mappers>
+
+</configuration>
