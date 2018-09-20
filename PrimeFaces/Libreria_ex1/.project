@@ -3,6 +3,7 @@
 	<name>Libreria_ex1</name>
 	<comment></comment>
 	<projects>
+		<project>Soap_ex1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

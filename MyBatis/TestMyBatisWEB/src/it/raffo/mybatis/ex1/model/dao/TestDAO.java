@@ -6,18 +6,30 @@ import org.eclipse.persistence.exceptions.DatabaseException;
 
 import it.raffo.mybatis.ex1.model.pojo.Persona;
 
-public class TestDAO extends MainDAO {
-	public static Persona selectPersonaByID(int id) throws DatabaseException {
+public class TestDAO extends MainDAO
+{
+	public static int countPersone()
+	{
 		beginTransaction();
-		Persona p = getMapper().selectPersonaByID(id);
+		int cont = getMapper().countPersone();
+		commitTransaction();
+		closeTransaction();
+		return cont;
+	}
+
+	public static List<Persona> selectAllPersona()
+	{
+		beginTransaction();
+		List<Persona> p = getMapper().selectAllPersona();
 		commitTransaction();
 		closeTransaction();
 		return p;
 	}
 
-	public static List<Persona> selectAllPersona() {
+	public static Persona selectPersonaByID(int id) throws DatabaseException
+	{
 		beginTransaction();
-		List<Persona> p = getMapper().selectAllPersona();
+		Persona p = getMapper().selectPersonaByID(id);
 		commitTransaction();
 		closeTransaction();
 		return p;

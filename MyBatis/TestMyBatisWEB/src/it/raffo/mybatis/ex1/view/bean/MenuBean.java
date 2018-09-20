@@ -3,24 +3,34 @@ package it.raffo.mybatis.ex1.view.bean;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 import org.apache.log4j.Logger;
 
+import it.raffo.ejb.view.ConverterBeanLocal;
 import it.raffo.mybatis.ex1.model.dao.TestDAO;
 import it.raffo.mybatis.ex1.model.pojo.Persona;
 import it.raffo.mybatis.ex1.util.Constants;
 
 @Named
 @SessionScoped
-public class MenuBean implements Serializable {
+public class MenuBean implements Serializable
+{
 	private static final long	serialVersionUID	= 2958135620185606357L;
-	private int					currentView			= Constants.MENU_HOME;
 	private static final Logger	log					= Logger.getLogger(MenuBean.class);
+	private int					currentView			= Constants.MENU_HOME;
 
-	public int getCurrentView() {
+	@EJB
+	private ConverterBeanLocal	converterBeanLocal;
+
+	public int getCurrentView()
+	{
+
 		log.info("Reading current view");
 
 		// prendo persona dal db
@@ -29,20 +39,42 @@ public class MenuBean implements Serializable {
 
 		List<Persona> pList = TestDAO.selectAllPersona();
 
-		for (Persona e : pList) {
+		for (Persona e : pList)
+		{
 			log.info(e);
+		}
+
+		log.info("Ci sono " + TestDAO.countPersone() + " persone.");
+
+		log.info(
+				"Chiamata all'EJB (con injection): Conversion test:" + this.converterBeanLocal.celsiusToFahrenheit(30));
+
+		try
+		{
+			InitialContext context = new InitialContext();
+			ConverterBeanLocal ejbConverter = (ConverterBeanLocal) context.lookup(Constants.EJB_CONVERTER_JNDI);
+			if (ejbConverter != null)
+			{
+				log.info("Chiamata all'EJB (con lookup): Conversion test:" + ejbConverter.celsiusToFahrenheit(40));
+			}
+		}
+		catch (NamingException e1)
+		{
+			log.error(e1.getMessage(), e1);
 		}
 		return this.currentView;
 	}
 
-	public void setCurrentView(int currentView) {
-		log.info("Setting current view: " + currentView);
-		this.currentView = currentView;
-	}
-
-	public boolean isLogged() {
+	public boolean isLogged()
+	{
 		final FacesContext context = FacesContext.getCurrentInstance();
 		final String userLogged = (String) context.getExternalContext().getSessionMap().get("utente");
-		return userLogged != null && !userLogged.isEmpty();
+		return (userLogged != null) && !userLogged.isEmpty();
+	}
+
+	public void setCurrentView(int currentView)
+	{
+		log.info("Setting current view: " + currentView);
+		this.currentView = currentView;
 	}
 }

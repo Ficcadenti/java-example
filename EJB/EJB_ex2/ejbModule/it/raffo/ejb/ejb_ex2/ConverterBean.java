@@ -1,7 +1,7 @@
 package it.raffo.ejb.ejb_ex2;
 
 import javax.ejb.Stateless;
-
+import it.raffo.ejb.ejb_ex2.Converter;
 import it.raffo.ejb.ejb_ex2.view.ConverterBeanLocal;
 import it.raffo.ejb.ejb_ex2.view.ConverterBeanRemote;
 
