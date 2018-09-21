@@ -2,6 +2,7 @@ package it.raffo.mybatis.ex1.view.bean;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.concurrent.Future;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
@@ -24,6 +25,9 @@ public class MenuBean implements Serializable
 	private static final long	serialVersionUID	= 2958135620185606357L;
 	private static final Logger	log					= Logger.getLogger(MenuBean.class);
 	private int					currentView			= Constants.MENU_HOME;
+
+	private ConverterBeanLocal	ejbConverter		= null;
+	private Future<String>		f					= null;
 
 	@EJB
 	private ConverterBeanLocal	converterBeanLocal;
@@ -49,18 +53,27 @@ public class MenuBean implements Serializable
 		log.info(
 				"Chiamata all'EJB (con injection): Conversion test:" + this.converterBeanLocal.celsiusToFahrenheit(30));
 
-		try
+		if (this.ejbConverter == null)
 		{
-			InitialContext context = new InitialContext();
-			ConverterBeanLocal ejbConverter = (ConverterBeanLocal) context.lookup(Constants.EJB_CONVERTER_JNDI);
-			if (ejbConverter != null)
+			try
 			{
-				log.info("Chiamata all'EJB (con lookup): Conversion test:" + ejbConverter.celsiusToFahrenheit(40));
+
+				InitialContext context = new InitialContext();
+
+				this.ejbConverter = (ConverterBeanLocal) context.lookup(Constants.EJB_CONVERTER_JNDI);
+				if (this.ejbConverter != null)
+				{
+					if (this.f == null)
+					{
+						this.f = this.ejbConverter.processoAsincrono();
+					}
+					log.info("Chiamata all'EJB (con lookup): f.isDone()=" + this.f.isDone());
+				}
 			}
-		}
-		catch (NamingException e1)
-		{
-			log.error(e1.getMessage(), e1);
+			catch (NamingException e1)
+			{
+				log.error(e1.getMessage(), e1);
+			}
 		}
 		return this.currentView;
 	}
