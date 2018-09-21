@@ -13,14 +13,33 @@
 	<ui:composition template="/pages/layouts/basic-layout.xhtml">
 		<ui:define name="content">
 			<h:form id="formHome">
-				<div class="col-sm-3 col-md-3 col-lg-3"></div>
-				<b:panel title="MyBatis - Esempio 01" span="6" look="primary">
-					<b:panelGrid columns="1">
-						JNDI: java:/test
-						<br />
-						Database: test
-					</b:panelGrid>
-				</b:panel>
+				<b:panelGrid columns="2">
+					<b:panel title="MyBatis" look="primary" size="lg">
+						<b:panelGrid columns="2" size="lg">
+							<b:column>
+								JNDI: java:/test
+								<br />
+								Database: test
+							</b:column>
+							<b:column>
+								<b:commandButton value="Test MyBatis" ajax="true" update="@form"
+									look="primary" action="#{testEJBBean.testMyBatis}" />
+							</b:column>
+						</b:panelGrid>
+					</b:panel>
+					<b:panel title="EJB" look="primary" size="lg">
+						<b:growl id="registration_messages" allow-dismiss="true" />
+						<b:panelGrid columns="2" style="display:block; text-align:center"
+							size="lg">
+							<b:commandButton value="Test EJB Stateless" ajax="true"
+								update="@form" look="primary"
+								action="#{testEJBBean.testEJBStateless}" />
+							<b:commandButton value="Test EJB Statfull" ajax="true"
+								update="@form" look="primary"
+								action="#{testEJBBean.testEJBStatfull}" />
+						</b:panelGrid>
+					</b:panel>
+				</b:panelGrid>
 			</h:form>
 		</ui:define>
 	</ui:composition>

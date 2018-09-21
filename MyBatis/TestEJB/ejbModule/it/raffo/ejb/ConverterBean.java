@@ -2,7 +2,6 @@ package it.raffo.ejb;
 
 import java.util.concurrent.Future;
 
-import javax.annotation.Resource;
 import javax.ejb.AsyncResult;
 import javax.ejb.Asynchronous;
 import javax.ejb.Local;
@@ -11,10 +10,6 @@ import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
-import javax.ejb.TransactionManagement;
-import javax.ejb.TransactionManagementType;
-import javax.transaction.SystemException;
-import javax.transaction.UserTransaction;
 
 import it.raffo.ejb.view.ConverterBeanLocal;
 import it.raffo.ejb.view.ConverterBeanRemote;
@@ -25,15 +20,10 @@ import it.raffo.ejb.view.ConverterBeanRemote;
 @Stateless
 @Local(ConverterBeanLocal.class)
 @Remote(ConverterBeanRemote.class)
-@TransactionManagement(TransactionManagementType.CONTAINER)
-@TransactionAttribute(TransactionAttributeType.REQUIRED)
+@TransactionAttribute(TransactionAttributeType.NEVER)
 @LocalBean
 public class ConverterBean implements ConverterBeanRemote, ConverterBeanLocal
 {
-
-	@Resource
-	private UserTransaction usertransaction;
-
 	/**
 	 * Default constructor.
 	 */
@@ -52,18 +42,6 @@ public class ConverterBean implements ConverterBeanRemote, ConverterBeanLocal
 	public float fahrenheitToCelsius(float temperature)
 	{
 		return (temperature - 32) / 1.8f;
-	}
-
-	private void metodo1()
-	{
-		// TODO Auto-generated method stub
-
-	}
-
-	private void metodo2()
-	{
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -91,25 +69,7 @@ public class ConverterBean implements ConverterBeanRemote, ConverterBeanLocal
 	@Override
 	public void testTransazione()
 	{
-		try
-		{
-			this.usertransaction.begin();
-			this.metodo1();
-			this.metodo2();
-			this.usertransaction.commit();
-		}
-		catch (Exception ecc)
-		{
-			try
-			{
-				this.usertransaction.rollback();
-			}
-			catch (IllegalStateException | SecurityException | SystemException e)
-			{
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		// TODO Auto-generated method stub
 	}
 
 }

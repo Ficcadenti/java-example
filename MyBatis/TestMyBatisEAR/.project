@@ -5,6 +5,7 @@
 	<projects>
 		<project>TestMyBatisWEB</project>
 		<project>TestEJB</project>
+		<project>TestEJBStateful</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
