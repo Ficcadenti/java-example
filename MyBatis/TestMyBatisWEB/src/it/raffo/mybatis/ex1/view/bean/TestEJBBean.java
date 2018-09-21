@@ -91,10 +91,7 @@ public class TestEJBBean implements Serializable
 		this.carrello.addItem("Penna");
 
 		log.info("Lista prodotti:");
-		for (String item : this.carrello.getItems())
-		{
-			log.info(item);
-		}
+		this.carrello.getItems().forEach((v) -> log.info("Prodotto : " + v));
 	}
 
 	public void testMyBatis()
