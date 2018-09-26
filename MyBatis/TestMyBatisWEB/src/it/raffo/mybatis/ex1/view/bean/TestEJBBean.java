@@ -3,6 +3,7 @@ package it.raffo.mybatis.ex1.view.bean;
 import java.io.Serializable;
 import java.util.List;
 import java.util.concurrent.Future;
+import java.util.function.Consumer;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
@@ -92,6 +93,16 @@ public class TestEJBBean implements Serializable
 
 		log.info("Lista prodotti:");
 		this.carrello.getItems().forEach((v) -> log.info("Prodotto : " + v));
+		Consumer<String> action = new Consumer<String>()
+		{
+			@Override
+			public void accept(String t)
+			{
+				log.info("Prodotto : " + t);
+
+			}
+		};
+		this.carrello.getItems().forEach(action);
 	}
 
 	public void testMyBatis()

@@ -7,14 +7,7 @@
 			<attribute name="owner.project.facets" value="jst.appclient"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_162">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/r.ficcadenti/Desktop/jlibs-xml-2.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/r.ficcadenti/Desktop/jlibs-xsd-2.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/r.ficcadenti/Desktop/commons-io-2.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/r.ficcadenti/Desktop/xerces-2.9.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sharedXml"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
