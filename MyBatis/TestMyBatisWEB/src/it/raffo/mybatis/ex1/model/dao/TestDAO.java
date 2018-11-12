@@ -17,6 +17,15 @@ public class TestDAO extends MainDAO
 		return cont;
 	}
 
+	public static boolean modificaNomePersona(String nome, String cognome)
+	{
+		beginTransaction();
+		boolean b = getMapper().modificaNomePersona(nome, cognome);
+		commitTransaction();
+		closeTransaction();
+		return b;
+	}
+
 	public static List<Persona> selectAllPersona()
 	{
 		beginTransaction();

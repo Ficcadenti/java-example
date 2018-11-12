@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (http://www.altova.com) by  () -->
+<xsd:schema xmlns:hrp="http://hrp.exolab.it/HRPDemo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" targetNamespace="http://hrp.exolab.it/HRPDemo" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xsd:element name="hrp">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Curriculum" type="hrp:curriculum"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="curriculum">
+		<xsd:sequence>
+			<xsd:element name="affidabilita" type="xsd:float"/>
+			<xsd:element name="curriculum" type="xsd:base64Binary" minOccurs="0"/>
+			<xsd:element name="idCurriculum" type="xsd:int"/>
+			<xsd:element name="nameTemplate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="nominativo" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="outputs" type="hrp:output" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="processato" type="xsd:int"/>
+			<xsd:element name="tokens" type="hrp:token" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="uploader" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="output">
+		<xsd:sequence>
+			<xsd:element name="chiave" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="curriculum" type="hrp:curriculum" minOccurs="0"/>
+			<xsd:element name="idOutput" type="xsd:int"/>
+			<xsd:element name="modulo" type="hrp:modulo" minOccurs="0"/>
+			<xsd:element name="resultTemplates" type="hrp:resultTemplate" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="valore" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="resultTemplate">
+		<xsd:sequence>
+			<xsd:element name="idResultTemplate" type="xsd:int"/>
+			<xsd:element name="output" type="hrp:output" minOccurs="0"/>
+			<xsd:element name="template" type="hrp:template" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="template">
+		<xsd:sequence>
+			<xsd:element name="idTemplate" type="xsd:int"/>
+			<xsd:element name="nameTemplate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="valore" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="token">
+		<xsd:sequence>
+			<xsd:element name="curriculum" type="hrp:curriculum" minOccurs="0"/>
+			<xsd:element name="id" type="xsd:int"/>
+			<xsd:element name="idUtente" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="modulo" type="hrp:modulo" minOccurs="0"/>
+			<xsd:element name="token" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="utente">
+		<xsd:sequence>
+			<xsd:element name="cognome" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="dataRegistrazione" type="xsd:dateTime" minOccurs="0"/>
+			<xsd:element name="email" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="idUtente" type="xsd:int"/>
+			<xsd:element name="nome" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="password" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ruolo" type="hrp:ruolo" minOccurs="0"/>
+			<xsd:element name="societa" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="stato" type="hrp:stato" minOccurs="0"/>
+			<xsd:element name="token" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="modulo">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="FACEBOOK"/>
+			<xsd:enumeration value="LINKEDIN"/>
+			<xsd:enumeration value="ANALISI"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ruolo">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="UTENTE"/>
+			<xsd:enumeration value="ADMIN"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="stato">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="IN_ATTESA_DI_VALIDAZIONE"/>
+			<xsd:enumeration value="DISABILITATO"/>
+			<xsd:enumeration value="ABILITATO"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

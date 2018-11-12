@@ -1,6 +1,14 @@
 package it.raffo.pdfbox;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.io.RandomAccessFile;
@@ -13,8 +21,35 @@ public class Client_ex1
 
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
 		System.out.println("Test PDFBox - ex1");
+		String fileNameDizionario = "D:\\Temp\\dizionario.txt";
+		List<String> listParole = new ArrayList<>();
+
+		try (Stream<String> stream = Files.lines(Paths.get(fileNameDizionario), StandardCharsets.ISO_8859_1))
+		{
+			stream.forEach(p -> listParole.add(p));
+		}
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// String fileNameAlfabeto = "D:\\Temp\\paesi.txt";
+		// List<String> listParoleA = new ArrayList<>();
+		//
+		// try (Stream<String> stream = Files.lines(Paths.get(fileNameAlfabeto),
+		// StandardCharsets.ISO_8859_1))
+		// {
+		// stream.forEach(p -> listParoleA.add(p));
+		// }
+		// catch (IOException e)
+		// {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
+
+		String regexDizionario = "(?i)\\b(" + String.join("|", listParole) + ")\\b";
 
 		PDFParser parser = null;
 		PDDocument pdDoc = null;
@@ -22,7 +57,7 @@ public class Client_ex1
 		PDFTextStripper pdfStripper;
 
 		String parsedText;
-		String fileName = "C:\\Users\\r.ficcadenti\\Desktop\\Manuali\\Algoritmi\\cinesi.pdf";
+		String fileName = "D:\\Temp\\cv.pdf";
 		File file = new File(fileName);
 		try
 		{
@@ -33,7 +68,9 @@ public class Client_ex1
 			pdfStripper = new PDFTextStripper();
 			pdDoc = new PDDocument(cosDoc);
 			parsedText = pdfStripper.getText(pdDoc);
-			System.out.println(parsedText.replaceAll("[^A-Za-z0-9. ]+", ""));
+			List<String> parole = Arrays
+					.asList(parsedText.replaceAll(regexDizionario, "").replaceAll("\\s+", "::").split("::"));
+			parole.forEach(p -> System.out.println("[" + p.trim() + "]"));
 		}
 		catch (Exception e)
 		{

@@ -119,6 +119,8 @@ public class TestEJBBean implements Serializable
 			log.info(e);
 		}
 		log.info("Ci sono " + TestDAO.countPersone() + " persone.");
+		log.info("update=" + TestDAO.modificaNomePersona("rossi", "rossi"));
+		log.info("update=" + TestDAO.modificaNomePersona("rossi", "xxxxx"));
 
 	}
 

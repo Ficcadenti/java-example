@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (http://www.altova.com) by  () -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:include schemaLocation="COMPLEX_TYPE.xsd"/>
+	<xs:element name="DEP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="NUMERO_DOCUMENTI">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="0"/>
+							<xs:maxInclusive value="9999999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="NUMERO_DISTINTE" minOccurs="1" maxOccurs="1">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DISTINTA" type="DISTINTA_DEP_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DEF">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="NUMERO_DOCUMENTI">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="0"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="NUMERO_DISTINTE" minOccurs="1" maxOccurs="1">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DISTINTA" type="DISTINTA_DEF_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EDE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_DISTINTE_CONTROLLATE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DISTINTA_CONTROLLATA" type="DISTINTA_CONTROLLATA_EDE_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RCA">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_ACK_RECAPITI">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ACCETTAZIONE_RECAPITO" type="ACCETTAZIONE_RECAPITO_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RCP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_PRE_FATTURE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PRE_FATTURA_RCP" type="PRE_FATTURA_RCP_TYPE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ERC">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_PRE_FATTURA_CONTROLLATE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PRE_FATTURA_CONTROLLATA" type="PRE_FATTURA_CONTROLLATA_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RED">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_RENDICONTAZIONI">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="RENDICONTAZIONE_CONSEGNA" type="RENDICONTAZIONE_CONSEGNA_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ERE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_ESITI_RENDICONTAZIONE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="RENDICONTAZIONE_CONTROLLATA_ERE" type="CONTROLLATA_BASE_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IMD">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_IMMAGINI">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ZIP_FILE">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="256"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="HASH_CODE_ZIP_FILE">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="256"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="IMMAGINI">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IMMAGINE" type="IMMAGINE_TYPE" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EIM">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_ARCHIVI_IMMAGINI_CONTROLLATI">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ARCHIVIO_IMMAGINI_CONTROLLATO" type="CONTROLLATA_BASE_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SCD">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_DOCUMENTI_DI_TRASPORTO">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DOCUMENTO_DI_TRASPORTO" type="DOCUMENTO_DI_TRASPORTO_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ESC">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_SCATOLE_CONTROLLATE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SCATOLA_CONTROLLATA" type="CONTROLLATA_BASE_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="REP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_PRE_FATTURE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PRE_FATTURA_REP" type="PRE_FATTURA_REP_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ERP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_PRE_FATTURE_CONTROLLATE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PRE_FATTURA_CONTROLLATA" type="PRE_FATTURA_CONTROLLATA_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VDE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_VERIFICHE_RICHIESTE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="VERIFICA_RICHIESTA" type="VERIFICA_RICHIESTA_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ERV">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="NUMERO_RISPOSTE_CONTROLLATE">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="RISPOSTA_CONTROLLATA" type="CONTROLLATA_BASE_TYPE" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CAP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="ELENCO_CAP_NON_GESTITI" type="ELENCO_CAP_NON_GESTITI_TYPE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ACK">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="HEADER" type="HEADER_TYPE"/>
+				<xs:element name="FILE_RICEVUTO" type="FILE_RICEVUTO_TYPE"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

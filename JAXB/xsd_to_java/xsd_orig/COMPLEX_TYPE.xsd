@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2016 (http://www.altova.com) by  () -->
+<!-- Created with Liquid XML Studio - FREE Community Edition 7.0.2.746 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="HEADER_TYPE">
+		<xs:sequence>
+			<xs:element name="NOME_FLUSSO" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MITTENTE_FLUSSO" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZ_FLUSSO" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="DESTINATARIO_FLUSSO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_FLUSSO" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IMMAGINE_TYPE">
+		<xs:sequence>
+			<xs:element name="NOME_IMMAGINE_FRONTE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="HASH_CODE_FRONTE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NOME_IMMAGINE_RETRO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="HASH_CODE_RETRO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_IMMAGINE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_ID_SCATOLA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PROGRESSIVO_CARTACEO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CONTROLLATA_BASE_TYPE">
+		<xs:sequence>
+			<xs:element name="IDENTIFICATIVO_FILE_ESITI" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE_ESITI" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="IDENTIF_FILE_CONTROLLATO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_ESITO" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUMERO_DETTAGLI" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DETTAGLIO" type="DETTAGLIO_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PALLET_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGR_PALLET" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_SCATOLE">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SCATOLA" type="SCATOLA_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SCATOLA_TYPE">
+		<xs:sequence>
+			<xs:element name="NUM_ID_SCATOLA" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_MAZZETTE" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MAZZETTA" type="MAZZETTA_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MAZZETTA_TYPE">
+		<xs:sequence>
+			<xs:element name="NUM_ID_MAZZETTA" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_CARTACEI">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CARTACEO" type="CARTACEO_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CARTACEO_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGR_MAZZETTA">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_RACCOMANDATA" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_DOCUMENTO" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_SPEDIZIONE" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_OGGETTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ERRORE_TYPE">
+		<xs:sequence>
+			<xs:element name="TAG_ERRATO_NOME">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TAG_ERRATO_CONTENUTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="80"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_ERRORE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_ERRORE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MORE_INFO_TYPE"/>
+	<xs:complexType name="IDENTIFICATIVO_TYPE">
+		<xs:sequence>
+			<xs:element name="GUID">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="70"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATAMATRIX">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="72"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MORE_INFO" type="MORE_INFO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DISTINTA_CONTROLLATA_EDE_TYPE">
+		<xs:complexContent>
+			<xs:extension base="CONTROLLATA_BASE_TYPE">
+				<xs:sequence>
+					<xs:element name="DATA_RITIRO_MATERIALITA" type="xs:date"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DOCUMENTO_DI_TRASPORTO_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO_DOCUMENTO_DI_TRASPORTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_DDT" type="xs:date"/>
+			<xs:element name="COMMITTENTE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IDENTIFICATIVO_FILE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE" type="xs:date"/>
+			<xs:element name="LOTTO_TERRITORIALE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPOLOGIA_CONTENUTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_TOT_PALLET">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_TOT_SCATOLE">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_TOT_CARTACEI">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PALLET" type="PALLET_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DISTINTA_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IDENTIFICATIVO_FILE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE" type="xs:date"/>
+			<xs:element name="TIPO_MODELLO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_AMBITO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_CLIENTE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_SPEDIZIONE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LOTTO_TERRITORIALE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DISTINTA_DEP_TYPE">
+		<xs:complexContent>
+			<xs:extension base="DISTINTA_TYPE">
+				<xs:sequence>
+					<xs:element name="ID_FUSIONE" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="10"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DATA_PREVISTA_COMPLETAMENTO_STAMPA" type="xs:date"/>
+					<xs:element name="DATA_PREVISTA_POSTALIZZAZIONE" type="xs:date"/>
+					<xs:element name="NUMERO_RIFERIMENTO">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="3"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CODICE_RECAPITISTA">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CODICE_SERVICE_STAMPA">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FORMATO_BUSTA" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FORMATO_FOGLI">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NUMERO_PREVISTO_OGGETTI_DA_RECAPITARE">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="99999"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="MORE_INFO" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DISTINTA_DEF_TYPE">
+		<xs:complexContent>
+			<xs:extension base="DISTINTA_TYPE">
+				<xs:sequence>
+					<xs:element name="ID_FUSIONE">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="10"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DATA_COMPLETAMENTO_STAMPA" type="xs:date"/>
+					<xs:element name="DATA_POSTALIZZAZIONE" type="xs:date"/>
+					<xs:element name="NUMERO_RIFERIMENTO">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="3"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CODICE_RECAPITISTA">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CODICE_SERVICE_STAMPA">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FORMATO_BUSTA">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FORMATO_FOGLI">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NUMERO_DETTAGLI">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="99999"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DETTAGLIO" type="DETTAGLIO_DEF_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RENDICONTAZIONE_CONSEGNA_TYPE">
+		<xs:complexContent>
+			<xs:extension base="DISTINTA_TYPE">
+				<xs:sequence>
+					<xs:element name="ID_FUSIONE">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="10"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NOME_LOTTO_S">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="4"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DATA_PRESA_IN_CARICO_RECAPITO" type="xs:date"/>
+					<xs:element name="FLAG_TIPO_POSTALIZZAZIONE">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NUMERO_DETTAGLI">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="99999"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DETTAGLIO" type="DETTAGLIO_RED_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DETTAGLIO_TYPE">
+		<xs:sequence>
+			<xs:element name="TIPO_MODELLO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_AMBITO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PROGRESSIVO_DETTAGLIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUMERO_ERRORI">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ERRORE" type="ERRORE_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DETTAGLIO_DEF_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO_DETTAGLIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NOME_LOTTO_S">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_GESTIONE_RESO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_RACCOMANDATA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_DOCUMENTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DESTINATARIO" type="DESTINATARIO_DEF_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="MITTENTE" type="MITTENTE_DEF_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="GRAMMATURA_REALE" type="xs:string"/>
+			<xs:element name="FLAG_COPERTURA_CAP" type="xs:string"/>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DESTINATARIO_DEF_TYPE">
+		<xs:sequence>
+			<xs:element name="RIGA1_DESTINATARIO" type="xs:string"/>
+			<xs:element name="RIGA2_AGGIUNTIVE" type="xs:string"/>
+			<xs:element name="RIGA3_EDIFICIO" type="xs:string"/>
+			<xs:element name="RIGA4_INDIRIZZO" type="xs:string"/>
+			<xs:element name="RIGA5_LOCALITA" type="LOCALITA_TYPE" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RIGA6_STATO_ESTERO" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LOCALITA_TYPE">
+		<xs:sequence>
+			<xs:element name="CAP">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="COMUNE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="42"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PROVINCIA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MITTENTE_DEF_TYPE">
+		<xs:sequence>
+			<xs:element name="MITT_RIGA1" type="xs:string"/>
+			<xs:element name="MITT_RIGA2" type="xs:string"/>
+			<xs:element name="MITT_INDIR" type="xs:string"/>
+			<xs:element name="MITT_CAPCOMPROV" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ACCETTAZIONE_RECAPITO_TYPE">
+		<xs:complexContent>
+			<xs:extension base="DISTINTA_TYPE">
+				<xs:sequence>
+					<xs:element name="CODICE_RECAPITISTA">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NUMERO_DOCUMENTI">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="99999"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DETTAGLIO" type="DETTAGLIO_RCA_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DETTAGLIO_RCA_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO_DETTAGLIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_RACCOMANDATA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_DOCUMENTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_FINE_STAMPA" type="xs:date"/>
+			<xs:element name="DATA_POSTALIZZAZIONE" type="xs:date"/>
+			<xs:element name="DATA_INIZIO_RECAPITO" type="xs:date"/>
+			<xs:element name="FLAG_COPERTURA_CAP">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DOCUMENTO_TYPE">
+		<xs:sequence>
+			<xs:element name="NUM_DOCUMENTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_RACCOMANDATA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_MODELLO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_AMBITO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CENTRO_COSTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DOCUMENTO_COSTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DOCUMENTO_IVA">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DOCUMENTO_REP_TYPE">
+		<xs:complexContent>
+			<xs:extension base="DOCUMENTO_TYPE"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DOCUMENTO_RCP_TYPE">
+		<xs:complexContent>
+			<xs:extension base="DOCUMENTO_TYPE">
+				<xs:sequence>
+					<xs:element name="CAP">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="5"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="TIPO_SPEDIZIONE">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DATA_SPEDIZIONE_RECAPITISTA" type="xs:date"/>
+					<xs:element name="GRAMMATURA">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:fractionDigits value="1"/>
+								<xs:minInclusive value="0.1"/>
+								<xs:maxInclusive value="99999.9"/>
+								<xs:totalDigits value="7"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FLAG_SMARRITO">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FLAG_FURTATO">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="FLAG_COPERTURA_CAP">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="RISCONTRO_TYPE">
+		<xs:sequence>
+			<xs:element name="FATTURA_NETTO_AUTORIZZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FATTURA_IVA_AUTORIZZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FATTURA_TOTALE_AUTORIZZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUMERO_DOC_AUTORIZZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUMERO_DOC_ERRATI">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DOCUMENTO_AUTORIZZ" type="DOCUMENTO_AUTORIZZ_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="DOCUMENTO_ERRATO" type="DOCUMENTO_ERRATO_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DOCUMENTO_AUTORIZZ_TYPE">
+		<xs:sequence>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DOCUMENTO_ERRATO_TYPE">
+		<xs:sequence>
+			<xs:element name="NUM_ERRORI">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ERRORE" type="ERRORE_TYPE" maxOccurs="unbounded"/>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PRE_FATTURA_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE" type="xs:date"/>
+			<xs:element name="CODICE_FORNITORE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_CLIENTE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_PRE_FATTURA" type="xs:date"/>
+			<xs:element name="PERIODO_DAL" type="xs:date"/>
+			<xs:element name="PERIODO_AL" type="xs:date"/>
+			<xs:element name="FATTURA_NETTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FATTURA_IVA">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FATTURA_TOTALE">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="2"/>
+						<xs:minInclusive value="0.01"/>
+						<xs:maxInclusive value="999999999.99"/>
+						<xs:totalDigits value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PRE_FATTURA_REP_TYPE">
+		<xs:complexContent>
+			<xs:extension base="PRE_FATTURA_TYPE">
+				<xs:sequence>
+					<xs:element name="IDENTIFICATIVO_FILE">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="28"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NUMERO_DOC_FATTURATI">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="99999"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DOCUMENTO" type="DOCUMENTO_REP_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PRE_FATTURA_RCP_TYPE">
+		<xs:complexContent>
+			<xs:extension base="PRE_FATTURA_TYPE">
+				<xs:sequence>
+					<xs:element name="IDENTIFICATIVO_FILE">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="28"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="NUMERO_DOC_FATTURATI">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+								<xs:maxInclusive value="99999"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="DOCUMENTO" type="DOCUMENTO_RCP_TYPE" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PRE_FATTURA_CONTROLLATA_TYPE">
+		<xs:sequence>
+			<xs:element name="IDENTIFICATIVO_FILE_ESITI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE_ESITI" type="xs:date"/>
+			<xs:element name="IDENTIF_FILE_CONTROLLATO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_FORNITORE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_CLIENTE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_PRE_FATTURA" type="xs:date"/>
+			<xs:element name="PERIODO_DAL" type="xs:date"/>
+			<xs:element name="PERIODO_AL" type="xs:date"/>
+			<xs:element name="TIPO_ESITO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RISCONTRO" type="RISCONTRO_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DETTAGLIO_RED_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO_DETTAGLIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_RACCOMANDATA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_DOCUMENTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RIGA1_DESTINATARIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RIGA2_AGGIUNTIVE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RIGA3_EDIFICIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RIGA4_INDIRIZZO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RIGA5_LOCALITA" type="LOCALITA_TYPE" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="RIGA6_STATO_ESTERO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="44"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CONSEGNA" type="xs:date"/>
+			<xs:element name="CODICE_ESITO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_MOTIVO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CANALE_CONSEGNA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_ESITO" type="xs:date"/>
+			<xs:element name="CODICE_SCATOLA_PLICO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="12"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FLAG_COPERTURA_CAP">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_ORA_1_TENTATIVO" type="xs:dateTime"/>
+			<xs:element name="DATA_ORA_2_TENTATIVO" type="xs:dateTime"/>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="VERIFICA_RICHIESTA_TYPE">
+		<xs:sequence>
+			<xs:element name="IDENTIFICATIVO_FILE" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="TIPO_MODELLO" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_AMBITO" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CODICE_CLIENTE" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUMERO_DETTAGLI" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DETTAGLIO" type="DETTAGLIO_VDE_TYPE" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DETTAGLIO_VDE_TYPE">
+		<xs:sequence>
+			<xs:element name="PROGRESSIVO_DETTAGLIO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPOLOGIA_CONTESTAZIONE" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_RACCOMANDATA" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUM_DOCUMENTO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_SPEDIZIONE" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="IDENTIFICATIVO" type="IDENTIFICATIVO_TYPE" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ELENCO_CAP_NON_GESTITI_TYPE">
+		<xs:sequence>
+			<xs:element name="IDENTIFICATIVO_FILE" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="28"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_CREAZIONE_FILE" type="xs:date" minOccurs="1"/>
+			<xs:element name="NUMERO_CAP_NON_GESTITI" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="99999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CAP_NON_GESTITI" type="CAP_NON_GESTITI_TYPE" maxOccurs="unbounded"/>
+			<xs:element name="MORE_INFO" type="MORE_INFO_TYPE"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CAP_NON_GESTITI_TYPE">
+		<xs:sequence>
+			<xs:element name="CAP">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AREA_DESTINAZIONE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_VARIAZIONE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_EFFETTO_VARIAZIONE" type="xs:date" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FILE_RICEVUTO_TYPE">
+		<xs:sequence>
+			<xs:element name="NOME_FLUSSO_RIC" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TIPO_FLUSSO_RIC">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DATA_ORA_RICEZIONE_FLUSSO" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="HASH_CODE" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="27"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
