@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
-  <runtime name="Apache Tomcat v9.0"/>
+  <runtime name="WildFly 12.0 Runtime"/>
   <fixed facet="jst.web"/>
   <fixed facet="jst.java"/>
   <installed facet="jst.web" version="2.5"/>
