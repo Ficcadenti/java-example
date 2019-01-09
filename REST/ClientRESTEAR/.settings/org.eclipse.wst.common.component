@@ -11,13 +11,7 @@
         <dependent-module archiveName="log4j-api-2.11.0.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Sviluppo/Progetti/GitHub/sharedLib/sharedLog4j2/log4j-api-2.11.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="httpclient-4.2.6.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Sviluppo/Progetti/GitHub/sharedLib/sharedHttp/httpclient-4.2.6.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Sviluppo/Progetti/GitHub/sharedLib/sharedHttp/commons-logging-1.1.1.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="httpcore-4.2.5.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Sviluppo/Progetti/GitHub/sharedLib/sharedHttp/httpcore-4.2.5.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="json-20180813.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Sviluppo/Progetti/GitHub/sharedLib/sharedJson/json-20180813.jar">

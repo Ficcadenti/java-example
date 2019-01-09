@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- Make sub deployments isolated by default, so they cannot see each others classes without a Class-Path entry -->
+	<!-- <ear-subdeployments-isolated>true</ear-subdeployments-isolated> -->
+	<!-- This corresponds to the top level deployment. For a war this is the war's module, for an ear -->
+	<!-- This is the top level ear module, which contains all the classes in the EAR's lib folder -->
+	<deployment>
+		<!-- exclude-subsystem prevents a subsystems deployment unit processors running on a deployment -->
+		<!-- which gives basically the same effect as removing the subsystem, but it only affects single deployment -->
+		<!-- Exclusions allow you to prevent the server from automatically adding some dependencies -->
+		<!-- This allows you to define additional dependencies, it is the same as using the Dependencies: manifest attribute -->
+		<dependencies>
+			<module name="org.apache.httpcomponents" export="true" />
+		</dependencies>
+		<!-- These add additional classes to the module. In this case it is the same as including the jar in the EAR's lib directory -->
+	</deployment>
+</jboss-deployment-structure>
