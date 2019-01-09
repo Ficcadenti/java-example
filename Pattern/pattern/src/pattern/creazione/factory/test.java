@@ -1,5 +1,7 @@
 package pattern.creazione.factory;
 
+//http://www-sop.inria.fr/marelle/Laurent.Thery/lsp/pattern.html
+
 abstract class Astratta
 {
 	public abstract String getVal();
