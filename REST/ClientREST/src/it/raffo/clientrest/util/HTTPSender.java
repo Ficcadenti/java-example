@@ -1,5 +1,7 @@
 package it.raffo.clientrest.util;
 
+//http://www-sop.inria.fr/marelle/Laurent.Thery/lsp/pattern.html
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
