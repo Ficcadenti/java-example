@@ -1,0 +1,7 @@
+Fabrizio Celli
+How to install this webservice.
+
+1 - download Apache Axis from the official website (current version 1.4)
+2 - copy under Tomcat/webapps the directory "axis" that is under "webapps" of the downloaded package
+3 - copy the WSDD in axis/WEB-INF
+4 - copy the classes/org in axis/WEB-INF/classes

@@ -65,6 +65,7 @@ public class WelcomeBean implements Serializable
 		if (this.getUsername().equals("raffo") && this.getPasswrd().equals("1234"))
 		{
 			this.addMessage(this.getUsername());
+			this.setLogged(true);
 			return "/pages/index?faces-redirect=true";
 		}
 		else
