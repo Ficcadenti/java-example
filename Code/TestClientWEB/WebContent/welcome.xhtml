@@ -20,9 +20,10 @@
 <h:body>
 	<h:form id="formHome" enctype="multipart/form-data">
 		<h1>Test Code</h1>	
-		<p:growl id="messages" showDetail="true" />
+		<p:growl id="growl" showDetail="true" sticky="true" />
 		
-		<p:commandButton value="Send msg" id="ajax" update="messages" action="#{codeBean.sendMsg()}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+		<p:commandButton ajax="true" value="Send msg" id="ajax" update="formHome" action="#{codeBean.sendMsg()}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+		<p:inputText value="#{codeBean.msg}"></p:inputText>
 
 	</h:form>
 </h:body>
