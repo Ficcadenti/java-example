@@ -1,4 +1,4 @@
-package it.raffo.threadlocal;
+package it.raffo.threadlocal.ex1;
 
 public class MyClass
 {

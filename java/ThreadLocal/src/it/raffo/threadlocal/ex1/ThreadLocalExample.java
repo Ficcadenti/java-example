@@ -1,26 +1,26 @@
-package it.raffo.threadlocal;
+package it.raffo.threadlocal.ex1;
 
 public class ThreadLocalExample
 {
 	public static class MyRunnable implements Runnable
 	{
 
-		private static final int		THREAD_SLEEP	= 2000;
+		private static final int			THREAD_SLEEP	= 2000;
 
-		private ThreadLocal<MyClass>	threadLocal		= new ThreadLocal<MyClass>()
-														{
-
-															@Override
-															protected MyClass initialValue()
+		private static ThreadLocal<MyClass>	threadLocal		= new ThreadLocal<MyClass>()
 															{
-																MyClass myClass = new MyClass();
-																myClass.set("Numero casuale: ["
-																		+ Thread.currentThread().getName()
-																		+ "] rondom int="
-																		+ (int) (Math.random() * 100D));
-																return myClass;
-															}
-														};
+
+																@Override
+																protected MyClass initialValue()
+																{
+																	MyClass myClass = new MyClass();
+																	myClass.set("Numero casuale: ["
+																			+ Thread.currentThread().getName()
+																			+ "] rondom int="
+																			+ (int) (Math.random() * 100D));
+																	return myClass;
+																}
+															};
 
 		@Override
 		public void run()
@@ -28,7 +28,7 @@ public class ThreadLocalExample
 
 			while (true)
 			{
-				this.threadLocal.get().info();
+				MyRunnable.threadLocal.get().info();
 				try
 				{
 					Thread.sleep(THREAD_SLEEP);

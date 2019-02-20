@@ -1,4 +1,4 @@
-package pattern.creazione.abstractfactory;
+package pattern.creazione.abstractfactory.ex1;
 
 public class A1 extends AstrattaA
 {

@@ -1,4 +1,4 @@
-package pattern.creazione.builder;
+package pattern.creazione.builder.ex1;
 
 public class A
 {
