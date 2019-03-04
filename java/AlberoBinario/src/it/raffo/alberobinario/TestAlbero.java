@@ -26,8 +26,9 @@ public class TestAlbero
 		albero.inserisciValore(sc7);
 		albero.inserisciValore(sc8);
 
-		System.out.println("Cancello : " + sc3);
-		albero.cancella(sc3);
+		System.out.println("Cancello : " + sc4);
+		albero.cancella(sc4);
+
 		System.out.println("In Order : ");
 		albero.visitaInOrder();
 

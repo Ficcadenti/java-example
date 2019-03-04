@@ -50,18 +50,12 @@ public class AlberoBinario
 		}
 	}
 
-	public void cancella(Scheda sc)
+	private void cancella(Nodo nodoCorrente)
 	{
-		Nodo nodoCorrente = this.cerca(sc);
-		if (nodoCorrente == null)
-		{
-			return;
-		}
-
 		if (this.grado(nodoCorrente) == FOGLIA)
 		{
 			Nodo padre = nodoCorrente.getPadre();
-			if (padre.getDx().getSc().equals(nodoCorrente.getSc()))
+			if ((padre.getDx() != null) && padre.getDx().getSc().equals(nodoCorrente.getSc()))
 			{
 				padre.setDx(null);
 			}
@@ -94,7 +88,25 @@ public class AlberoBinario
 
 			successivo.setPadre(padre);
 		}
+		else if (this.grado(nodoCorrente) == DUE_FIGLI)
+		{
+			Nodo successore = this.successore(nodoCorrente);
+			nodoCorrente.setSc(successore.getSc());
+			System.out.println("2 figli e cancello il successore : " + successore.getSc());
+			System.out.println("con grado=" + this.grado(successore));
+			this.cancella(successore);
+		}
 
+	}
+
+	public void cancella(Scheda sc)
+	{
+		Nodo nodoCorrente = this.cerca(sc);
+		if (nodoCorrente == null)
+		{
+			return;
+		}
+		this.cancella(nodoCorrente);
 	}
 
 	public Nodo cerca(Scheda sc)
@@ -411,9 +423,8 @@ public class AlberoBinario
 		this.root = root;
 	}
 
-	public Nodo successore(Scheda sc)
+	private Nodo successore(Nodo nodoCorrente)
 	{
-		Nodo nodoCorrente = this.cerca(sc);
 		if (nodoCorrente == null)
 		{
 			return null;
@@ -432,6 +443,16 @@ public class AlberoBinario
 			}
 			return padre;
 		}
+	}
+
+	public Nodo successore(Scheda sc)
+	{
+		Nodo nodoCorrente = this.cerca(sc);
+		if (nodoCorrente == null)
+		{
+			return null;
+		}
+		return this.successore(nodoCorrente);
 	}
 
 	@Override
