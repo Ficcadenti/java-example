@@ -4,6 +4,9 @@ public class AlberoBinario
 {
 	private static final int	ITERATIVO	= 1;
 	private static final int	RICORSIVO	= 2;
+	private static final int	FOGLIA		= 0;
+	private static final int	UN_FIGLIO	= 1;
+	private static final int	DUE_FIGLI	= 2;
 
 	private Nodo				root;
 	private int					modo;
@@ -22,6 +25,78 @@ public class AlberoBinario
 		this.setModo(modo);
 	}
 
+	public int altezza()
+	{
+		if (this.root == null)
+		{
+			return 0;
+		}
+		else
+		{
+			return this.altezza(this.root);
+
+		}
+	}
+
+	private int altezza(Nodo nodoCorrente)
+	{
+		if (nodoCorrente == null)
+		{
+			return 0;
+		}
+		else
+		{
+			return this.max(this.altezza(nodoCorrente.getSx()), this.altezza(nodoCorrente.getDx())) + 1;
+		}
+	}
+
+	public void cancella(Scheda sc)
+	{
+		Nodo nodoCorrente = this.cerca(sc);
+		if (nodoCorrente == null)
+		{
+			return;
+		}
+
+		if (this.grado(nodoCorrente) == FOGLIA)
+		{
+			Nodo padre = nodoCorrente.getPadre();
+			if (padre.getDx().getSc().equals(nodoCorrente.getSc()))
+			{
+				padre.setDx(null);
+			}
+			else
+			{
+				padre.setSx(null);
+			}
+		}
+		else if (this.grado(nodoCorrente) == UN_FIGLIO)
+		{
+			Nodo successivo = null;
+			if (nodoCorrente.getSx() != null)
+			{
+				successivo = nodoCorrente.getSx();
+			}
+			else
+			{
+				successivo = nodoCorrente.getDx();
+			}
+
+			Nodo padre = nodoCorrente.getPadre();
+			if (padre.getDx().getSc().equals(nodoCorrente.getSc()))
+			{
+				padre.setDx(successivo);
+			}
+			else
+			{
+				padre.setSx(successivo);
+			}
+
+			successivo.setPadre(padre);
+		}
+
+	}
+
 	public Nodo cerca(Scheda sc)
 	{
 		if (this.root == null)
@@ -32,20 +107,13 @@ public class AlberoBinario
 
 	}
 
-	public Nodo cercaAntenato(Scheda sc)
+	private Nodo cercaNodo(Scheda sc, Nodo nodoCorrente)
 	{
-		if (this.root == null)
+		if (nodoCorrente == null)
 		{
 			return null;
 		}
-
-		return this.root;
-
-	}
-
-	private Nodo cercaNodo(Scheda sc, Nodo nodoCorrente)
-	{
-		if (nodoCorrente.getSc().compareTo(sc) > 0)
+		else if (nodoCorrente.getSc().compareTo(sc) > 0)
 		{
 			return this.cercaNodo(sc, nodoCorrente.getSx());
 		}
@@ -56,6 +124,31 @@ public class AlberoBinario
 		else
 		{
 			return nodoCorrente;
+		}
+	}
+
+	public int dimensione()
+	{
+		if (this.root == null)
+		{
+			return 0;
+		}
+		else
+		{
+			return this.dimensione(this.root);
+
+		}
+	}
+
+	private int dimensione(Nodo nodoCorrente)
+	{
+		if (nodoCorrente == null)
+		{
+			return 0;
+		}
+		else
+		{
+			return this.dimensione(nodoCorrente.getSx()) + this.dimensione(nodoCorrente.getDx()) + 1;
 		}
 	}
 
@@ -117,6 +210,20 @@ public class AlberoBinario
 		return this.root;
 	}
 
+	private int grado(Nodo n)
+	{
+		int g = 0;
+		if (n.getDx() != null)
+		{
+			g++;
+		}
+		if (n.getSx() != null)
+		{
+			g++;
+		}
+		return g;
+	}
+
 	private void inOrder(Nodo nodo)
 	{
 		if (nodo != null)
@@ -148,12 +255,13 @@ public class AlberoBinario
 
 	private void insert(Nodo nodoCorrente, Scheda valore)
 	{
+		Nodo figlio = new Nodo(valore);
+		figlio.setPadre(nodoCorrente);
+
 		if (valore.compareTo(nodoCorrente.getSc()) < 0)
 		{
 			if (nodoCorrente.getSx() == null)
 			{
-				Nodo figlio = new Nodo(valore);
-				figlio.setPadre(nodoCorrente);
 				nodoCorrente.setSx(figlio);
 
 			}
@@ -166,8 +274,6 @@ public class AlberoBinario
 		{
 			if (nodoCorrente.getDx() == null)
 			{
-				Nodo figlio = new Nodo(valore);
-				figlio.setPadre(nodoCorrente);
 				nodoCorrente.setDx(figlio);
 			}
 			else
@@ -216,6 +322,23 @@ public class AlberoBinario
 		nodoCorrente = new Nodo(valore);
 	}
 
+	private boolean isFoglia(Nodo n)
+	{
+		return (n.getSx() == null) && (n.getDx() == null);
+	}
+
+	private int max(int a, int b)
+	{
+		if (a >= b)
+		{
+			return a;
+		}
+		else
+		{
+			return b;
+		}
+	}
+
 	private void postOrder(Nodo nodo)
 	{
 		if (nodo != null)
@@ -223,6 +346,29 @@ public class AlberoBinario
 			this.postOrder(nodo.getSx());
 			this.postOrder(nodo.getDx());
 			this.visita(nodo);
+		}
+	}
+
+	public Nodo predecessore(Scheda sc)
+	{
+		Nodo nodoCorrente = this.cerca(sc);
+		if (nodoCorrente == null)
+		{
+			return null;
+		}
+		else if (nodoCorrente.getSx() != null)
+		{
+			return this.getMassimo(nodoCorrente.getSx());
+		}
+		else
+		{
+			Nodo padre = nodoCorrente.getPadre();
+			while ((padre.getSx() != null) && nodoCorrente.getSc().equals(padre.getSx().getSc()))
+			{
+				nodoCorrente = padre;
+				padre = nodoCorrente.getPadre();
+			}
+			return padre;
 		}
 	}
 
@@ -236,6 +382,25 @@ public class AlberoBinario
 		}
 	}
 
+	public int profondita(Scheda sc)
+	{
+		int p = 0;
+		Nodo nodoCorrente = this.cerca(sc);
+		if (nodoCorrente == null)
+		{
+			p = -1;
+		}
+		else
+		{
+			while (nodoCorrente.getPadre() != null)
+			{
+				p++;
+				nodoCorrente = nodoCorrente.getPadre();
+			}
+		}
+		return p;
+	}
+
 	public void setModo(int modo)
 	{
 		this.modo = modo;
@@ -244,6 +409,29 @@ public class AlberoBinario
 	public void setRoot(Nodo root)
 	{
 		this.root = root;
+	}
+
+	public Nodo successore(Scheda sc)
+	{
+		Nodo nodoCorrente = this.cerca(sc);
+		if (nodoCorrente == null)
+		{
+			return null;
+		}
+		else if (nodoCorrente.getDx() != null)
+		{
+			return this.getMinimo(nodoCorrente.getDx());
+		}
+		else
+		{
+			Nodo padre = nodoCorrente.getPadre();
+			while ((padre.getDx() != null) && nodoCorrente.getSc().equals(padre.getDx().getSc()))
+			{
+				nodoCorrente = padre;
+				padre = nodoCorrente.getPadre();
+			}
+			return padre;
+		}
 	}
 
 	@Override

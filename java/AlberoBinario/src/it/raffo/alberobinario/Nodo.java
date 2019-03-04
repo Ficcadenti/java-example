@@ -74,7 +74,7 @@ public class Nodo
 	@Override
 	public String toString()
 	{
-		return "Nodo [sc=" + this.sc + ", dx=" + this.dx + ", sx=" + this.sx + ", padre=" + this.padre + "]";
+		return "Nodo [sc=" + this.sc + ", dx=" + this.dx + ", sx=" + this.sx + "]";
 	}
 
 }

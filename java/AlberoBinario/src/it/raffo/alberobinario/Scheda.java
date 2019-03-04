@@ -14,16 +14,16 @@ public class Scheda implements Comparable<Scheda>
 	}
 
 	@Override
-	public int compareTo(Scheda o)
+	public int compareTo(Scheda sc)
 	{
 		int ret = 0;
-		if (o.getEta() > this.eta)
-		{
-			ret = 1;
-		}
-		else if (o.getEta() < this.eta)
+		if (this.eta < sc.getEta())
 		{
 			ret = -1;
+		}
+		else if (this.eta > sc.getEta())
+		{
+			ret = 1;
 		}
 		return ret;
 	}

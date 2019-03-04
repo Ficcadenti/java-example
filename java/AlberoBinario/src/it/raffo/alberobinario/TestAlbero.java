@@ -12,7 +12,9 @@ public class TestAlbero
 		Scheda sc3 = new Scheda("Yuri", "Quaglia", 31);
 		Scheda sc4 = new Scheda("Samuele", "Parentato", 18);
 		Scheda sc5 = new Scheda("Alberto", "Ruggeri", 28);
-		Scheda sc6 = new Scheda("Enzo", "Cianfarani", 70);
+		Scheda sc6 = new Scheda("Francesca", "Maffia", 16);
+		Scheda sc7 = new Scheda("Enzo", "Cianfarani", 70);
+		Scheda sc8 = new Scheda("Pluto", "Pippo", 23);
 
 		AlberoBinario albero = new AlberoBinario(RICORSIVO);
 		albero.inserisciValore(sc1);
@@ -21,13 +23,48 @@ public class TestAlbero
 		albero.inserisciValore(sc4);
 		albero.inserisciValore(sc5);
 		albero.inserisciValore(sc6);
+		albero.inserisciValore(sc7);
+		albero.inserisciValore(sc8);
 
-		System.out.println("In Order:");
+		System.out.println("Cancello : " + sc3);
+		albero.cancella(sc3);
+		System.out.println("In Order : ");
 		albero.visitaInOrder();
 
-		System.out.println("Minimo: " + albero.getMinimo());
-		System.out.println("Massimo: " + albero.getMassimo());
-		System.out.println("Cerca: " + albero.cerca(sc3).getSc());
+		System.out.println("Dimensione : " + albero.dimensione());
+		System.out.println("Altezza : " + albero.altezza());
+		System.out.println("Profondità : " + albero.profondita(sc5));
+		System.out.println("Profondità : " + albero.profondita(sc1));
+		System.out.println("Minimo : " + albero.getMinimo());
+		System.out.println("Massimo : " + albero.getMassimo());
+		if (albero.cerca(sc5) != null)
+		{
+			System.out.println("Cerca : " + albero.cerca(sc5).getSc());
+		}
+
+		Scheda s = sc5;
+		System.out.print("Successore (" + s.getEta() + ") : ");
+		Nodo successore = albero.successore(s);
+		if (successore != null)
+		{
+			System.out.println(successore.getSc());
+		}
+		else
+		{
+			System.out.println("NULL");
+		}
+
+		s = sc3;
+		Nodo predecessore = albero.predecessore(s);
+		System.out.print("Predecessore (" + s.getEta() + ") : ");
+		if (predecessore != null)
+		{
+			System.out.println(predecessore.getSc());
+		}
+		else
+		{
+			System.out.println(": NULL");
+		}
 	}
 
 	public static void stampaPostOrdine(Nodo albero)
