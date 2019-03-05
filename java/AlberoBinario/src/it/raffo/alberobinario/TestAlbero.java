@@ -20,17 +20,17 @@ public class TestAlbero
 		albero.inserisciValore(sc1);
 		albero.inserisciValore(sc2);
 		albero.inserisciValore(sc3);
-		// albero.inserisciValore(sc4);
-		// albero.inserisciValore(sc5);
-		// albero.inserisciValore(sc6);
-		// albero.inserisciValore(sc7);
-		// albero.inserisciValore(sc8);
+		albero.inserisciValore(sc4);
+		albero.inserisciValore(sc5);
+		albero.inserisciValore(sc6);
+		albero.inserisciValore(sc7);
+		albero.inserisciValore(sc8);
 
 		// System.out.println("Cancello : " + sc4);
 		// albero.cancella(sc3);
 
 		System.out.println("In Order : ");
-		albero.visitaInOrder();
+		albero.visitaLivelli();
 
 		System.out.println("Dimensione  : " + albero.dimensione());
 		System.out.println("Altezza min : " + albero.altezzaMinima());

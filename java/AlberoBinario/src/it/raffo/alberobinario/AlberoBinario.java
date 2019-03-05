@@ -1,5 +1,8 @@
 package it.raffo.alberobinario;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class AlberoBinario
 {
 	private static final int	ITERATIVO	= 1;
@@ -532,6 +535,38 @@ public class AlberoBinario
 	public void visitaInOrder()
 	{
 		this.inOrder(this.root);
+	}
+
+	public void visitaLivelli()
+	{
+
+		this.visitaLivelli(this.root);
+	}
+
+	private void visitaLivelli(Nodo nodoCorrente)
+	{
+
+		if (nodoCorrente != null)
+		{
+			Queue<Nodo> coda = new LinkedList<Nodo>();
+			coda.add(nodoCorrente);
+			while (!coda.isEmpty())
+			{
+				Nodo temp = coda.poll();
+				if (temp != null)
+				{
+					this.visita(temp);
+					if (temp.getSx() != null)
+					{
+						coda.add(temp.getSx());
+					}
+					if (temp.getDx() != null)
+					{
+						coda.add(temp.getDx());
+					}
+				}
+			}
+		}
 	}
 
 	public void visitaPostOrder()
