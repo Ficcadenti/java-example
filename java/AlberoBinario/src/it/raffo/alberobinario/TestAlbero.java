@@ -20,30 +20,32 @@ public class TestAlbero
 		albero.inserisciValore(sc1);
 		albero.inserisciValore(sc2);
 		albero.inserisciValore(sc3);
-		albero.inserisciValore(sc4);
-		albero.inserisciValore(sc5);
-		albero.inserisciValore(sc6);
-		albero.inserisciValore(sc7);
-		albero.inserisciValore(sc8);
+		// albero.inserisciValore(sc4);
+		// albero.inserisciValore(sc5);
+		// albero.inserisciValore(sc6);
+		// albero.inserisciValore(sc7);
+		// albero.inserisciValore(sc8);
 
-		System.out.println("Cancello : " + sc4);
-		albero.cancella(sc4);
+		// System.out.println("Cancello : " + sc4);
+		// albero.cancella(sc3);
 
 		System.out.println("In Order : ");
 		albero.visitaInOrder();
 
-		System.out.println("Dimensione : " + albero.dimensione());
-		System.out.println("Altezza : " + albero.altezza());
-		System.out.println("Profondità : " + albero.profondita(sc5));
-		System.out.println("Profondità : " + albero.profondita(sc1));
-		System.out.println("Minimo : " + albero.getMinimo());
-		System.out.println("Massimo : " + albero.getMassimo());
+		System.out.println("Dimensione  : " + albero.dimensione());
+		System.out.println("Altezza min : " + albero.altezzaMinima());
+		System.out.println("Altezza max : " + albero.altezzaMinima());
+		System.out.println("Profondità  : " + albero.profondita(sc5));
+		System.out.println("Profondità  : " + albero.profondita(sc1));
+		System.out.println("Minimo      : " + albero.getMinimo());
+		System.out.println("Massimo     : " + albero.getMassimo());
+		System.out.println("Bilanciato  : " + albero.isBilanciato());
 		if (albero.cerca(sc5) != null)
 		{
 			System.out.println("Cerca : " + albero.cerca(sc5).getSc());
 		}
 
-		Scheda s = sc5;
+		Scheda s = sc3;
 		System.out.print("Successore (" + s.getEta() + ") : ");
 		Nodo successore = albero.successore(s);
 		if (successore != null)
@@ -56,8 +58,8 @@ public class TestAlbero
 		}
 
 		s = sc3;
-		Nodo predecessore = albero.predecessore(s);
 		System.out.print("Predecessore (" + s.getEta() + ") : ");
+		Nodo predecessore = albero.predecessore(s);
 		if (predecessore != null)
 		{
 			System.out.println(predecessore.getSc());
