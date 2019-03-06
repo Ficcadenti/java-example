@@ -34,12 +34,13 @@ public class TestAlbero
 
 		System.out.println("Dimensione  : " + albero.dimensione());
 		System.out.println("Altezza min : " + albero.altezzaMinima());
-		System.out.println("Altezza max : " + albero.altezzaMinima());
+		System.out.println("Altezza max : " + albero.altezzaMassima());
 		System.out.println("Profondità  : " + albero.profondita(sc5));
 		System.out.println("Profondità  : " + albero.profondita(sc1));
 		System.out.println("Minimo      : " + albero.getMinimo());
 		System.out.println("Massimo     : " + albero.getMassimo());
 		System.out.println("Bilanciato  : " + albero.isBilanciato());
+
 		if (albero.cerca(sc5) != null)
 		{
 			System.out.println("Cerca : " + albero.cerca(sc5).getSc());

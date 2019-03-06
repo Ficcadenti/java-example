@@ -3,6 +3,9 @@ package it.raffo.alberobinario;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import processing.core.PApplet;
+import processing.core.PFont;
+
 public class AlberoBinario
 {
 	private static final int	ITERATIVO	= 1;
@@ -13,6 +16,13 @@ public class AlberoBinario
 
 	private Nodo				root;
 	private int					modo;
+	private int					xNodo;
+	private int					yNodo;
+	private int					deltax;
+	private int					deltay;
+	private int					diametro;
+	private PFont				f;
+	private PApplet				pa;
 
 	public AlberoBinario()
 	{
@@ -21,9 +31,11 @@ public class AlberoBinario
 		this.setModo(RICORSIVO);
 	}
 
-	public AlberoBinario(int modo)
+	public AlberoBinario(int modo, PApplet pa)
 	{
 		super();
+		this.pa = pa;
+		this.f = this.pa.createFont("Arial", 32, true); // Loading font
 		this.root = null;
 		this.setModo(modo);
 	}
@@ -192,6 +204,17 @@ public class AlberoBinario
 		}
 	}
 
+	void drawArrow(int cx, int cy, int len, float angle)
+	{
+		this.pa.pushMatrix();
+		this.pa.translate(cx, cy);
+		this.pa.rotate(this.pa.radians(angle));
+		this.pa.line(0, 0, len, 0);
+		this.pa.line(len, 0, len - 8, -8);
+		this.pa.line(len, 0, len - 8, 8);
+		this.pa.popMatrix();
+	}
+
 	public Scheda getMassimo()
 	{
 		if (this.root == null)
@@ -243,6 +266,11 @@ public class AlberoBinario
 	public int getModo()
 	{
 		return this.modo;
+	}
+
+	public PApplet getPa()
+	{
+		return this.pa;
 	}
 
 	public Nodo getRoot()
@@ -388,7 +416,7 @@ public class AlberoBinario
 	{
 		if (nodoCorrente != null)
 		{
-			return nodoCorrente.getSc().equals(this.getMassimo(nodoCorrente).getSc());
+			return nodoCorrente.getSc().equals(this.getMassimo(this.root).getSc());
 		}
 		else
 		{
@@ -458,19 +486,21 @@ public class AlberoBinario
 		return this.predecessore(nodoCorrente);
 	}
 
-	private void preOrder(Nodo nodo)
+	private void preOrder(Nodo nodo, int x)
 	{
 		if (nodo != null)
 		{
+			int p = this.profondita(nodo.getSc());
+			this.visitaFX(nodo, x, p * this.deltay);
 			this.visita(nodo);
-			this.preOrder(nodo.getSx());
-			this.preOrder(nodo.getDx());
+			this.preOrder(nodo.getSx(), x - this.deltax);
+			this.preOrder(nodo.getDx(), x + this.deltax);
 		}
 	}
 
 	public int profondita(Scheda sc)
 	{
-		int p = 1;
+		int p = 0;
 		Nodo nodoCorrente = this.cerca(sc);
 		if (nodoCorrente == null)
 		{
@@ -490,6 +520,11 @@ public class AlberoBinario
 	public void setModo(int modo)
 	{
 		this.modo = modo;
+	}
+
+	public void setPa(PApplet pa)
+	{
+		this.pa = pa;
 	}
 
 	public void setRoot(Nodo root)
@@ -544,6 +579,31 @@ public class AlberoBinario
 		System.out.println("\n");
 	}
 
+	private void visitaFX(Nodo nodo, int x, int y)
+	{
+		this.pa.pushMatrix();
+		this.pa.noFill();
+		this.pa.stroke(204, 102, 0);
+		this.pa.textFont(this.f, 20);
+		this.pa.ellipse(this.xNodo + x, this.yNodo + y, this.diametro, this.diametro);
+
+		this.pa.text(nodo.getSc().getEta(), (this.xNodo + x) - 10, (this.yNodo + y) + 5);
+
+		if (!this.isFoglia(nodo))
+		{
+			if (nodo.getSx() != null)
+			{
+				this.drawArrow((this.xNodo + x) - 29, (this.yNodo + y) + 29, 60, +135);
+			}
+			if (nodo.getDx() != null)
+			{
+				this.drawArrow((this.xNodo + x) + 29, (this.yNodo + y) + 29, 60, +45);
+			}
+		}
+
+		this.pa.popMatrix();
+	}
+
 	public void visitaInOrder()
 	{
 		this.inOrder(this.root);
@@ -551,13 +611,17 @@ public class AlberoBinario
 
 	public void visitaLivelli()
 	{
-
+		this.xNodo = 50;
+		this.yNodo = 50;
+		this.diametro = 80;
+		this.deltax = 120;
+		this.deltay = 0;
 		this.visitaLivelli(this.root);
 	}
 
 	private void visitaLivelli(Nodo nodoCorrente)
 	{
-
+		int x = 0;
 		if (nodoCorrente != null)
 		{
 			Queue<Nodo> coda = new LinkedList<Nodo>();
@@ -568,6 +632,8 @@ public class AlberoBinario
 				if (temp != null)
 				{
 					this.visita(temp);
+					this.visitaFX(temp, x, 0);
+					x = x + this.deltax;
 					if (temp.getSx() != null)
 					{
 						coda.add(temp.getSx());
@@ -588,7 +654,15 @@ public class AlberoBinario
 
 	public void visitaPreOrder()
 	{
-		this.preOrder(this.root);
+		int p = this.altezzaMassima();
+		System.out.println("P=" + p);
+		this.diametro = 80;
+		this.deltax = 100;
+		this.deltay = 100;
+
+		this.xNodo = 500;// p*(this.deltax);
+		this.yNodo = 100;
+		this.preOrder(this.root, 0);
 	}
 
 }
