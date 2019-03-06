@@ -79,12 +79,10 @@ public class TestOpenGL extends PApplet
 		this.gl.glBufferData(GL.GL_ARRAY_BUFFER, Float.BYTES * this.positions.length, this.posBuffer,
 				GL.GL_DYNAMIC_DRAW);
 		this.gl.glVertexAttribPointer(this.posLoc, 4, GL.GL_FLOAT, false, 4 * Float.BYTES, 0);
-
 		this.gl.glBindBuffer(GL.GL_ARRAY_BUFFER, this.colorVboId);
 		this.gl.glBufferData(GL.GL_ARRAY_BUFFER, Float.BYTES * this.colors.length, this.colorBuffer,
 				GL.GL_DYNAMIC_DRAW);
 		this.gl.glVertexAttribPointer(this.colorLoc, 4, GL.GL_FLOAT, false, 4 * Float.BYTES, 0);
-
 		this.gl.glBindBuffer(GL.GL_ARRAY_BUFFER, 0);
 
 		// Draw the triangle elements
@@ -93,9 +91,9 @@ public class TestOpenGL extends PApplet
 				GL.GL_DYNAMIC_DRAW);
 		this.gl.glDrawElements(PGL.TRIANGLES, this.indices.length, GL.GL_UNSIGNED_INT, 0);
 		this.gl.glBindBuffer(PGL.ELEMENT_ARRAY_BUFFER, 0);
-
 		this.gl.glDisableVertexAttribArray(this.posLoc);
 		this.gl.glDisableVertexAttribArray(this.colorLoc);
+
 		this.shader.unbind();
 
 		this.endPGL();
@@ -116,7 +114,7 @@ public class TestOpenGL extends PApplet
 		URL resourceFrag = this.getClass().getResource("/resources/frag.glsl");
 		URL resourceVert = this.getClass().getResource("/resources/vert.glsl");
 		System.out.println("Frag file:: " + resourceFrag.getFile());
-		System.out.println("Frag file:: " + resourceVert.getFile());
+		System.out.println("Vert file:: " + resourceVert.getFile());
 
 		this.shader = this.loadShader(resourceFrag.getFile(), resourceVert.getFile());
 
