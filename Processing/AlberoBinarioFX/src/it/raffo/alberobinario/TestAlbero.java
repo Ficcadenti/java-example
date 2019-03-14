@@ -48,9 +48,8 @@ public class TestAlbero extends PApplet
 		albero.inserisciValore(sc7);
 		albero.inserisciValore(sc8);
 
-		// albero.visitaPreOrder();
-		// this.test();
-		this.test1();
+		albero.visitaPreOrder();
+
 	}
 
 	public void test()
