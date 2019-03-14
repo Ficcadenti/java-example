@@ -48,7 +48,27 @@ public class TestAlbero extends PApplet
 		albero.inserisciValore(sc7);
 		albero.inserisciValore(sc8);
 
-		albero.visitaPreOrder();
+		// albero.visitaPreOrder();
+		// this.test();
+		this.test1();
+	}
+
+	public void test()
+	{
+		this.smooth();
+		this.translate(this.width / 2, this.height / 2);
+		this.strokeWeight(2);
+		this.beginShape();
+		for (int i = 0; i < 350; i++)
+		{
+			this.curveVertex((i * 2) * sin((float) (i / 5.0)), (i * 2) * cos((float) (i / 5.0)));
+		}
+		this.endShape();
+	}
+
+	public void test1()
+	{
+
 	}
 
 }

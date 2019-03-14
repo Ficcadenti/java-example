@@ -65,6 +65,34 @@ public class AlberoBinario
 		}
 	}
 
+	public Nodo altezzaMassima2()
+	{
+		if (this.root == null)
+		{
+			return null;
+		}
+		else
+		{
+			return this.altezzaMassima2(this.root, this.root);
+
+		}
+	}
+
+	private Nodo altezzaMassima2(Nodo nodoCorrente, Nodo max)
+	{
+		if (nodoCorrente != null)
+		{
+			if (this.profondita(nodoCorrente.getSc()) > this.profondita(nodoCorrente.getSc()))
+			{
+				max = nodoCorrente;
+			}
+			this.altezzaMassima2(nodoCorrente.getSx(), max);
+			this.altezzaMassima2(nodoCorrente.getDx(), max);
+
+		}
+		return max;
+	}
+
 	public int altezzaMinima()
 	{
 		if (this.root == null)

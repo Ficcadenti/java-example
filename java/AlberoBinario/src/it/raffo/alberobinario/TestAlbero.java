@@ -41,34 +41,36 @@ public class TestAlbero
 		System.out.println("Massimo     : " + albero.getMassimo());
 		System.out.println("Bilanciato  : " + albero.isBilanciato());
 
-		if (albero.cerca(sc5) != null)
-		{
-			System.out.println("Cerca : " + albero.cerca(sc5).getSc());
-		}
+		System.out.println("Nodo con altezza max : " + albero.altezzaMassima2().getSc());
 
-		Scheda s = sc3;
-		System.out.print("Successore (" + s.getEta() + ") : ");
-		Nodo successore = albero.successore(s);
-		if (successore != null)
-		{
-			System.out.println(successore.getSc());
-		}
-		else
-		{
-			System.out.println("NULL");
-		}
-
-		s = sc3;
-		System.out.print("Predecessore (" + s.getEta() + ") : ");
-		Nodo predecessore = albero.predecessore(s);
-		if (predecessore != null)
-		{
-			System.out.println(predecessore.getSc());
-		}
-		else
-		{
-			System.out.println(": NULL");
-		}
+		// if (albero.cerca(sc5) != null)
+		// {
+		// System.out.println("Cerca : " + albero.cerca(sc5).getSc());
+		// }
+		//
+		// Scheda s = sc3;
+		// System.out.print("Successore (" + s.getEta() + ") : ");
+		// Nodo successore = albero.successore(s);
+		// if (successore != null)
+		// {
+		// System.out.println(successore.getSc());
+		// }
+		// else
+		// {
+		// System.out.println("NULL");
+		// }
+		//
+		// s = sc3;
+		// System.out.print("Predecessore (" + s.getEta() + ") : ");
+		// Nodo predecessore = albero.predecessore(s);
+		// if (predecessore != null)
+		// {
+		// System.out.println(predecessore.getSc());
+		// }
+		// else
+		// {
+		// System.out.println(": NULL");
+		// }
 	}
 
 	public static void stampaPostOrdine(Nodo albero)

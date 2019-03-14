@@ -53,6 +53,48 @@ public class AlberoBinario
 		}
 	}
 
+	public Nodo altezzaMassima2()
+	{
+		return this.altezzaMassima2(this.root);
+	}
+
+	private Nodo altezzaMassima2(Nodo nodoCorrente)
+	{
+		Nodo max = nodoCorrente;
+		if (nodoCorrente != null)
+		{
+			Queue<Nodo> coda = new LinkedList<Nodo>();
+			coda.add(nodoCorrente);
+
+			while (!coda.isEmpty())
+			{
+				Nodo temp = coda.poll();
+
+				if (this.profondita(temp.getSc()) > this.profondita(max.getSc()))
+				{
+					max = temp;
+				}
+
+				if (temp != null)
+				{
+					this.visita(temp);
+					if (temp.getSx() != null)
+					{
+						coda.add(temp.getSx());
+					}
+					if (temp.getDx() != null)
+					{
+						coda.add(temp.getDx());
+					}
+				}
+			}
+
+		}
+
+		return max;
+
+	}
+
 	public int altezzaMinima()
 	{
 		if (this.root == null)
@@ -470,7 +512,7 @@ public class AlberoBinario
 
 	public int profondita(Scheda sc)
 	{
-		int p = 1;
+		int p = 0;
 		Nodo nodoCorrente = this.cerca(sc);
 		if (nodoCorrente == null)
 		{
