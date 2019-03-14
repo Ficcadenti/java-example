@@ -15,11 +15,9 @@ public class Spirale extends PApplet
 
 	PFont	font;
 	float	t		= 0, w, h;
-	float	r		= 0;
 	float	theta	= 0;
 	float	verso	= +1;
 	float	a		= 30;
-
 	float	k		= 0;
 
 	@Override
@@ -45,22 +43,33 @@ public class Spirale extends PApplet
 		// ruota di theta
 		this.rotate(this.theta);
 
-		// equazione Spirale aurea
-		// r=a*exp((k*theta*log(1+sqrt(5)/2))/PI);
-		// r=a*(1+cos(theta));
-		// r=100*pow(cos(2*theta/3),3);
-		// r=150*(sin(theta)*pow(sin(5*theta/2),3));
-		this.r = 150 * (sin(2 * this.theta) * cos(2 * this.theta));
-		// r=a*theta;
-		// r=pow(a,2)*cos(2*theta);
-		// r=150*(sin(theta)+pow(sin(5*theta/2),3));
-		// colore verde
+		// la coloro
 		this.stroke(0, 255, 0);
 		// la disegno
-		this.point(this.r, 0);
-		// point(-r,0);
+
+		this.point(this.equazioneLibera(this.theta), 0);
+		// this.point(-this.spiraleAurea(this.theta), 0);
 		// incremento l'angolo
 		this.t += 0.25;
+	}
+
+	public float equazioneLibera(float theta)
+	{
+		// r=a*(1+cos(theta));
+		//
+		// r=a*theta;
+		// r=pow(a,2)*cos(2*theta);
+		//
+		this.a = 200;
+		this.k = 2;
+		// float r = this.a * (sin(this.k * this.theta) * cos(this.k * this.theta));
+		float r = this.a * (sin(theta) + pow(sin((5 * theta) / 2), 3));
+		// float r = this.a * (sin(theta) * pow(sin((5 * theta) / 2), 3));
+		// float r = this.a * pow(cos((this.k * theta) / 3), 3);
+		// float r = pow(this.a, 1) * cos(this.k * theta);
+		// float r = this.a * (1 + cos(theta));
+		return r;
+
 	}
 
 	@Override
@@ -84,6 +93,15 @@ public class Spirale extends PApplet
 		this.line(0, this.h / 2, this.w, this.h / 2);
 		this.line(this.w / 2, 0, this.w / 2, this.h);
 		this.strokeWeight(3);
+	}
+
+	public float spiraleAurea(float theta)
+	{
+		// equazione Spirale aurea
+		this.a = 30;
+		this.k = 1.618f;
+		float r = this.a * exp((this.k * theta * log(1 + (sqrt(5) / 2))) / PI);
+		return r;
 	}
 
 }
