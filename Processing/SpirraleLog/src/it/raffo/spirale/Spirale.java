@@ -50,7 +50,7 @@ public class Spirale extends PApplet
 		this.point(this.equazioneLibera(this.theta), 0);
 		// this.point(-this.spiraleAurea(this.theta), 0);
 		// incremento l'angolo
-		this.t += 0.25;
+		this.t += 0.15;
 	}
 
 	public float equazioneLibera(float theta)
@@ -63,10 +63,10 @@ public class Spirale extends PApplet
 		this.a = 200;
 		this.k = 2;
 		// float r = this.a * (sin(this.k * this.theta) * cos(this.k * this.theta));
-		float r = this.a * (sin(theta) + pow(sin((5 * theta) / 2), 3));
+		// float r = this.a * (sin(theta) + pow(sin((5 * theta) / 2), 3));
 		// float r = this.a * (sin(theta) * pow(sin((5 * theta) / 2), 3));
 		// float r = this.a * pow(cos((this.k * theta) / 3), 3);
-		// float r = pow(this.a, 1) * cos(this.k * theta);
+		float r = pow(this.a, 1) * cos(this.k * theta);
 		// float r = this.a * (1 + cos(theta));
 		return r;
 

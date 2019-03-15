@@ -22,6 +22,17 @@ public class FileSystem
 		this.y = 50;
 	}
 
+	void drawArrow(int cx, int cy, int len, float angle)
+	{
+		this.pa.pushMatrix();
+		this.pa.translate(cx, cy);
+		this.pa.rotate(this.pa.radians(angle));
+		this.pa.line(0, 0, len, 0);
+		this.pa.line(len, 0, len - 8, -8);
+		this.pa.line(len, 0, len - 8, 8);
+		this.pa.popMatrix();
+	}
+
 	public int getDeltaY()
 	{
 		return this.deltaY;
@@ -137,6 +148,7 @@ public class FileSystem
 				if (n.getElem().getType().equalsIgnoreCase("D"))
 				{
 					this.stampaAlbero(n, x + this.deltaX);
+					this.drawArrow(x, this.y, x + this.deltaX, this.y + this.deltaY);
 				}
 			}
 		}
