@@ -4,8 +4,7 @@ import processing.core.PApplet;
 
 public class TestGrafo extends PApplet
 {
-	public static int	contNodo		= 1;
-	public static int	distanzaMinima	= 5;
+	public static int	distanzaMinima	= 30;
 	public static int	h				= 1000;
 	public static int	raggio			= 40;
 	public static int	w				= 1000;
@@ -23,13 +22,13 @@ public class TestGrafo extends PApplet
 
 	private static Centro calcolaCentro(int[][] m)
 	{
-		int possibileCentroX = (int) (Math.random() * 999);
-		int possibileCentroY = (int) (Math.random() * 999);
+		int possibileCentroX = (int) (Math.random() * w);
+		int possibileCentroY = (h);
 		Centro c = new Centro(possibileCentroX, possibileCentroY);
 		while (!isVuotoNeiDintorni(c, m))
 		{
-			possibileCentroX = (int) (Math.random() * 999);
-			possibileCentroY = (int) (Math.random() * 999);
+			possibileCentroX = (int) (Math.random() * w);
+			possibileCentroY = (int) (Math.random() * h);
 			c = new Centro(possibileCentroX, possibileCentroY);
 		}
 		System.out.println("trovato centro: " + c);
@@ -40,27 +39,29 @@ public class TestGrafo extends PApplet
 	private static boolean isVuotoNeiDintorni(Centro c, int[][] m)
 	{
 		boolean bRet = true;
+		int recinto = raggio + distanzaMinima;
+
 		// controllo se sono al margine della matrice tenendo conto del raggio
-		if ((c.getX() - raggio) < 0)
+		if ((c.getX() - recinto) < 0)
 		{
 			return false;
 		}
-		if ((c.getX() + raggio) >= w)
+		if ((c.getX() + recinto) >= w)
 		{
 			return false;
 		}
-		if ((c.getY() - raggio) < 0)
+		if ((c.getY() - recinto) < 0)
 		{
 			return false;
 		}
-		if ((c.getY() + raggio) >= h)
+		if ((c.getY() + recinto) >= h)
 		{
 			return false;
 		}
 
-		for (int x = c.getX() - (raggio); x < (c.getX() + (raggio)); x++)
+		for (int x = c.getX() - (recinto); x < (c.getX() + (recinto)); x++)
 		{
-			for (int y = c.getY() - (raggio); y < (c.getY() + (raggio)); y++)
+			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
 			{
 				if (m[x][y] == 1)
 				{
@@ -80,15 +81,14 @@ public class TestGrafo extends PApplet
 
 	private static void stampaCentroSuMatrice(Centro c, int[][] m)
 	{
-		for (int x = c.getX() - (raggio); x < (c.getX() + (raggio)); x++)
+		int recinto = raggio + distanzaMinima;
+		for (int x = c.getX() - (recinto); x < (c.getX() + (recinto)); x++)
 		{
-			for (int y = c.getY() - (raggio); y < (c.getY() + (raggio)); y++)
+			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
 			{
-				m[x][y] = contNodo;
+				m[x][y] = 1;
 			}
 		}
-		contNodo++;
-
 	}
 
 	private static void stampaMatrice(int[][] m, int w, int h)
