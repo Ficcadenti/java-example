@@ -4,104 +4,14 @@ import processing.core.PApplet;
 
 public class TestGrafo extends PApplet
 {
-	public static int	distanzaMinima	= 30;
+	public static int	distanzaMinima	= 20;
 	public static int	h				= 1000;
-	public static int	raggio			= 40;
+	public static int	raggio			= 30;
 	public static int	w				= 1000;
-
-	public static void azzeraMatrice(int[][] m, int w, int h)
-	{
-		for (int x = 0; x < w; x++)
-		{
-			for (int y = 0; y < h; y++)
-			{
-				m[x][y] = 0;
-			}
-		}
-	}
-
-	private static Centro calcolaCentro(int[][] m)
-	{
-		int possibileCentroX = (int) (Math.random() * w);
-		int possibileCentroY = (h);
-		Centro c = new Centro(possibileCentroX, possibileCentroY);
-		while (!isVuotoNeiDintorni(c, m))
-		{
-			possibileCentroX = (int) (Math.random() * w);
-			possibileCentroY = (int) (Math.random() * h);
-			c = new Centro(possibileCentroX, possibileCentroY);
-		}
-		System.out.println("trovato centro: " + c);
-		stampaCentroSuMatrice(c, m);
-		return c;
-	}
-
-	private static boolean isVuotoNeiDintorni(Centro c, int[][] m)
-	{
-		boolean bRet = true;
-		int recinto = raggio + distanzaMinima;
-
-		// controllo se sono al margine della matrice tenendo conto del raggio
-		if ((c.getX() - recinto) < 0)
-		{
-			return false;
-		}
-		if ((c.getX() + recinto) >= w)
-		{
-			return false;
-		}
-		if ((c.getY() - recinto) < 0)
-		{
-			return false;
-		}
-		if ((c.getY() + recinto) >= h)
-		{
-			return false;
-		}
-
-		for (int x = c.getX() - (recinto); x < (c.getX() + (recinto)); x++)
-		{
-			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
-			{
-				if (m[x][y] == 1)
-				{
-					bRet = false;
-					break;
-				}
-			}
-		}
-		return bRet;
-
-	}
 
 	public static void main(String[] args)
 	{
 		PApplet.main("it.raffo.grafi.TestGrafo");
-	}
-
-	private static void stampaCentroSuMatrice(Centro c, int[][] m)
-	{
-		int recinto = raggio + distanzaMinima;
-		for (int x = c.getX() - (recinto); x < (c.getX() + (recinto)); x++)
-		{
-			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
-			{
-				m[x][y] = 1;
-			}
-		}
-	}
-
-	private static void stampaMatrice(int[][] m, int w, int h)
-	{
-		for (int y = 0; y < h; y++)
-		{
-			for (int x = 0; x < w; x++)
-			{
-				System.out.print(m[x][y]);
-			}
-			System.out.println();
-		}
-
 	}
 
 	@Override
@@ -130,29 +40,29 @@ public class TestGrafo extends PApplet
 	{
 		this.background(0);
 		this.generaPunti(200);
-		int matrice[][] = new int[w][h];
-		azzeraMatrice(matrice, w, h);
 
 		System.out.println("Test Grafo - 15-03/2019 - Raffo - raffaele.ficcadenti@gmail.com");
 
 		Grafo g = new Grafo(this);
 		g.setRaggio(raggio);
-		Centro c = calcolaCentro(matrice);
-		Nodo A = new Nodo(c, "A");
-		c = calcolaCentro(matrice);
-		Nodo B = new Nodo(c, "B");
-		c = calcolaCentro(matrice);
-		Nodo C = new Nodo(c, "C");
-		c = calcolaCentro(matrice);
-		Nodo D = new Nodo(c, "D");
-		c = calcolaCentro(matrice);
-		Nodo E = new Nodo(c, "E");
-		c = calcolaCentro(matrice);
-		Nodo F = new Nodo(c, "F");
-		c = calcolaCentro(matrice);
-		Nodo G = new Nodo(c, "G");
-		c = calcolaCentro(matrice);
-		Nodo H = new Nodo(c, "H");
+		Matrice.getInstance().setW(w);
+		Matrice.getInstance().setH(h);
+		Matrice.getInstance().setRaggio(raggio);
+		Matrice.getInstance().setDistanzaMinima(distanzaMinima);
+		Matrice.getInstance().azzeraMatrice();
+
+		System.out.println("Test Grafo ");
+		Nodo A = new Nodo("A");
+		Nodo B = new Nodo("B");
+		Nodo C = new Nodo("C");
+		Nodo D = new Nodo("D");
+		Nodo E = new Nodo("E");
+		Nodo F = new Nodo("F");
+		Nodo G = new Nodo("G");
+		Nodo H = new Nodo("H");
+		// Matrice.getInstance().stampaMatrice();
+
+		System.out.println("Test Grafo ");
 
 		Integer peso = new Integer(1);
 		g.add(A, B, peso);

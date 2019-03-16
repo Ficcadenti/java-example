@@ -2,23 +2,17 @@ package it.raffo.grafi;
 
 public class Nodo
 {
+
 	private String	txt;
 	private int		x;
 	private int		y;
 
-	public Nodo(Centro c, String txt)
+	public Nodo(String txt)
 	{
 		super();
+		Centro c = Matrice.getInstance().calcolaCentro();
 		this.x = c.getX();
 		this.y = c.getY();
-		this.txt = txt;
-	}
-
-	public Nodo(int x, int y, String txt)
-	{
-		super();
-		this.x = x;
-		this.y = y;
 		this.txt = txt;
 	}
 
