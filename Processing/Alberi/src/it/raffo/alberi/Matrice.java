@@ -1,4 +1,4 @@
-package it.raffo.grafi;
+package it.raffo.alberi;
 
 public class Matrice
 {
@@ -14,20 +14,18 @@ public class Matrice
 		return istanza;
 	}
 
+	private int		centriTrovati;
 	private int		distanzaMinima;
-
 	private int		h;
-
 	private int[][]	matrice;
-
 	private int		raggio;
-
 	private int		w;
 
 	private Matrice()
 	{
 		super();
 		this.matrice = null;
+		this.centriTrovati = 0;
 	}
 
 	public void azzeraMatrice()
@@ -37,6 +35,7 @@ public class Matrice
 		{
 			for (int y = 0; y < this.h; y++)
 			{
+
 				this.matrice[x][y] = 0;
 			}
 		}
@@ -48,17 +47,26 @@ public class Matrice
 		int possibileCentroX = (int) ((Math.random() * this.w) - 1);
 		int possibileCentroY = (int) ((Math.random() * this.h) - 1);
 		Centro c = new Centro(possibileCentroX, possibileCentroY);
+		System.out.println(c);
 		while (!this.isVuotoNeiDintorni(c, this.matrice))
 		{
-			System.out.println("Collisione n°:" + cont++);
+			if ((cont % 1000) == 0)
+			{
+				System.out.println("Collisione n°:" + cont++);
+			}
 			possibileCentroX = (int) ((Math.random() * this.w) - 1);
 			possibileCentroY = (int) ((Math.random() * this.h) - 1);
 			c = new Centro(possibileCentroX, possibileCentroY);
 		}
 		cont = 1;
-		System.out.println("trovato centro: " + c);
+		System.out.println("trovato centro (" + (++this.centriTrovati) + ": " + c);
 		this.stampaCentroSuMatrice(c);
 		return c;
+	}
+
+	public int getCentriTrovati()
+	{
+		return this.centriTrovati;
 	}
 
 	private boolean isVuotoNeiDintorni(Centro c, int[][] m)
@@ -88,15 +96,22 @@ public class Matrice
 		{
 			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
 			{
+
 				if ((m[x][y] == 1) || (m[x][y] == 2))
 				{
 					bRet = false;
 					break;
 				}
+
 			}
 		}
 		return bRet;
 
+	}
+
+	public void setCentriTrovati(int centriTrovati)
+	{
+		this.centriTrovati = centriTrovati;
 	}
 
 	public void setDistanzaMinima(int distanzaMinima)
@@ -132,6 +147,7 @@ public class Matrice
 			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
 			{
 				this.matrice[x][y] = 2;
+
 			}
 		}
 
@@ -139,6 +155,7 @@ public class Matrice
 		{
 			for (int y = c.getY() - (this.raggio); y < (c.getY() + (this.raggio)); y++)
 			{
+
 				this.matrice[x][y] = 1;
 			}
 		}
@@ -150,7 +167,9 @@ public class Matrice
 		{
 			for (int x = 0; x < this.w; x++)
 			{
+
 				System.out.print(this.matrice[x][y]);
+
 			}
 			System.out.println();
 		}

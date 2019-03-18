@@ -14,35 +14,44 @@ public class Piano3d extends PApplet
 		PApplet.main("it.raffo.piano3d.Piano3d");
 	}
 
-	PImage	img;
 	PShape	globe;
+	PImage	img;
 	float	t		= 0, o = 0, w, h;
 	float	theta	= 0, omega = 0;
 
 	@Override
 	public void draw()
 	{
+		// this.noStroke();
+		// this.lights();
+		// this.translate(100, 100, 50);
+		// this.sphere(28);
+		// this.translate(200, 200, -350);
+		// this.sphere(28);
+		// this.rotate(PI);
 
-		// this.translate(this.width / 2, this.height / 2);
-		// this.beginShape();
-		// this.shape(this.globe);
-		// this.endShape();
+		this.background(0);
+		this.stroke(150);
+		this.noFill();
 
-		// posizionati al centro
-		this.translate(this.w / 2, this.h / 2);
+		this.lights();
+		this.translate(100, 100, 50);
+		this.sphere(28);
+		this.translate(200, 200, -350);
+		this.sphere(28);
 
-		// angolo polare ruotato
-		this.theta = radians(this.t);
-		// ruota di theta
-		this.rotate(this.theta);
+		// box(150); //Enable/disable these one by one
 
-		// la coloro
-		this.stroke(0, 255, 0);
-		// la disegno
-		float r = 200 * (sin(this.theta) + pow(sin((5 * this.theta) / 2), 3));
-		this.point(r, 0, 0);
+		this.beginCamera();
+		this.camera();
+		this.translate(this.width / 2, this.height / 2);
+		this.endCamera();
 
-		this.t += 0.25;
+		this.beginCamera();
+		// this.rotateX(radians(this.mouseX));
+		this.rotateY(radians(this.mouseX));
+		this.endCamera();
+
 	}
 
 	@Override

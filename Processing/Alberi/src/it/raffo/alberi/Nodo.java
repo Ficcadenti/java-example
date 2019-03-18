@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Nodo
 {
+	private Centro		c;
 	private Elemento	elem;
 	private List<Nodo>	figli;
 	private Nodo		padre;
@@ -41,6 +42,11 @@ public class Nodo
 		this.figli.add(f);
 	}
 
+	public Centro getC()
+	{
+		return this.c;
+	}
+
 	public Elemento getElem()
 	{
 		return this.elem;
@@ -54,6 +60,11 @@ public class Nodo
 	public Nodo getPadre()
 	{
 		return this.padre;
+	}
+
+	public void setC(Centro c)
+	{
+		this.c = c;
 	}
 
 	public void setElem(Elemento elem)

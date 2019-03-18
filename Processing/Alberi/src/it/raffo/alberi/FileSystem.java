@@ -6,36 +6,52 @@ import processing.core.PApplet;
 
 public class FileSystem
 {
-	private Nodo	root;
+	private int		distanzaMinima;
+	private int		h;
 	private PApplet	pa;
-	private int		deltaX;
-	private int		deltaY;
-	private int		y;
+	private int		raggio;
+	private Nodo	root;
+	private int		w;
 
-	public FileSystem(PApplet pa)
+	public FileSystem(PApplet pa, int w, int h)
 	{
 		super();
 		this.pa = pa;
 		this.root = null;
-		this.deltaX = 50;
-		this.deltaY = 50;
-		this.y = 50;
+		this.w = w;
+		this.h = h;
+		this.raggio = 5;
+		this.distanzaMinima = 0;
+		Matrice.getInstance().setW(this.w);
+		Matrice.getInstance().setH(this.h);
+		Matrice.getInstance().setRaggio(this.raggio);
+		Matrice.getInstance().setDistanzaMinima(this.distanzaMinima);
+		Matrice.getInstance().azzeraMatrice();
+	}
+
+	private void drawArco(Nodo nFrom, Nodo nTo)
+	{
+		this.pa.pushMatrix();
+		this.pa.noFill();
+		this.pa.stroke(255, 255, 255);
+		this.pa.line(nFrom.getC().getX(), nFrom.getC().getY(), nTo.getC().getX(), nTo.getC().getY());
+		this.pa.popMatrix();
+
 	}
 
 	void drawArrow(int cx, int cy, int len, float angle)
 	{
 		this.pa.pushMatrix();
 		this.pa.translate(cx, cy);
-		this.pa.rotate(this.pa.radians(angle));
 		this.pa.line(0, 0, len, 0);
 		this.pa.line(len, 0, len - 8, -8);
 		this.pa.line(len, 0, len - 8, 8);
 		this.pa.popMatrix();
 	}
 
-	public int getDeltaY()
+	public int getH()
 	{
-		return this.deltaY;
+		return this.h;
 	}
 
 	public PApplet getPa()
@@ -48,9 +64,9 @@ public class FileSystem
 		return this.root;
 	}
 
-	public int getY()
+	public int getW()
 	{
-		return this.y;
+		return this.w;
 	}
 
 	public void ls(File file)
@@ -70,6 +86,7 @@ public class FileSystem
 			}
 
 			this.root = new Nodo(new Elemento(file.getName(), type, size, file));
+			this.root.setC(Matrice.getInstance().calcolaCentro());
 			this.ls(this.root);
 		}
 	}
@@ -82,20 +99,22 @@ public class FileSystem
 			if (f.isDirectory() && !f.isHidden())
 			{
 				Nodo n = new Nodo(new Elemento(f.getName(), "D", f.length(), f));
+				n.setC(Matrice.getInstance().calcolaCentro());
 				nodoCorrente.addFiglio(n);
 				this.ls(n);
 			}
 			if (f.isFile())
 			{
 				Nodo n = new Nodo(new Elemento(f.getName(), "F", f.length(), f));
+				n.setC(Matrice.getInstance().calcolaCentro());
 				nodoCorrente.addFiglio(n);
 			}
 		}
 	}
 
-	public void setDeltaY(int deltaY)
+	public void setH(int h)
 	{
-		this.deltaY = deltaY;
+		this.h = h;
 	}
 
 	public void setPa(PApplet pa)
@@ -108,9 +127,9 @@ public class FileSystem
 		this.root = root;
 	}
 
-	public void setY(int y)
+	public void setW(int w)
 	{
-		this.y = y;
+		this.w = w;
 	}
 
 	public String space(int n)
@@ -128,50 +147,46 @@ public class FileSystem
 		if (this.root != null)
 		{
 			String str = this.root.getElem().getNome() + " (" + this.root.getElem().getType() + ")";
-			System.out.println(str);
-			this.stampaTxtFx(str, 50);
-			this.stampaAlbero(this.root, 50 + this.deltaX);
+			System.out.println(" directory di partenza: " + str);
+			this.stampaTxtFx(this.root);
+			this.stampaAlbero(this.root);
 		}
 
 	}
 
-	public void stampaAlbero(Nodo nodoCorrente, int x)
+	public void stampaAlbero(Nodo nodoCorrente)
 	{
 
 		if (nodoCorrente.getFigli() != null)
 		{
+
 			for (Nodo n : nodoCorrente.getFigli())
 			{
-				String str = n.getElem().getNome() + " (" + n.getElem().getType() + ")";
-				this.stampaTxtFx(str, x);
+				this.drawArco(nodoCorrente, n);
+				nodoCorrente.getC().getX();
+				this.stampaTxtFx(n);
 
 				if (n.getElem().getType().equalsIgnoreCase("D"))
 				{
-					this.stampaAlbero(n, x + this.deltaX);
-					this.drawArrow(x, this.y, x + this.deltaX, this.y + this.deltaY);
+					this.stampaAlbero(n);
 				}
 			}
 		}
 	}
 
-	public void stampaTxtFx(String str, int x)
+	public void stampaTxtFx(Nodo n)
 	{
 		this.pa.pushMatrix();
+		String str = n.getElem().getNome() + " (" + n.getElem().getType() + ")";
 		this.pa.noFill();
 		this.pa.stroke(255);
-		int startX = x - 10;
-		int startY = this.y - 15;
-		int DX = str.length() * 7;
-		int DY = 20;
-		this.pa.rect(startX, startY, DX, DY);
-		int riquadro = 3;
-		this.pa.rect(startX - riquadro, startY - riquadro, DX + (riquadro * 2), DY + (riquadro * 2));
-
+		this.pa.ellipse(n.getC().getX(), n.getC().getY(), this.raggio * 2, this.raggio * 2);
+		this.pa.fill(this.pa.random(255), this.pa.random(255), this.pa.random(255));
+		this.pa.ellipse(n.getC().getX(), n.getC().getY(), (this.raggio * 2) - 6, (this.raggio * 2) - 6);
 		this.pa.fill(this.pa.random(255), this.pa.random(255), this.pa.random(255));
 		this.pa.color(this.pa.random(255), this.pa.random(255), this.pa.random(255));
-		this.pa.text(str, x, this.y);
+		this.pa.text(str, n.getC().getX(), n.getC().getY() - ((this.raggio) + 5));
 		this.pa.popMatrix();
-		this.y += this.deltaY;
 	}
 
 }
