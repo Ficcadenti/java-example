@@ -137,7 +137,7 @@ public class HangmanGame extends JFrame
 							if (HangmanGame.this.controllaPartitaVinta()) /* hai vinto */
 							{
 								JOptionPane.showMessageDialog(null, "Hai vinto!!!!",
-										"The Hangstickman Game !!!! (c) Raffo", JOptionPane.INFORMATION_MESSAGE);
+										"The Hangstickman   Game !!!! (c) Raffo", JOptionPane.INFORMATION_MESSAGE);
 							}
 
 							letteraTrovata = true;
