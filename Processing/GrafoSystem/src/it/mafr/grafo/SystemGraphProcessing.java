@@ -1,3 +1,5 @@
+package it.mafr.grafo;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
@@ -7,17 +9,20 @@ import processing.core.PApplet;
 public class SystemGraphProcessing extends PApplet
 {
 
-	public static int diametro = 10;
+	public static int diametro = 30;
 
 	public static void main(String[] args)
 	{
-		PApplet.main("SystemGraphProcessing");
-		// Matrice.getIstance().stampaMatrice();
-
+		PApplet.main("it.mafr.grafo.SystemGraphProcessing");
+		Matrice.getIstance().setH(800);
+		Matrice.getIstance().setW(800);
+		Matrice.getIstance().setDiametro(diametro);
+		Matrice.getIstance().azzeraMatrice();
+		Matrice.getIstance().generaCentro(0);
 	}
 
 	private Nodo	cartellaPartenza;
-	private String	path		= "d:\\prova";
+	private String	path		= "D:\\TAGGATI\\Duke Ellington & His Orchestra\\2002 - Duke Ellington's Finest Hour";
 
 	private File	rootFile	= new File(this.path);
 

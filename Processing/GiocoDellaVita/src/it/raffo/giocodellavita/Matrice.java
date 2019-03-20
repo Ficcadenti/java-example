@@ -1,4 +1,4 @@
-package it.raffo.alberi;
+package it.raffo.giocodellavita;
 
 public class Matrice
 {
@@ -48,7 +48,7 @@ public class Matrice
 		int possibileCentroY = (int) ((Math.random() * this.h) - 1);
 		Centro c = new Centro(possibileCentroX, possibileCentroY);
 		System.out.println(c);
-		while (!this.isVuotoNeiDintorni(c))
+		while (!this.isVuotoNeiDintorni(c, this.matrice))
 		{
 			if ((cont % 1000) == 0)
 			{
@@ -69,7 +69,7 @@ public class Matrice
 		return this.centriTrovati;
 	}
 
-	private boolean isVuotoNeiDintorni(Centro c)
+	private boolean isVuotoNeiDintorni(Centro c, int[][] m)
 	{
 		boolean bRet = true;
 		int recinto = this.raggio + this.distanzaMinima;
@@ -97,7 +97,7 @@ public class Matrice
 			for (int y = c.getY() - (recinto); y < (c.getY() + (recinto)); y++)
 			{
 
-				if ((this.matrice[x][y] == 1) || (this.matrice[x][y] == 2))
+				if ((m[x][y] == 1) || (m[x][y] == 2))
 				{
 					bRet = false;
 					break;
