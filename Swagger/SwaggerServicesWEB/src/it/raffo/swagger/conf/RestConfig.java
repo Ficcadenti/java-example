@@ -20,7 +20,7 @@ public class RestConfig extends Application
 {
 
 	private static final String	SWAGGER_REST_SERVICE_VERSION		= "1.0.2";
-	private static final String	SWAGGER_REST_SERVICE_TITLE			= "API REST AppDoganeServices";
+	private static final String	SWAGGER_REST_SERVICE_TITLE			= "API REST SwaggerServices";
 	private static final String	SWAGGER_REST_SERVICE_HOST			= "localhost:8080";
 	private static final String	SWAGGER_REST_SERVICE_BASE_PATH		= "/SwaggerServicesWEB/rest";
 	private static final String	SWAGGER_REST_SERVICE_RESOURCE_PACK	= "it.raffo.swagger.rest";
