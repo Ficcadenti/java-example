@@ -30,7 +30,8 @@ public class TestAlbero
 		// albero.cancella(sc3);
 
 		System.out.println("In Order : ");
-		albero.visitaLivelli();
+		// albero.visitaLivelli();
+		albero.visitaInOrder();
 
 		System.out.println("Dimensione  : " + albero.dimensione());
 		System.out.println("Altezza min : " + albero.altezzaMinima());
@@ -41,7 +42,8 @@ public class TestAlbero
 		System.out.println("Massimo     : " + albero.getMassimo());
 		System.out.println("Bilanciato  : " + albero.isBilanciato());
 
-		System.out.println("Nodo con altezza max : " + albero.altezzaMassima2().getSc());
+		// System.out.println("Nodo con altezza max : " +
+		// albero.altezzaMassima2().getSc());
 
 		// if (albero.cerca(sc5) != null)
 		// {

@@ -580,14 +580,14 @@ public class AlberoBinario
 		System.out.println("Età     : " + nodo.getSc().getEta());
 		if (nodo.getPadre() != null)
 		{
-			System.out.println("Padre   : " + nodo.getPadre().getSc().getCognome() + " ("
-					+ nodo.getPadre().getSc().getEta() + ")");
+			System.out.println("Padre   : " + nodo.getPadre().getSc().getCognome() + " (" + nodo.getPadre().getSc().getEta() + ")");
 		}
 		System.out.println("\n");
 	}
 
 	public void visitaInOrder()
 	{
+		System.out.println("VISITA ALBERO IN ORDINE");
 		this.inOrder(this.root);
 	}
 
@@ -599,7 +599,7 @@ public class AlberoBinario
 
 	private void visitaLivelli(Nodo nodoCorrente)
 	{
-
+		System.out.println("IN ORDER");
 		if (nodoCorrente != null)
 		{
 			Queue<Nodo> coda = new LinkedList<Nodo>();
