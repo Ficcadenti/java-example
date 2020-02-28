@@ -9,6 +9,7 @@ public class Users
 	private String			cf;
 	private String			mail;
 	private java.util.Date	mail_verified_at;
+	private Integer			eta;
 	private String			telefono;
 	private String			provincia;
 	private String			www;
@@ -152,5 +153,15 @@ public class Users
 	{
 		return "Users [id=" + this.id + ", nome=" + this.nome + ", cognome=" + this.cognome + ", cf=" + this.cf + ", mail=" + this.mail + ", mail_verified_at=" + this.mail_verified_at + ", telefono=" + this.telefono + ", provincia=" + this.provincia
 				+ ", www=" + this.www + ", password=" + this.password + ", remember_token=" + this.remember_token + ", created_at=" + this.created_at + ", updated_at=" + this.updated_at + "]";
+	}
+
+	public Integer getEta()
+	{
+		return eta;
+	}
+
+	public void setEta(Integer eta)
+	{
+		this.eta = eta;
 	}
 }

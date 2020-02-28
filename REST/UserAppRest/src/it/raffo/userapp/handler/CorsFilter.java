@@ -32,10 +32,11 @@ public class CorsFilter implements Filter
 			String requestURI = httpServletRequest.getRequestURI();
 			System.out.println(requestURI);
 
-			if (requestURI.contains("usermod") || requestURI.contains("useradd"))
+			if (requestURI.contains("usermod") || requestURI.contains("useradd") || requestURI.contains("userdel"))
 			{
 				System.out.println("Applico CORS !!!!");
 				HttpServletResponse httpServletResponse = (HttpServletResponse) response;
+				httpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
 				httpServletResponse.addHeader("Access-Control-Allow-Headers", "content-type");
 				httpServletResponse.addHeader("Access-Control-Allow-Methods", "POST, PUT, DELETE");
 				filterChain.doFilter(request, httpServletResponse);
