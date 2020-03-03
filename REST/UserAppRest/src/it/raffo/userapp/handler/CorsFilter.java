@@ -12,9 +12,12 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 @WebFilter("/*")
 public class CorsFilter implements Filter
 {
+	private static final Logger log = Logger.getLogger(CorsFilter.class);
 
 	@Override
 	public void destroy()
@@ -24,17 +27,17 @@ public class CorsFilter implements Filter
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException
 	{
-		System.out.println("Partito il filtro");
+		log.info("Partito il filtro");
 		if (response instanceof HttpServletResponse)
 		{
 			HttpServletRequest httpServletRequest = (HttpServletRequest) request;
 
 			String requestURI = httpServletRequest.getRequestURI();
-			System.out.println(requestURI);
+			log.info(requestURI);
 
 			if (requestURI.contains("usermod") || requestURI.contains("useradd") || requestURI.contains("userdel"))
 			{
-				System.out.println("Applico CORS !!!!");
+				log.info("Applico CORS !!!!");
 				HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 				httpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
 				httpServletResponse.addHeader("Access-Control-Allow-Headers", "content-type");

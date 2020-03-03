@@ -9,6 +9,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -17,6 +18,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
+import org.apache.log4j.Logger;
+
+import it.raffo.userapp.controller.Jwt;
 import it.raffo.userapp.model.pojo.Esito;
 import it.raffo.userapp.model.pojo.Users;
 import it.raffo.userapp.util.Constants;
@@ -27,7 +31,10 @@ import it.raffo.userapp.util.Constants;
 @Consumes({ "application/json" })
 public class UserAppService
 {
-	private List<Users> uList = null;
+	private static final Logger	log		= Logger.getLogger(UserAppService.class);
+
+	// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ZXN0dXNlcmlkIiwiaWF0IjoxNTgzMjQ4MzAzLCJleHAiOjE1ODMyNTkxMDMsInN1YiI6IkpvZSIsImF1ZCI6InRlc3RBdWRpZW5jZUlkIn0.IgOZ3Xbq0vL4ZA6MRLGdAPa_3GQhlqjIp66gkxGDuFY
+	private List<Users>			uList	= null;
 
 	@PostConstruct
 	public void init()
@@ -60,11 +67,30 @@ public class UserAppService
 	}
 
 	@GET
-	@Path("/info")
-	public Response info()
+	@Path("/token")
+	public Response generaToken(@HeaderParam("userId") String userId)
 	{
-		System.out.println("Test");
-		return this.buildDefaultOkResponse(new String("Ciao mondo!!!!")).build();
+		String token = Jwt.getIstance().generaToken(userId);
+		return this.buildDefaultOkResponse(token).build();
+	}
+
+	@GET
+	@Path("/info")
+	public Response info(@HeaderParam("Token") String token)
+	{
+		Esito esito = new Esito();
+		log.info("info Token: " + token);
+		if (Jwt.getIstance().verificaToken(token))
+		{
+			esito.setCodice(Constants.OK);
+			esito.setMsg("Token valido");
+		}
+		else
+		{
+			esito.setCodice(Constants.KO);
+			esito.setMsg("Token non valido");
+		}
+		return this.buildDefaultOkResponse(esito).build();
 	}
 
 	@GET
@@ -94,16 +120,16 @@ public class UserAppService
 	public Response updateUser(Users user)
 	{
 		Esito esito = new Esito();
-		System.out.println("User to update: " + user);
+		log.info("User to update: " + user);
 		Optional<Users> u = this.uList.stream().filter(e -> e.getId() == user.getId()).findFirst();
 
 		if (u.isPresent())
 		{
 			int idx = this.uList.indexOf(u.get());
-			System.out.println("Utente trovato in posizione idx=" + idx);
+			log.info("Utente trovato in posizione idx=" + idx);
 			this.uList.remove(idx);
 			this.uList.add(idx, user);
-			this.uList.stream().forEach(e -> System.out.println(e));
+			this.uList.stream().forEach(e -> log.info(e));
 			esito.setCodice(Constants.OK);
 			esito.setMsg("Utente modificato");
 			return this.buildDefaultOkResponse(esito).build();
@@ -123,9 +149,9 @@ public class UserAppService
 	public Response userAdd(Users user)
 	{
 		Esito esito = new Esito();
-		System.out.println("User to add: " + user);
+		log.info("User to add: " + user);
 		this.uList.add(user);
-		this.uList.stream().forEach(e -> System.out.println(e));
+		this.uList.stream().forEach(e -> log.info(e));
 		esito.setCodice(Constants.OK);
 		esito.setMsg("Utente inserito");
 		return this.buildDefaultOkResponse(esito).build();
@@ -136,19 +162,19 @@ public class UserAppService
 	public Response userDel(@PathParam(value = "id") int id)
 	{
 		Esito esito = new Esito();
-		System.out.println("utente da cancellare: " + id);
+		log.info("utente da cancellare: " + id);
 		Optional<Users> u = this.uList.stream().filter(e -> e.getId() == id).findFirst();
 		if (u.isPresent())
 		{
 			this.uList.remove(u.get());
-			this.uList.stream().forEach(e -> System.out.println(e));
+			this.uList.stream().forEach(e -> log.info(e));
 			esito.setCodice(Constants.OK);
 			esito.setMsg("User removed");
 			return this.buildDefaultOkResponse(esito).build();
 		}
 		else
 		{
-			System.out.println("utente non presente");
+			log.info("utente non presente");
 			esito.setCodice(Constants.KO);
 			esito.setMsg("Id not found");
 			return Response.status(Response.Status.NOT_FOUND).entity(esito).build();
@@ -159,7 +185,7 @@ public class UserAppService
 	// @Path("/usermod")
 	// public Response preflight()
 	// {
-	// System.out.println("preflight");
+	// log.info("preflight");
 	//
 	// return
 	// this.buildDefaultOkResponse(null).header("Access-Control-Allow-Headers",
@@ -171,7 +197,7 @@ public class UserAppService
 	// @Path("/useradd")
 	// public Response preflight2()
 	// {
-	// System.out.println("preflight2");
+	// log.info("preflight2");
 	//
 	// return
 	// this.buildDefaultOkResponse(null).header("Access-Control-Allow-Headers",
@@ -183,7 +209,7 @@ public class UserAppService
 	// @Path("/userdel/2")
 	// public Response preflight3()
 	// {
-	// System.out.println("preflight3");
+	// log.info("preflight3");
 	//
 	// return
 	// this.buildDefaultOkResponse(null).header("Access-Control-Allow-Headers",
