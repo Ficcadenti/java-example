@@ -44,7 +44,7 @@ public class Jwt
 	public String generaToken(String userid)
 	{
 		// genero le date per la validità del token
-		log.info("Genero il TOKEN");
+		log.info("Genero il TOKEN per userId=" + userid);
 		Date dNow = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm");
 		Calendar c = Calendar.getInstance();

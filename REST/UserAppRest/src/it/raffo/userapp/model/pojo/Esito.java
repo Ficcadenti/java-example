@@ -4,6 +4,7 @@ public class Esito
 {
 	private int		codice;
 	private String	msg;
+	private String	token;
 
 	public int getCodice()
 	{
@@ -23,6 +24,16 @@ public class Esito
 	public void setMsg(String msg)
 	{
 		this.msg = msg;
+	}
+
+	public String getToken()
+	{
+		return this.token;
+	}
+
+	public void setToken(String token)
+	{
+		this.token = token;
 	}
 
 }

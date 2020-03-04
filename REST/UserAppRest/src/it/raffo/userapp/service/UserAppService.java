@@ -67,11 +67,17 @@ public class UserAppService
 	}
 
 	@GET
-	@Path("/token")
-	public Response generaToken(@HeaderParam("userId") String userId)
+	@Path("/token/{userId}")
+	public Response generaToken(@PathParam(value = "userId") String userId)
 	{
+		Esito esito = new Esito();
+		log.info("userId : " + userId);
 		String token = Jwt.getIstance().generaToken(userId);
-		return this.buildDefaultOkResponse(token).build();
+		log.info("Token generato: " + token);
+		esito.setCodice(Constants.OK);
+		esito.setMsg("Token generato");
+		esito.setToken(token);
+		return this.buildDefaultOkResponse(esito).build();
 	}
 
 	@GET
@@ -84,13 +90,14 @@ public class UserAppService
 		{
 			esito.setCodice(Constants.OK);
 			esito.setMsg("Token valido");
+			return this.buildDefaultOkResponse(esito).build();
 		}
 		else
 		{
 			esito.setCodice(Constants.KO);
 			esito.setMsg("Token non valido");
+			return Response.status(Response.Status.UNAUTHORIZED).entity(esito).build();
 		}
-		return this.buildDefaultOkResponse(esito).build();
 	}
 
 	@GET
