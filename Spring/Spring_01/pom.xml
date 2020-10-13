@@ -20,7 +20,7 @@
 		<mojo_version>1.5.0</mojo_version>
 		<jar_version>3.0.2</jar_version>
 		<compiler_version>3.5.1</compiler_version>
-		<junit_version>3.8.1</junit_version>
+		<junit_version>4.13.1</junit_version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
