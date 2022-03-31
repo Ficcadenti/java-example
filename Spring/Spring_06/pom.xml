@@ -18,7 +18,7 @@
 		<hibernate_version>5.2.6.Final</hibernate_version>
 		<mysql_version>5.1.37</mysql_version>
 		<json_version>20160810</json_version>
-		<spring_version>4.3.10.RELEASE</spring_version>
+		<spring_version>5.3.18</spring_version>
 		<mojo_version>1.5.0</mojo_version>
 		<jar_version>3.0.2</jar_version>
 		<compiler_version>3.5.1</compiler_version>
