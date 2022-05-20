@@ -15,7 +15,7 @@
 		<main_class>NetClientGet</main_class>
 
 		<!-- Versioni per dipendenze jar -->
-		<gson_version>2.8.2</gson_version>
+		<gson_version>2.8.9</gson_version>
 	</properties>
 
 	<build>
