@@ -12,7 +12,7 @@
 		<org.springframework-version>4.3.10.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.7.25</org.slf4j-version>
-		<gson_version>2.8.2</gson_version>
+		<gson_version>2.8.9</gson_version>
 		<java_source_version>1.8</java_source_version>
 		<java_target_version>1.8</java_target_version>
 		<compiler_version>3.5.1</compiler_version>
