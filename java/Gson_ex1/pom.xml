@@ -11,7 +11,7 @@
 		<jar_version>3.0.2</jar_version>
 		<compiler_version>3.7.0</compiler_version>
 
-		<gson_version>2.8.2</gson_version>
+		<gson_version>2.8.9</gson_version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
