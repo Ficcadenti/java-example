@@ -3,7 +3,7 @@
 		<servlet_version>4.0.0-b01</servlet_version>
 		<log4j_version>1.2.17</log4j_version>
 		<hibernate_version>5.2.6.Final</hibernate_version>
-		<mysql_version>5.1.37</mysql_version>
+		<mysql_version>8.0.28</mysql_version>
 		<json_version>20160810</json_version>
 		<jsf_version>1.2</jsf_version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
